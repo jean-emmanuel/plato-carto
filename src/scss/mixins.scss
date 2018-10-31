@@ -1,0 +1,15 @@
+.shadow {
+    // box-shadow: 0 0 0 1px rgba(#000, .1)!important;
+    box-shadow: 0 0 20px 0 rgba(#000, .1)!important;
+}
+
+.control {
+    border-radius: $border-radius;
+    overflow: hidden;
+    @extend .shadow;
+    background: $base;
+    color: #fff;
+    text-align: center;
+    opacity: .9;
+    cursor: pointer;
+}

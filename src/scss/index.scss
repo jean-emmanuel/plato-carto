@@ -1,0 +1,297 @@
+@import 'normalize';
+
+@import 'vars';
+@import 'mixins';
+
+@import 'leaflet';
+@import 'MarkerCluster';
+@import 'leaflet-custom';
+
+@import 'materialize-custom';
+@import 'materialize';
+
+@import 'typo';
+@import 'form';
+
+
+
+html {
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+body {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+#map {
+
+    position: absolute;
+    top:$nav-height;
+    bottom:0;
+    left: 0;
+    right:0;
+    z-index: 1;
+
+    path {
+        fill: $accent;
+        stroke: $accent;
+    }
+
+}
+
+#map-tools {
+
+    position: absolute;
+    top: $nav-height + 10px;
+    right: 10px;
+    z-index: 1;
+
+    > div {
+        float: left;
+        margin-left: 10px;
+    }
+}
+
+#zoom {
+
+    width: 25px;
+    @extend .control;
+
+    a {
+        cursor: pointer;
+        width: 25px;
+        height:25px;
+        line-height:25px;
+        font-size: 12px;
+        color: inherit!important;
+        font-weight: bold;
+    }
+}
+
+
+#sidepanel {
+
+    position: absolute;
+    top: $nav-height;
+    bottom:0;
+    left: 0;
+    width: $sidepanel-width;
+    opacity: 1;
+    transition: left .2s, opacity .2s;
+    z-index: 3;
+    &.sidepanel-closed {
+        left: -$sidepanel-width;
+        // opacity: 0;
+        #sidepanel-closer {
+            width: 40px;
+            i {
+                transform: rotate(-180deg);
+            }
+        }
+
+    }
+
+    background: #fff;
+
+    @extend .shadow;
+
+    padding: 25px;
+
+}
+
+#sidepanel-tools {
+    position: absolute;
+    top: 10px;
+    left: $sidepanel-width;
+    height: 50px;
+    line-height: 50px;
+    width: 100px;
+
+}
+
+#sidepanel-closer {
+
+    @extend .control;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 20px;
+    transition: width .2s;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    i {
+        transition: transform .4s;
+    }
+    &:hover:not(.nohover) {
+        width: 40px;
+        i {
+            transform: rotate(360deg);
+        }
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        bottom: -10px;
+        right: -10px;
+        left: -10px;
+    }
+
+    @extend .shadow;
+
+}
+
+#list-toggle {
+
+    @extend .control;
+
+    width: 50px;
+    float: left;
+    transition: background-color .2s;
+    position: relative;
+
+    #list-count {
+        position: absolute;
+        top: 6px;
+        left: 26px;
+        font-size: 9px;
+        font-weight: bold;
+        min-width: 18px;
+        line-height: 10px;
+        background: $accent;
+        padding: 2px 3px;
+        border-radius: 100%;
+        border: 2px solid $base;
+        transition: background-color .5s, border-color .5s;
+    }
+
+    &.on {
+        background: $accent;
+        color: #fff;
+        #list-count {
+            background: $base;
+            border-color: $accent;
+
+        }
+    }
+
+    @extend .shadow;
+
+}
+
+#nav {
+
+    position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    z-index: 4;
+    height: $nav-height;
+    line-height: $nav-height;
+
+    background: $base;
+
+    header {
+        // text-align: center;
+        font-family: Lato;
+        color: #fff;
+        font-weight: bold;
+        padding: 1px 10px 0 10px;
+        // width: $sidepanel-width;
+        .icon {
+            $icon-size:  $nav-height - 11px;
+            $icon-offset: 4px;
+            width: $icon-size;
+            height: $icon-size;
+            position: relative;
+            top: $icon-offset;
+            text-align: center;
+            border-radius: 100%;
+            background: rgba(black, 0.15);
+            margin-right: 10px;
+            display: inline-block;
+            i {
+                position: relative;
+                top: -$icon-offset;
+            }
+        }
+    }
+
+    ul {
+        height: $nav-height;
+        line-height: $nav-height;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .btn {
+        margin-top: -5px;
+    }
+
+    @extend .shadow;
+
+
+}
+
+#list {
+    position: absolute;
+    top: $nav-height;
+    left: $sidepanel-width;
+    right: 0;
+    bottom:0;
+    background: #fafafa;
+    transition: left .2s, opacity .2s;
+    z-index: 2;
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 72px;
+        width: 100%;
+        background: #fff;
+        display: block;
+        @extend .shadow;
+    }
+    .list-content {
+        position: absolute;
+        top: 72px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // > :first-child {
+        //     margin-top:0;
+        // }
+        overflow-y: auto;
+
+        .list-item {
+            padding: 20px 30px;
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba(black, .1);
+            }
+        }
+    }
+
+    opacity: 0;
+    pointer-events: none;
+    &.hidden {
+        z-index: -1;
+    }
+    &.opened {
+        pointer-events: initial;
+        opacity: 1;
+    }
+}
+
+.sidepanel-closed + #list {
+    left: 0;
+}

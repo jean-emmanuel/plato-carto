@@ -1,0 +1,51 @@
+var keyboardJS = require('keyboardjs'),
+    sidepanel = document.getElementById('sidepanel'),
+    closer = document.getElementById('sidepanel-closer'),
+    filterManager = require('./filters'),
+    html = require('nanohtml')
+
+
+function toggleSidepanel() {
+
+    sidepanel.classList.toggle('sidepanel-closed')
+
+    // force :hover out
+    closer.classList.add('nohover')
+    setTimeout(()=>{
+        closer.classList.remove('nohover')
+    },250)
+
+}
+
+closer.addEventListener('click', ()=>{
+    toggleSidepanel()
+})
+
+keyboardJS.bind('f1', (e)=>{
+    e.preventDefault()
+    toggleSidepanel()
+})
+
+
+function createForm(filters, parentNode) {
+
+    for (var f of filters) {
+
+        var element = html`
+            <p class="filter">
+                ${f.html}
+            </p>`
+
+        parentNode.appendChild(element)
+
+        if (f.filters.length) {
+
+            createForm(f.filters, f.html)
+
+        }
+
+    }
+
+}
+
+createForm(filterManager.filters, sidepanel)

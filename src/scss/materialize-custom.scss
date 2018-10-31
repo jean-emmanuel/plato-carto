@@ -1,0 +1,30 @@
+@import '_color-variables';
+
+// $primary-color: color("materialize-red", "lighten-2") !default;
+// $primary-color-light: lighten($primary-color, 15%) !default;
+// $primary-color-dark: darken($primary-color, 15%) !default;
+//
+// $secondary-color: color("teal", "lighten-1") !default;
+// $success-color: color("green", "base") !default;
+// $error-color: color("red", "base") !default;
+// $link-color: color("light-blue", "darken-1") !default;
+
+$primary-color: $base;
+$primary-color-light: lighten($primary-color, 15%);
+$primary-color-dark: darken($primary-color, 15%);
+
+$secondary-color: lighten($accent, 15%);
+$success-color: $accent;
+$error-color: $accent;
+$link-color: $accent;
+
+$button-radius: $border-radius;
+
+
+.btn, .btn-small {
+    font-weight: bold;
+    // padding: 0 10px!important;
+    i {
+        font-size: inherit;
+    }
+}

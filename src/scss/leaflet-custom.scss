@@ -1,0 +1,54 @@
+
+.leaflet-marker-icon {
+
+    background: none;
+    border: none;
+
+    i {
+        position: absolute;
+        bottom: 6px;
+        left:-25px + 6px;
+        font-size: 40px;
+        z-index: 1;
+
+        &.icon-shadow {
+            color: black!important;
+            opacity: 0.1;
+            transform-origin: center bottom;
+            transform: skewX(-30deg) scaleY(.7);
+            z-index: 0
+        }
+    }
+
+    &.icon-compagnie {
+        i {
+            color: $accent;
+        }
+    }
+
+    &.icon-structure {
+        i {
+            color: $base;
+        }
+    }
+
+    &.cluster {
+        i {
+            bottom: 0;//-16px;
+            color: mix($base, $accent);
+        }
+        .count {
+            position: absolute;
+            font-weight: 900;
+            color: #fff;
+            bottom: 0;//-16px;
+            left: -19px;
+            width: 50px;
+            text-align: center;
+            line-height: 41px;
+            z-index: 10;
+            font-size: 15px;
+        }
+    }
+
+}

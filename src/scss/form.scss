@@ -1,0 +1,55 @@
+#sidepanel {
+
+    // > p:first-of-type {
+    //     margin-top: 0;
+    // }
+
+    .filter {
+        margin-top: 20px;
+    }
+    .filter .filter {
+        padding-left: 20px;
+    }
+
+    .group > .filter {
+        padding-left: 0;
+    }
+
+    .number {
+        > div {
+            position: relative;
+        }
+        input {
+            display: inline-block;
+            width: 75%;
+        }
+        .helper {
+            display: inline-block;
+            opacity: .6;
+            width: 20%;
+            text-align: center;
+            pointer-events: none;
+            margin-left: 4%;
+            position: relative;
+            top: 1px;
+        }
+        &:after {
+            content:"";
+
+        }
+    }
+
+    .radio {
+        label {
+            display: block
+        }
+    }
+
+    .separator {
+        margin: 35px 0;
+        width: 50%;
+        border-top: 1px solid #000;
+        opacity: 0.1;
+    }
+
+}
