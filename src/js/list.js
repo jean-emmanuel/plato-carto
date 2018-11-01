@@ -3,6 +3,8 @@ var keyboardJS = require('keyboardjs'),
     morph = require('nanomorph'),
     config = require('../../data/config'),
     map = require('./map'),
+    modal = require('./modal'),
+    templates = require('../../data/templates'),
     list = document.getElementById('list'),
     listCount = document.getElementById('list-count'),
     listContent = list.getElementsByClassName('list-content')[0],
@@ -44,19 +46,25 @@ var listEmpty = html`
 
 listContent.appendChild(listTree)
 
-
 function updateList(){
 
-    var descriptions = map.getVisibleMarkersListViews()
+    var markers = map.getVisibleMarkers()
 
-    listCount.innerText = descriptions.length
+    listCount.innerText = markers.length
 
     if (!listOpened) return
 
-    if (descriptions.length) {
+    if (markers.length) {
 
         var newTree = html`<div></div>`
-        descriptions.forEach(d => newTree.appendChild(d))
+        markers.forEach(data => {
+            var desc = templates.listView(data),
+                more = html`<p class="btn-small waves-effect">${config.locale.more}</p>`
+            more.addEventListener('click', ()=>{
+                modal(templates.modalView(data))
+            })
+            desc.appendChild(more)
+        })
 
         // morph(listTree, newTree)
         listContent.innerHTML = ''

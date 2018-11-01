@@ -117,9 +117,9 @@ class Map {
 
     }
 
-    getVisibleMarkersListViews() {
+    getVisibleMarkers() {
 
-        return this.markers.filter(m => m._visible).map(m => this.listView(m))
+        return this.markers.filter(m => m._visible)
 
     }
 

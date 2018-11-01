@@ -20,7 +20,6 @@ module.exports = {
                         html`<span><i class="fas fa-fw fa-phone"></i> ${item.telephone}<br/></span>` : ''
                     }
 
-                    <p class="btn-small waves-effect">En savoir plus</p>
                 </p>
             </div>
         `

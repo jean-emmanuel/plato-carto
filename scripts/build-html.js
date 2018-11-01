@@ -11,4 +11,4 @@ fs.writeFileSync(outputPath, mustache.render(fs.readFileSync(inputPath).toString
 
 setTimeout(()=>{
     send('reload')
-}, 250)
+}, 1000)
