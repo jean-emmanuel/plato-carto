@@ -42,8 +42,8 @@ class Text extends Filter {
 
         var options = {
             input: html`<input type="text"/>`,
-            class: 'input-field',
             ...o,
+            class: o.class + ' input-field'
         }
 
         super(options)

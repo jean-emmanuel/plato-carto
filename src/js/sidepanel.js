@@ -11,7 +11,9 @@ function toggleSidepanel() {
 
     // force :hover out
     closer.classList.add('nohover')
+    sidepanel.classList.add('transitioning')
     setTimeout(()=>{
+        sidepanel.classList.remove('transitioning')
         closer.classList.remove('nohover')
     },250)
 

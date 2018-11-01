@@ -1,4 +1,5 @@
 var browserify = require('browserify'),
+    nanohtml = require('nanohtml'),
     uglifyify = require('uglifyify'),
     through = require('through'),
     minimatch = require('minimatch').Minimatch,
@@ -50,8 +51,8 @@ b = browserify(inputPath, {
     plugin: plugins
  })
 
-b = b.transform(ignoreWrapper(babelify), {presets: ["env"]})
-
+b.transform(ignoreWrapper(babelify), {presets: ["env"]})
+b.transform(nanohtml)
 if (prod) b = b.transform(ignoreWrapper(uglifyify), {global: true})
 
 

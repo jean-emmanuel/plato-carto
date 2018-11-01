@@ -28,3 +28,8 @@ $button-radius: $border-radius;
         font-size: inherit;
     }
 }
+
+#modal .modal-close {
+    border-radius: inherit
+    // border-radius: $border-radius!important;
+}

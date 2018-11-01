@@ -1,6 +1,6 @@
 function connect() {
 
-    var ws = new WebSocket('ws://127.0.0.1:8080/webPage')
+    var ws = new WebSocket('ws://' + window.location.host + ':8080/webPage')
 
     ws.onmessage = (message)=>{
         try {

@@ -24,10 +24,11 @@ module.exports = {
         layers: [
             ['geoJSON', require('./region-pays-de-la-loire.json'), {weight: 1.5, fillOpacity: 0.1}]
         ],
-        markers: dataset.map((m) => {m._string = JSON.stringify(Object.values(m)); return m}),
+        markers: dataset.map((m) => {m._string = [m.nom, m.adresse, m.codepostal, m.ville].join(' '); return m}),
         iconClass: (item) => 'icon-' + item._type,
         tooltip: (item) => item.nom,
-        description: templates
+        listView: templates.listView,
+        modalView: templates.modalView,
     }
 
 }

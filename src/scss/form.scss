@@ -44,7 +44,11 @@
             display: block
         }
     }
-
+    .search label:before {
+        content: "\f002";
+        font-family: "Font Awesome 5 Free";
+        margin-right: 10px;
+    }
     .separator {
         margin: 35px 0;
         width: 50%;

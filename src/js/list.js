@@ -47,7 +47,7 @@ listContent.appendChild(listTree)
 
 function updateList(){
 
-    var descriptions = map.getVisibleMarkersDescriptions()
+    var descriptions = map.getVisibleMarkersListViews()
 
     listCount.innerText = descriptions.length
 
@@ -58,11 +58,15 @@ function updateList(){
         var newTree = html`<div></div>`
         descriptions.forEach(d => newTree.appendChild(d))
 
-        morph(listTree, newTree)
+        // morph(listTree, newTree)
+        listContent.innerHTML = ''
+        listContent.appendChild(newTree)
 
     } else {
 
-        morph(listTree, listEmpty)
+        listContent.innerHTML = ''
+        listContent.appendChild(listEmpty)
+        // morph(listTree, listEmpty)
 
     }
 

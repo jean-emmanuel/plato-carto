@@ -19,13 +19,15 @@ class Map {
             layers: [],
             markers: [],
             iconClass: marker => '',
-            tooltip: marker => 'Short Description',
-            description: marker => ({title: 'Title', content: 'Long Description (html)'})
+            tooltip: marker => 'Title',
+            listView: marker => 'Short description (html)',
+            modalView: marker => 'Long description (html)'
 
         }, o)
 
         this.markers = options.markers
-        this.description = options.description
+        this.listView = options.listView
+        this.modalView = options.modalView
 
         this.map = leaflet.map('map', {
             zoomControl: false,
@@ -51,6 +53,7 @@ class Map {
 
         this.markerLayer = this.addLayer('markerClusterGroup', {
             showCoverageOnHover: false,
+            // maxClusterRadius: 60,
             iconCreateFunction: function(cluster) {
                 return leaflet.divIcon({
                     html: `
@@ -69,7 +72,7 @@ class Map {
 
         this.markerLayer.on('click', (e)=>{
             if (popup) popup.destroy()
-            modal(options.description(e.layer.options._data))
+            modal(this.modalView(e.layer.options._data))
         })
 
         this.markerLayer.on('mouseover', (e)=>{
@@ -114,9 +117,9 @@ class Map {
 
     }
 
-    getVisibleMarkersDescriptions() {
+    getVisibleMarkersListViews() {
 
-        return this.markers.filter(m => m._visible).map(m => this.description(m))
+        return this.markers.filter(m => m._visible).map(m => this.listView(m))
 
     }
 

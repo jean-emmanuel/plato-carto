@@ -7,6 +7,7 @@ module.exports = [
         label: 'Rechercher',
         type: 'text',
         value: '',
+        class: 'search',
         filter: (data, value) => !value || lazySearch.find(data._string, value).length
     },
     // {
