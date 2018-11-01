@@ -8,7 +8,7 @@
     "build-css": "node scripts/build-css.js",
     "build-js": "node scripts/build-js.js",
     "build-html": "node scripts/build-html.js",
-    "build": "npm run copy-assets && npm run build-css && npm run build-js",
+    "build": "npm run build-css && npm run build-js",
     "watch": "node scripts/reload.js & nodemon --watch src/scss -e scss -x \"npm run build-css\" & npm run build-js -- --watch & nodemon --watch src/mustache -e mustache --watch data/config.js -x \"npm run build-html\""
   },
   "author": "",
