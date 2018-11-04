@@ -1,8 +1,11 @@
-#sidepanel {
+$inactive-color: #888;
 
-    // > p:first-of-type {
-    //     margin-top: 0;
-    // }
+#form {
+
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 7px 25px 25px;
 
     .filter {
         margin-top: 20px;
@@ -11,8 +14,70 @@
         padding-left: 20px;
     }
 
-    .group > .filter {
-        padding-left: 0;
+
+    label {
+        color: inherit!important;
+        width: 100%;
+        margin: 0;
+        font-size: .8rem;
+        .icon {
+            margin-right: 10px;
+            font-size: .8rem;
+        }
+        .reset {
+            float:right;
+            line-height: 20px;
+            padding: 0 7px;
+            font-size: .8rem;
+            cursor: pointer;
+            // &:hover {
+            //     color: $color-text;
+            // }
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                top:-10px;
+                bottom:-10px;
+                left:-10px;
+                right:-10px;
+            }
+        }
+
+    }
+
+    .text label {
+        &, .icon {
+            transition: transform .2s ease-out, font-size .2s ease-out;
+        }
+        &.active {
+            transform: translateY(-14px);
+            font-size: .6rem;
+        }
+        &.active .icon {
+            font-size: .6rem;
+        }
+    }
+
+
+
+    .filter {
+        color: $secondary-color;
+    }
+    .inactive {
+        .reset {
+            opacity: 0.2;
+        }
+        color: $inactive-color;
+        .select-dropdown li span {
+            color: $inactive-color;
+        }
+        &.checkbox label span:before, .select-dropdown label input:not([disabled]) + span:before, .select-dropdown {
+            border-color: $inactive-color;
+        }
+        .select-wrapper .caret {
+            fill: $inactive-color;
+        }
     }
 
     .number {
@@ -25,13 +90,13 @@
         }
         .helper {
             display: inline-block;
-            opacity: .6;
             width: 20%;
             text-align: center;
             pointer-events: none;
             margin-left: 4%;
             position: relative;
             top: 1px;
+            white-space: nowrap;
         }
         &:after {
             content:"";
@@ -54,6 +119,77 @@
         width: 50%;
         border-top: 1px solid #000;
         opacity: 0.1;
+    }
+
+    .row .checkbox {
+        display: inline-block;
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+
+    }
+
+
+    .collapse {
+        > label {
+            cursor: pointer;
+            display: block;
+            padding: 10px;
+            padding-right: 0;
+            width: auto;
+            position: relative;
+            margin-left: -10px;
+            // font-size: 18px;
+            .icon {
+                transition: transform .4s;
+            }
+        }
+        > .filter {
+            opacity: 0;
+            transition: opacity .2s;
+            position: absolute;
+            height: 0;
+            overflow: hidden;
+        }
+        &.open {
+            > label .icon {
+                transform: rotateX(180deg);
+            }
+            > .filter {
+                display: block;
+                opacity: 1;
+                height: auto;
+                position: relative;
+                overflow: visible;
+            }
+        }
+    }
+
+
+    input.select-dropdown {
+        padding-right: 30px!important;
+        font-size: .8rem;
+        color: inherit;
+    }
+    ul.select-dropdown {
+        padding: 5px;
+        li {
+            padding: 5px;
+            min-height: auto;
+            > span {
+                padding: 0;
+                // color: inherit;
+            }
+            &:not(.selected) {
+                > span {
+                    color: $inactive-color
+                }
+
+            }
+        }
+    }
+    .select-wrapper .caret {
+        fill: $secondary-color;
     }
 
 }

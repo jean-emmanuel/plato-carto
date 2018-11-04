@@ -1,5 +1,6 @@
 var html = require('nanohtml'),
     store = require('./store'),
+    {deepEqual, deepCopy} = require('../utils'),
     filterTypes
 
 class FilterBase {
@@ -15,6 +16,7 @@ class FilterBase {
             ...o
         }
 
+        this.defaultValue = options.value
         this.value = options.value
         this.parent = options.parent
         this.filterCallback = options.filter
@@ -39,7 +41,8 @@ class FilterBase {
 
     applyFilter(marker) {
 
-        if (this.disabled && this.disabled(store)) return true
+        if (this.inactive) return true
+        if (this.disabled && this.disabled(marker, this.value, store)) return true
         if (this.filterCallback && !this.filterCallback(marker, this.value, store)) return false
         return this.filters.every(f => f.applyFilter(marker))
 
@@ -67,9 +70,30 @@ class Filter extends FilterBase {
         this.html = options.html
 
         if (options.label) {
+            if (options.icon) {
+                var icon = html`<i class="fas faw icon fa-${options.icon}"></i>`
 
-            this.label = html`<label for="${this.id}">${options.label}</label>`
+            }
+            this.label = html`<label for="${this.id}">${icon}${options.label}</label>`
             this.html.appendChild(this.label)
+            if (options.reset) {
+                var reset = html`<i class="fas fa-trash reset"></i>`
+                this.label.append(reset)
+                reset.addEventListener('mousedown', (e)=>{
+                    // e.preventDefault()
+                    e.stopPropagation()
+                })
+                reset.addEventListener('touchstart', (e)=>{
+                    // e.preventDefault()
+                    e.stopPropagation()
+                })
+                reset.addEventListener('click', (e)=>{
+                    e.preventDefault()
+                    e.stopPropagation()
+                    this.reset()
+                    this.onChange()
+                })
+            }
 
         }
 
@@ -84,13 +108,42 @@ class Filter extends FilterBase {
 
         }
 
+        this.inactive = false
+        this.checkInactive()
+
         store[this.id] = this
+
+    }
+
+    setValue(value) {
+
+        this.value = value
+
+    }
+
+    reset() {
+
+        this.setValue(deepCopy(this.defaultValue))
+        for (var i in this.filters) {
+            this.filters[i].reset()
+        }
+        this.checkInactive()
+
+    }
+
+    checkInactive() {
+
+        this.inactive =  deepEqual(this.defaultValue, this.value)
+        this.html.classList.toggle('inactive', this.inactive )
 
     }
 
     onChange(e, value) {
 
         if (value !== undefined) this.value = value
+
+        this.checkInactive()
+
         this.parent.onChange(e, undefined)
 
     }

@@ -12,6 +12,7 @@ class Separator extends Filter {
             input: false,
             label: false,
             ...o,
+            type: 'separator'
         }
 
         super(options)
@@ -28,9 +29,26 @@ class Group extends Filter {
             input: false,
             // label: false,
             ...o,
+            icon: o.collapse ? 'chevron-down' : o.icon,
+            type: 'group'
         }
 
         super(options)
+
+        if (options.collapse) {
+            this.html.classList.add('collapse')
+            this.label.classList.add('waves-effect')
+            this.label.addEventListener('click', ()=>{
+                this.html.classList.toggle('open')
+            })
+        }
+
+    }
+
+    checkInactive() {
+
+        this.inactive = this.filters.every(x => x.inactive)
+        this.html.classList.toggle('inactive', this.inactive )
 
     }
 
@@ -42,17 +60,39 @@ class Text extends Filter {
 
         var options = {
             input: html`<input type="text"/>`,
+            value: '',
             ...o,
-            class: o.class + ' input-field'
+            class: o.class + ' input-field',
+            type: 'text'
         }
 
         super(options)
 
         this.input.setAttribute('id', this.id)
+        this.input.addEventListener('keydown', (e)=>{
+            if (e.keyCode == 13) {
+                e.preventDefault()
+                this.input.blur()
+            }
+        })
+
         this.input.addEventListener('input', (e)=>{
             e.stopPropagation()
             this.onChange(e)
         })
+
+    }
+
+    reset() {
+        super.reset()
+        this.input.blur()
+        this.label.classList.remove('active')
+    }
+
+    setValue(value) {
+
+        super.setValue(value)
+        this.input.value = value
 
     }
 
@@ -75,8 +115,10 @@ class CheckBox extends Filter {
                     <input type="checkbox"/>
                     <span>${o.label}</span>
                 </label>`,
+            value: false,
             ...o,
             label: false,
+            type: 'checkbox'
         }
 
         super(options)
@@ -84,6 +126,13 @@ class CheckBox extends Filter {
         this.checkbox = this.input.getElementsByTagName('input')[0]
         this.checkbox.setAttribute('id', this.id)
         this.checkbox.checked = this.value
+
+    }
+
+    setValue(value) {
+
+        super.setValue(value)
+        this.checkbox.checked = !!value
 
     }
 
@@ -104,7 +153,8 @@ class CheckList extends Filter {
             value: [],
             choices: {a: 'choice a', b: 'choice b'},
             single: false,
-            ...o
+            ...o,
+            type: 'checklist'
         }
 
         super(options)
@@ -120,6 +170,21 @@ class CheckList extends Filter {
             this.input.appendChild(this.checkboxes[k].html)
         }
 
+    }
+
+    reset() {
+        super.reset()
+        for (var k in this.checkboxes) {
+            this.checkboxes[k].checkInactive()
+        }
+    }
+
+    setValue(value) {
+
+        super.setValue(value)
+        for (var k in this.checkboxes) {
+            this.checkboxes[k].setValue(this.value.indexOf(k) !== -1)
+        }
 
     }
 
@@ -144,7 +209,8 @@ class Radio extends Filter {
             input: html`<div class="filter"></div>`,
             value: null,
             choices: {a: 'choice a', b: 'choice b'},
-            ...o
+            ...o,
+            type: 'radio'
         }
 
         super(options)
@@ -162,6 +228,15 @@ class Radio extends Filter {
             this.input.appendChild(item)
         }
 
+
+    }
+
+    setValue(value) {
+
+        super.setValue(value)
+        for (var k in this.checkboxes) {
+            this.checkboxes[k].checked = this.value === k
+        }
 
     }
 
@@ -185,7 +260,8 @@ class CheckRadio extends Filter {
             input: html`<div class="filter"></div>`,
             value: null,
             choices: {a: 'choice a', b: 'choice b'},
-            ...o
+            ...o,
+            type: 'checkradio'
         }
 
         super(options)
@@ -202,7 +278,27 @@ class CheckRadio extends Filter {
             this.input.appendChild(this.checkboxes[k].html)
         }
 
+        if (Object.keys(this.choices).length === 2) {
+            this.html.classList.add('row')
+        }
 
+
+    }
+
+    setValue(value) {
+
+        super.setValue(value)
+        for (var k in this.checkboxes) {
+            this.checkboxes[k].setValue(this.value === k)
+        }
+
+    }
+
+    reset() {
+        super.reset()
+        for (var k in this.checkboxes) {
+            this.checkboxes[k].checkInactive()
+        }
     }
 
     onChange(e) {
@@ -224,6 +320,64 @@ class CheckRadio extends Filter {
 
 }
 
+class Select extends Filter {
+
+    constructor(o) {
+
+        var options = {
+            input: html`<select multiple></select>`,
+            value: [],
+            choices: {a: 'choice a', b: 'choice b'},
+            single: false,
+            ...o,
+            type: 'select'
+        }
+
+        super(options)
+
+        this.choices = options.choices
+
+        this.html.removeChild(this.label)
+        this.input.appendChild(html`<option value="" disabled selected>${options.label}</option>`)
+
+        this.checkboxes = {}
+        for (var k in this.choices) {
+            this.checkboxes[k] = html`
+                <option value="${k}">${this.choices[k]}</option>
+            `
+            this.input.appendChild(this.checkboxes[k])
+        }
+
+        this.mSelect = null
+        setTimeout(()=>{
+            this.mSelect = materialize.FormSelect.init(this.input)
+        })
+
+
+    }
+
+    setValue(value) {
+
+        super.setValue(value)
+        for (var k in this.checkboxes) {
+            this.checkboxes[k].selected = this.value.indexOf(k) !== -1
+        }
+        this.mSelect._setSelectedStates()
+        this.mSelect._setValueToInput()
+
+
+    }
+
+    onChange(e) {
+
+        var value = this.mSelect.getSelectedValues()
+
+        super.onChange(e, value)
+
+    }
+
+}
+
 class Number extends Filter {
 
     constructor(o) {
@@ -238,12 +392,14 @@ class Number extends Filter {
             value:0,
             min: 0,
             max: 100,
-            ...o
+            ...o,
+            type: 'number'
         }
 
         super(options)
 
-        this.unit = options.unit ? ' ' + options.unit.trim() : ''
+        this.prefix = options.prefix ? options.prefix.trim() + ' ' : ''
+        this.suffix = options.suffix ? ' ' + options.suffix.trim() : ''
 
         this.slider = this.input.getElementsByTagName('input')[0]
         this.slider.setAttribute('id', this.id)
@@ -258,20 +414,29 @@ class Number extends Filter {
              this.onChange(e)
         })
 
-        materialize.Range.init(this.slider)
+        this.mRange = materialize.Range.init(this.slider)
 
     }
 
     updateHelper() {
 
-        this.helper.innerHTML = this.slider.value + this.unit
+        this.helper.innerHTML = this.prefix + this.value + this.suffix
+
+    }
+
+
+    setValue(value) {
+
+        this.mRange.el.value = value
+        super.setValue(value)
+        this.updateHelper()
 
     }
 
     onChange(e) {
 
-        this.updateHelper()
         super.onChange(e, parseInt(this.slider.value))
+        this.updateHelper()
 
     }
 
@@ -284,6 +449,7 @@ module.exports = {
     checklist: CheckList,
     radio: Radio,
     checkradio: CheckRadio,
+    select: Select,
     number: Number,
     group: Group,
     text: Text,

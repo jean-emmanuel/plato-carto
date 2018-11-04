@@ -21,6 +21,19 @@ $link-color: $accent;
 $button-radius: $border-radius;
 
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 .btn, .btn-small {
     font-weight: bold;
     // padding: 0 10px!important;
@@ -40,6 +53,7 @@ $button-radius: $border-radius;
 
 .modal.modal-fixed-header {
   // padding: 0;
+  width: 65%;
   height: 70%;
   padding-top:56px;
 

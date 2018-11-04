@@ -29,7 +29,16 @@ keyboardJS.bind('f1', (e)=>{
 })
 
 
+// prevent form focus scrolling
+document.body.addEventListener('scroll', (e)=>{
+    document.body.scrollTop = 0
+})
+
+
+var form = html`<div id="form"></div>`
+
 function createForm(filters, parentNode) {
+
 
     for (var f of filters) {
 
@@ -50,4 +59,6 @@ function createForm(filters, parentNode) {
 
 }
 
-createForm(filterManager.filters, sidepanel)
+createForm(filterManager.filters, form)
+
+sidepanel.appendChild(form)

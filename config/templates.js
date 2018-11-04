@@ -26,6 +26,10 @@ module.exports = {
 
     },
 
+    modalTitle: (item) => html`
+        <span class="${item.nom.length > 20 ? 'long' : ''}">${item.nom} <span class="chip">${item._type}</span></span>
+    `,
+
     modalView: (item) => {
 
         if (item._type === 'structure') {
@@ -126,7 +130,7 @@ module.exports = {
 
             var formes_art = {
                 "formesartistiques_theatre": "Théâtre",
-                "formesartistiques_danse": "Dans",
+                "formesartistiques_danse": "Danse",
                 "formesartistiques_cirque": "Cirque",
                 "formesartistiques_musique": "Musique",
                 "formesartistiques_marionette": "Marionnette",
@@ -178,7 +182,7 @@ module.exports = {
                         </p>`
                         : ''
                     }
-                    ${item.convention ? html`
+                    ${item.convention === 'Oui' ? html`
                         <p>
                             <label>Compagnie</label>
                             <span class="chip">conventionnée</span>
@@ -187,7 +191,7 @@ module.exports = {
                     ${item.structure_associee ? html`
                         <p>
                             <label>Associée à</label>
-                            <span class="chip">${item.structure_associee}</span>
+                            <span class="chip">${item.structure_associee.replace(/\n/g, ' / ')}</span>
                         </p>` : ''
                     }
 
@@ -256,8 +260,42 @@ module.exports = {
 
     },
 
-    modalTitle: (item) => html`
-        <span class="${item.nom.length > 20 ? 'long' : ''}">${item.nom} <span class="chip">${item._type}</span></span>
+    infosTitle: (item) => html`
+        <span>
+            ${locale.header}
+        </span>
+    `,
+
+    infos: (item) => html`
+        <div>
+
+            <h4>À propos</h4>
+
+            <h4>Mentions Légales</h4>
+
+            <ul class="browser-default">
+                <li>Hébergement: ?</li>
+                <li>Publication: PlatO</li>
+                <li>Réalisation: <a href="https://ammd.net">Jeannot / AMMD</a></li>
+            </ul>
+
+            <h4>Données</h4>
+
+            <p>
+                Les données utilisées pour la réalisation de cette carte sont
+                publiée sous licence <a href="https://spdx.org/licenses/ODbL-1.0.html#licenseText">ODC Open Database License (ODbL)</a>
+                à l'adresse <a href="">https://www.data.gouv.fr/fr/licences</a>.
+            </p>
+
+            <h4>Code source</h4>
+
+            <p>Cette carte à été réalisée integralement avec des logiciels libres.</p>
+            <p>
+                Son code source est publié sous licence <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU/GPL-3.0</a>
+                sur <a href="https://github.com/jean-emmanuel/plato-carto">https://github.com/jean-emmanuel/plato-carto</a>.
+            </p>
+
+        </div>
     `
 
 }

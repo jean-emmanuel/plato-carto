@@ -4,6 +4,21 @@ var html = require('nanohtml'),
     dataset = compagnies.concat(structures).sort((a, b) => a.nom[0].toLowerCase() > b.nom[0].toLowerCase()),
     templates = require('./templates.js')
 
+
+dataset = dataset.map((m)=>{
+    m._searchfield = [
+        m.nom,
+        m.nom.replace(/'/g, '  '),
+        m.adresse,
+        m.codepostal,
+        m.ville,
+        m.diffusion_festival_nom || ''
+    ].join(' ')
+    m._score = 0
+    return m
+})
+
+
 module.exports = {
 
     tiles: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png',
@@ -15,7 +30,7 @@ module.exports = {
     layers: [
         ['geoJSON', require('../data/region-pays-de-la-loire.json'), {weight: 1.5, fillOpacity: 0.1}]
     ],
-    markers: dataset.map((m) => {m._string = [m.nom, m.adresse, m.codepostal, m.ville].join(' '); return m}),
+    markers: dataset,
     iconClass: (item) => 'icon-' + item._type,
     tooltip: (item) => item.nom
 

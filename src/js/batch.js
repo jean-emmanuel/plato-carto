@@ -1,17 +1,17 @@
-var loading = document.getElementById('loading'),
-    state
+var loading = document.getElementById('loading')
 
 module.exports = batch
 
 function progress(progress, total) {
 
-    var newState = Math.round(progress / total * 4)
+    var state = progress / total
 
-    if (newState !== state) {
-        loading.classList.remove('state-' + state)
-        state = newState
-        loading.classList.add('state-' + state)
-    }
+    loading.classList.toggle('loading', state !== 0)
+    loading.setAttribute('style', `
+        -webkit-transform: scale3d(${state}, 1, 1);
+        -ms-transform: scale3d(${state}, 1, 1);
+            transform: scale3d(${state}, 1, 1);
+    `)
 
 }
 
