@@ -1,22 +1,35 @@
 var keyboardJS = require('keyboardjs'),
     html = require('nanohtml'),
     morph = require('nanomorph'),
-    config = require('../../data/config'),
+    locale = require('../../config/locale'),
     map = require('./map'),
     modal = require('./modal'),
-    templates = require('../../data/templates'),
+    batch = require('./batch'),
+    templates = require('../../config/templates'),
     list = document.getElementById('list'),
     listCount = document.getElementById('list-count'),
     listContent = list.getElementsByClassName('list-content')[0],
     listToggle = document.getElementById('list-toggle'),
-    listOpened = false
+    open = false
+
+var listEmpty = html`
+    <div class="list-item">
+        <p class="">${locale.noResults}</p>
+    </div>`
 
 function toggleList() {
 
-    list.classList.toggle('opened')
-    listOpened = listToggle.classList.toggle('on')
+    open = !open
+    updateList(open)
 
-    if (listOpened) {
+}
+
+function updateDom() {
+
+    list.classList.toggle('opened', open)
+    listToggle.classList.toggle('on', open)
+
+    if (open) {
         list.classList.remove('hidden')
     } else {
         setTimeout(()=>{
@@ -24,61 +37,61 @@ function toggleList() {
         }, 250)
     }
 
-    if (listOpened) updateList()
-
 }
 
-listToggle.addEventListener('click', ()=>{
-    toggleList()
-})
+listToggle.addEventListener('click', toggleList)
+keyboardJS.bind('f2', toggleList)
 
-keyboardJS.bind('f2', (e)=>{
-    e.preventDefault()
-    toggleList()
-})
+var queue = null,
+    timeout = null
 
-
-var listEmpty = html`
-    <div class="list-item">
-        <p class="">${config.locale.noResults}</p>
-    </div>`,
-    listTree = listEmpty
-
-listContent.appendChild(listTree)
-
-function updateList(){
+function process(){
 
     var markers = map.getVisibleMarkers()
-
     listCount.innerText = markers.length
 
-    if (!listOpened) return
+    if (open) {
 
-    if (markers.length) {
+        if (markers.length) {
 
-        var newTree = html`<div></div>`
-        markers.forEach(data => {
-            var desc = templates.listView(data),
-                more = html`<p class="btn-small waves-effect">${config.locale.more}</p>`
-            more.addEventListener('click', ()=>{
-                modal(templates.modalView(data))
+            var newTree = html`<div></div>`
+
+            batch(markers, (data)=>{
+
+                var desc = templates.listView(data),
+                    more = html`<p class="btn-small waves-effect">${locale.more}</p>`
+
+                more.addEventListener('click', ()=>{
+                    modal(templates.modalTitle(data), templates.modalView(data))
+                })
+                desc.appendChild(more)
+                newTree.appendChild(desc)
+
+            }, ()=>{
+
+                listContent.innerHTML = ''
+                listContent.appendChild(newTree)
+                updateDom()
+
             })
-            desc.appendChild(more)
-        })
 
-        // morph(listTree, newTree)
-        listContent.innerHTML = ''
-        listContent.appendChild(newTree)
+        } else {
+
+            listContent.innerHTML = ''
+            listContent.appendChild(listEmpty)
+
+        }
 
     } else {
-
-        listContent.innerHTML = ''
-        listContent.appendChild(listEmpty)
-        // morph(listTree, listEmpty)
-
+        updateDom()
     }
 
-
 }
+
+function updateList(){
+    clearTimeout(timeout)
+    timeout = setTimeout(process, 250)
+}
+
 
 module.exports = updateList

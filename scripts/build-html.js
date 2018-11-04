@@ -1,5 +1,5 @@
 var mustache = require('mustache'),
-    data = require('../data/config').locale,
+    data = require('../config/locale'),
     fs = require('fs'),
     path = require('path'),
     send = require('./ipc')

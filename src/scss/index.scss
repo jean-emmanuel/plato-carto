@@ -41,7 +41,7 @@ body {
     right:0;
     z-index: 1;
     transform: translate3d(0,0,0);
-    
+
     path {
         fill: $accent;
         stroke: $accent;
@@ -106,7 +106,7 @@ body {
 
     @extend .shadow;
 
-    padding: 25px;
+    padding: 7px 25px 25px;
 
 }
 
@@ -244,6 +244,38 @@ body {
 
 
 }
+
+#loading {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    transform-origin: left;
+    transform: scale3d(0, 1, 1);
+    background: lighten($accent, 50);
+    // box-shadow: 0 0 5px 0 $accent;
+    height: 2px;
+    z-index: 10;
+    transition: transform .4s;
+    opacity: 1;
+    &.state-0 {
+        opacity: 0;
+        transition: none;
+    }
+    &.state-1 {
+        transform: scale3d(0.25, 1, 1);
+    }
+    &.state-2 {
+        transform: scale3d(0.50, 1, 1);
+    }
+    &.state-3 {
+        transform: scale3d(0.75, 1, 1);
+    }
+    &.state-4, &.state-5 {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
 
 #list {
     position: absolute;

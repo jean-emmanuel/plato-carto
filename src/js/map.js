@@ -1,5 +1,6 @@
 var leaflet = require('leaflet'),
-    config = require('../../data/config'),
+    config = require('../../config/config'),
+    templates = require('../../config/templates'),
     materialize = require('materialize-css'),
     modal = require('./modal')
 
@@ -19,15 +20,11 @@ class Map {
             layers: [],
             markers: [],
             iconClass: marker => '',
-            tooltip: marker => 'Title',
-            listView: marker => 'Short description (html)',
-            modalView: marker => 'Long description (html)'
+            tooltip: marker => 'Title'
 
         }, o)
 
         this.markers = options.markers
-        this.listView = options.listView
-        this.modalView = options.modalView
 
         this.map = leaflet.map('map', {
             zoomControl: false,
@@ -72,7 +69,8 @@ class Map {
 
         this.markerLayer.on('click', (e)=>{
             if (popup) popup.destroy()
-            modal(this.modalView(e.layer.options._data))
+            var data = e.layer.options._data
+            modal(templates.modalTitle(data), templates.modalView(data))
         })
 
         this.markerLayer.on('mouseover', (e)=>{
@@ -147,4 +145,4 @@ class Map {
 
 
 
-module.exports = new Map(config.map)
+module.exports = new Map(config)

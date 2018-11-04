@@ -1,4 +1,4 @@
-var filtersData = require('../../../data/filters'),
+var filtersData = require('../../../config/filters'),
     {FilterBase} = require('./base'),
     map = require('../map'),
     updateList = require('../list')

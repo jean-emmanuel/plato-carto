@@ -29,7 +29,67 @@ $button-radius: $border-radius;
     }
 }
 
+.chip:first-letter {
+    text-transform:capitalize;
+}
+
 #modal .modal-close {
     border-radius: inherit
     // border-radius: $border-radius!important;
+}
+
+.modal.modal-fixed-header {
+  // padding: 0;
+  height: 70%;
+  padding-top:56px;
+
+  .modal-content {
+    // position: absolute;
+    // height: calc(;
+    height: 100%;
+    // margin-top: 56px;
+    width: 100%;
+    overflow-y: auto;
+
+    > div > p:first-child {
+        margin-top: 0;
+    }
+
+    label {
+        color: $color-text;
+    }
+  }
+
+  .modal-header {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    position: absolute;
+    top: 0;
+  }
+}
+
+.modal-header {
+    border-radius: 0 0 2px 2px;
+    background-color: #fafafa;
+    padding: 4px 6px;
+    // height: 56px;
+    width: 100%;
+
+    .btn, .btn-flat {
+      margin: 6px 0;
+    }
+
+    // overflow: hidden;
+
+    .modal-title {
+        float:left;
+        line-height: 48px;
+        margin: 0 6px;
+        max-width: calc(100% - 100px);
+        text-align: left;
+        // .long {
+        //     font-size: 70%;
+        //     line-height: 30px;
+        // }
+    }
+
 }
