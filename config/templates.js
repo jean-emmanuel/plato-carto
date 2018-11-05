@@ -273,14 +273,12 @@ module.exports = {
 
     infosTitle: (item) => html`
         <span>
-            ${locale.header}
+            ${locale.about}
         </span>
     `,
 
     infos: (item) => html`
         <div>
-
-            <h4>À propos</h4>
 
             <h4>Mentions Légales</h4>
 
