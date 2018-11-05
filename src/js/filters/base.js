@@ -145,7 +145,7 @@ class Filter extends FilterBase {
 
     checkInactive() {
 
-        this.inactive =  deepEqual(this.defaultValue, this.value)
+        this.inactive = deepEqual(this.defaultValue, this.value) && this.filters.every(x => x.inactive)
         this.html.classList.toggle('inactive', this.inactive )
 
     }

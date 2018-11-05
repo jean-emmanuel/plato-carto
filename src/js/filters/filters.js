@@ -45,13 +45,6 @@ class Group extends Filter {
 
     }
 
-    checkInactive() {
-
-        this.inactive = this.filters.every(x => x.inactive)
-        this.html.classList.toggle('inactive', this.inactive )
-
-    }
-
 }
 
 class Text extends Filter {

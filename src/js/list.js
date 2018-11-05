@@ -20,6 +20,7 @@ var listEmpty = html`
 function toggleList(state) {
 
     open = state !== undefined ? state : !open
+
     if (open) {
         updateList(open)
     } else {
@@ -43,8 +44,8 @@ function updateDom() {
 
 }
 
-listToggle.addEventListener('click', toggleList)
-keyboardJS.bind('f2', toggleList)
+listToggle.addEventListener('click', ()=>{toggleList()})
+keyboardJS.bind('f2', ()=>{toggleList()})
 
 var queue = null,
     timeout = null
