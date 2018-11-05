@@ -2,7 +2,8 @@ var leaflet = require('leaflet'),
     config = require('../../config/config'),
     templates = require('../../config/templates'),
     materialize = require('materialize-css'),
-    modal = require('./modal')
+    modal = require('./modal'),
+    list
 
 Object.assign(leaflet, require('leaflet.markercluster'))
 
@@ -93,13 +94,24 @@ class Map {
             if (popup) popup.destroy()
         })
 
+        document.addEventListener('click', (e)=>{
+            var coords = e.target.getAttribute('data-coords')
+            if (!coords) return
+            coords = coords.split(',')
+            e.preventDefault()
+            modal.close()
+            list.toggle(false)
+            this.setView(coords, 11)
+
+        })
+
 
 
     }
 
-    setView(view) {
+    setView() {
 
-        this.map.setView(...view)
+        this.map.setView(...arguments)
 
     }
 
@@ -146,3 +158,5 @@ class Map {
 
 
 module.exports = new Map(config)
+
+list = require('./list')

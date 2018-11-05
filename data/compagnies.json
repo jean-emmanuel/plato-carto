@@ -38,7 +38,10 @@
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Oui",
-    "coords": [47.973539, 0.554081]
+    "coords": [
+      47.973539,
+      0.554081
+    ]
   },
   {
     "nom": "Compagnie Théâtrale Science 89",
@@ -123,7 +126,10 @@
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Oui",
-    "coords": [47.202649, -1.592591]
+    "coords": [
+      47.202649,
+      -1.592591
+    ]
   },
   {
     "nom": "Cie Du Bout Du Toit",
@@ -164,7 +170,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.429695, -0.522006]
+    "coords": [
+      47.429695,
+      -0.522006
+    ]
   },
   {
     "nom": "Artbiguë Cie",
@@ -205,7 +214,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.429695, -0.522006]
+    "coords": [
+      47.429695,
+      -0.522006
+    ]
   },
   {
     "nom": "Cie Spectabilis",
@@ -246,10 +258,13 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.429695, -0.522006]
+    "coords": [
+      47.429695,
+      -0.522006
+    ]
   },
   {
-    "nom": "Piment, Langue D'oiseau",
+    "nom": "Piment, Langue D'Oiseau",
     "annee": 2005,
     "adresse": "10 rue Jacqueline Mazé",
     "codepostal": 49130,
@@ -287,7 +302,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.429695, -0.522006]
+    "coords": [
+      47.429695,
+      -0.522006
+    ]
   },
   {
     "nom": "Six Monstres",
@@ -328,7 +346,10 @@
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.429695, -0.522006]
+    "coords": [
+      47.429695,
+      -0.522006
+    ]
   },
   {
     "nom": "Ana Igluka - Le Thermogène",
@@ -639,7 +660,7 @@
     ]
   },
   {
-    "nom": "Compagnie De L'être Ange - Joan Vince",
+    "nom": "Compagnie De L'Être Ange - Joan Vince",
     "annee": 1996,
     "adresse": "16 bis rue de Veillevigne",
     "codepostal": 44140,
@@ -677,10 +698,13 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.075637, -1.399468]
+    "coords": [
+      47.075637,
+      -1.399468
+    ]
   },
   {
-    "nom": "Théâtre De L'équinoxe",
+    "nom": "Théâtre De L'Équinoxe",
     "annee": 1993,
     "adresse": "16 rue du Docteur Coignard",
     "codepostal": 49300,
@@ -718,7 +742,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.063515, -0.876697]
+    "coords": [
+      47.063515,
+      -0.876697
+    ]
   },
   {
     "nom": "Les Tombés De La Lune",
@@ -765,7 +792,7 @@
     ]
   },
   {
-    "nom": "Structure : Les Boites Sauvages (Coopérative Oz)- Nom D'artiste: Lulla (Collectif Lullabox)",
+    "nom": "Structure : Les Boites Sauvages (coopérative Oz)- Nom D'Artiste: Lulla (collectif Lullabox)",
     "annee": 2016,
     "adresse": "2 rue Pilastre",
     "codepostal": 49000,
@@ -803,7 +830,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.479305, -0.544351]
+    "coords": [
+      47.479305,
+      -0.544351
+    ]
   },
   {
     "nom": "La Parenthèse / Christophe Garcia",
@@ -888,7 +918,10 @@
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.199555, -1.589319]
+    "coords": [
+      47.199555,
+      -1.589319
+    ]
   },
   {
     "nom": "Kokeshi",
@@ -1111,7 +1144,7 @@
     ]
   },
   {
-    "nom": "Paq'la Lune",
+    "nom": "Paq'La Lune",
     "annee": 1999,
     "adresse": "3, rue Eugène Thomas",
     "codepostal": 44300,
@@ -1509,7 +1542,7 @@
   {
     "nom": "Cie Al Et Les Astrolobi",
     "annee": 2008,
-    "adresse": "51 RUE DE LA BOURDONNAIS",
+    "adresse": "51 rue de la bourdonnais",
     "codepostal": 44100,
     "ville": "Nantes",
     "mail": "",
@@ -1683,7 +1716,7 @@
     ]
   },
   {
-    "nom": "Crock'notes",
+    "nom": "Crock'Notes",
     "annee": 1995,
     "adresse": "6 Place de l'Eglise",
     "codepostal": 49125,
@@ -1721,10 +1754,13 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Non",
     "agecible_12ans": "Non",
-    "coords": [47.564311, -0.509945]
+    "coords": [
+      47.564311,
+      -0.509945
+    ]
   },
   {
-    "nom": "Cirque D'anges Heureux",
+    "nom": "Cirque D'Anges Heureux",
     "annee": 1998,
     "adresse": "7 rue du lavoir",
     "codepostal": 72440,
@@ -1768,7 +1804,7 @@
     ]
   },
   {
-    "nom": "Jalynka (Karine Jarry)",
+    "nom": "Jalynka (karine Jarry)",
     "annee": 2015,
     "adresse": "7 rue letouze",
     "codepostal": 72100,
@@ -1814,7 +1850,7 @@
   {
     "nom": "Compagnie 4 À Corps",
     "annee": 2007,
-    "adresse": "71 bd Aristide Briand Pôle associatif n°122",
+    "adresse": "71 bd Aristide Briand Pôle associatif, n°122",
     "codepostal": 85000,
     "ville": "La Roche-sur-Yon",
     "mail": "compagnie4acorps@gmail.com",
@@ -1851,13 +1887,14 @@
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
     "coords": [
-        46.670675, -1.431860
+      46.670675,
+      -1.43186
     ]
   },
   {
     "nom": "Compagnie Grizzli",
     "annee": 1990,
-    "adresse": "71 bd Aristide Briand, Pôle associatif boite 67",
+    "adresse": "71 bd Aristide Briand, Pôle associatif, n°67",
     "codepostal": 85000,
     "ville": "La Roche-sur-Yon",
     "mail": "theatre.grizzli@wanadoo.fr",
@@ -1893,12 +1930,15 @@
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Oui",
-    "coords": [46.670675, -1.431860]
+    "coords": [
+      46.670675,
+      -1.43186
+    ]
   },
   {
     "nom": "Pirate",
     "annee": 1988,
-    "adresse": "71, bd Aristide Briand",
+    "adresse": "71 bd Aristide Briand",
     "codepostal": 85000,
     "ville": "La Roche-sur-Yon",
     "mail": "compagnie.pirate@gmail.com",
@@ -2028,7 +2068,7 @@
     ]
   },
   {
-    "nom": "Niouton'théâtre",
+    "nom": "Niouton'Théâtre",
     "annee": 2009,
     "adresse": "Association Poisson Pilote, Bloc 13, 23 bd de Chantenay",
     "codepostal": 44100,
@@ -2066,7 +2106,10 @@
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.197051, -1.589454]
+    "coords": [
+      47.197051,
+      -1.589454
+    ]
   },
   {
     "nom": "Théâtre Cabines",
@@ -2107,7 +2150,10 @@
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Oui",
-    "coords": [47.197051, -1.589454]
+    "coords": [
+      47.197051,
+      -1.589454
+    ]
   },
   {
     "nom": "Cie Lili Desastres",
@@ -2148,7 +2194,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Non",
     "agecible_12ans": "Non",
-    "coords": [47.459492, -0.509126]
+    "coords": [
+      47.459492,
+      -0.509126
+    ]
   },
   {
     "nom": "T’atrium",
@@ -2189,7 +2238,10 @@
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Oui",
-    "coords": [48.067274, -0.830054]
+    "coords": [
+      48.067274,
+      -0.830054
+    ]
   },
   {
     "nom": "Cie Tétrofort",
@@ -2280,7 +2332,7 @@
     ]
   },
   {
-    "nom": "Les 'Mister' De L'ouest - Julien Poilvilain",
+    "nom": "Les 'Mister' De L'Ouest - Julien Poilvilain",
     "annee": 2014,
     "adresse": "La Gilberdière",
     "codepostal": 49150,
@@ -2318,7 +2370,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.538123, -0.179189]
+    "coords": [
+      47.538123,
+      -0.179189
+    ]
   },
   {
     "nom": "La Cigale Spectacles",
@@ -2359,7 +2414,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Non",
     "agecible_12ans": "Non",
-    "coords": [47.924792, 0.044419]
+    "coords": [
+      47.924792,
+      0.044419
+    ]
   },
   {
     "nom": "Compagnie A Deux Mains",
@@ -2444,10 +2502,13 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Non",
     "agecible_12ans": "Oui",
-    "coords": [47.488406, -0.537091]
+    "coords": [
+      47.488406,
+      -0.537091
+    ]
   },
   {
-    "nom": "Cie T'es Pas Mioche",
+    "nom": "Cie T'Es Pas Mioche",
     "annee": 2014,
     "adresse": "Le Silo",
     "codepostal": 72100,
@@ -2529,7 +2590,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [48.310753, 0.075354]
+    "coords": [
+      48.310753,
+      0.075354
+    ]
   },
   {
     "nom": "Compagnie Lily",
@@ -2570,7 +2634,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Oui",
-    "coords": [47.824916, 0.487892]
+    "coords": [
+      47.824916,
+      0.487892
+    ]
   },
   {
     "nom": "Bouskidou",
@@ -2611,7 +2678,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.212566, -1.549816]
+    "coords": [
+      47.212566,
+      -1.549816
+    ]
   },
   {
     "nom": "Chel",
@@ -2652,7 +2722,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.212566, -1.549816]
+    "coords": [
+      47.212566,
+      -1.549816
+    ]
   },
   {
     "nom": "M. Charly",
@@ -2693,7 +2766,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.212566, -1.549816]
+    "coords": [
+      47.212566,
+      -1.549816
+    ]
   },
   {
     "nom": "Marc Tetedoie",
@@ -2734,7 +2810,10 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.212566, -1.549816]
+    "coords": [
+      47.212566,
+      -1.549816
+    ]
   },
   {
     "nom": "Poussins Phoniques",
@@ -2775,6 +2854,9 @@
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
-    "coords": [47.212566, -1.549816]
+    "coords": [
+      47.212566,
+      -1.549816
+    ]
   }
 ]

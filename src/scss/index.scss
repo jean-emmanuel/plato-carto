@@ -330,3 +330,7 @@ html, body {
 .transitioning + #list .list-content {
     overflow-y: hidden;
 }
+
+[data-coords] {
+    cursor: pointer;
+}

@@ -1,6 +1,6 @@
 [
   {
-    "nom": "Affaires Culturelles Ville des Sables d'Olonne",
+    "nom": "Affaires Culturelles Ville Des Sables D'Olonne",
     "adresse": "21, place du Poilu de France",
     "codepostal": 85108,
     "ville": "Les Sables d'Olonne",
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "nom": "Atelier de l'OURSE BLEUE",
+    "nom": "Atelier De L'Ourse Bleue",
     "adresse": "20 bis, rue des Lices",
     "codepostal": 49000,
     "ville": "Angers",
@@ -127,12 +127,12 @@
     "actionculturelle_commune": "",
     "notes": "",
     "coords": [
-        48.1827359,
-        0.6473614
+      48.1827359,
+      0.6473614
     ]
   },
   {
-    "nom": "Centre Culturel de la Sarthe",
+    "nom": "Centre Culturel De La Sarthe",
     "adresse": "route de Changé",
     "codepostal": 72530,
     "ville": "Yvré l'Evêque",
@@ -176,7 +176,7 @@
     ]
   },
   {
-    "nom": "CENTRE CULTUREL L'ECHIQUIER",
+    "nom": "Centre Culturel L'Echiquier",
     "adresse": "La Fournière",
     "codepostal": 85700,
     "ville": "Pouzauges",
@@ -220,7 +220,7 @@
     ]
   },
   {
-    "nom": "Cie et Ecole de cirque Mimulus",
+    "nom": "Cie Et Ecole De Cirque Mimulus",
     "adresse": "Place de la Gare",
     "codepostal": 72130,
     "ville": "Fresnay-sur-Sarthe",
@@ -258,10 +258,13 @@
     "actionculturelle_epci": 200072700,
     "actionculturelle_commune": 72138,
     "notes": "",
-    "coords": [48.280659, 0.029440]
+    "coords": [
+      48.280659,
+      0.02944
+    ]
   },
   {
-    "nom": "Communauté de communes du Pays de Craon",
+    "nom": "Communauté De Communes Du Pays De Craon",
     "adresse": "Rue de Buchenberg B.P.71",
     "codepostal": 53400,
     "ville": "Craon",
@@ -299,10 +302,13 @@
     "actionculturelle_epci": 200048551,
     "actionculturelle_commune": "",
     "notes": "",
-    "coords": [47.842866, -0.967504]
+    "coords": [
+      47.842866,
+      -0.967504
+    ]
   },
   {
-    "nom": "Communauté de Communes du Pays des Herbiers",
+    "nom": "Communauté De Communes Du Pays Des Herbiers",
     "adresse": "6 rue du Tourniquet",
     "codepostal": 85500,
     "ville": "Les Herbiers",
@@ -346,7 +352,7 @@
     ]
   },
   {
-    "nom": "Communauté de Communes Erdre et Gesvres",
+    "nom": "Communauté De Communes Erdre Et Gesvres",
     "adresse": "1 rue Marie Curie - PA La Grande Haie",
     "codepostal": 44119,
     "ville": "Grandchamp des Fontaines",
@@ -384,10 +390,13 @@
     "actionculturelle_epci": 244400503,
     "actionculturelle_commune": "",
     "notes": "",
-    "coords": [47.374531, -1.646630]
+    "coords": [
+      47.374531,
+      -1.64663
+    ]
   },
   {
-    "nom": "communauté de communes LBN",
+    "nom": "Communauté De Communes Lbn",
     "adresse": "24 rue du pont de 4 metres",
     "codepostal": 72540,
     "ville": "Loué",
@@ -425,10 +434,13 @@
     "actionculturelle_epci": 200040475,
     "actionculturelle_commune": "",
     "notes": "",
-    "coords": [47.994555, -0.158881]
+    "coords": [
+      47.994555,
+      -0.158881
+    ]
   },
   {
-    "nom": "communauté de communes Pays de Chantonnay",
+    "nom": "Communauté De Communes Pays De Chantonnay",
     "adresse": "65 av. du Général de Gaulle",
     "codepostal": 85110,
     "ville": "Chantonnay",
@@ -472,7 +484,7 @@
     ]
   },
   {
-    "nom": "COMMUNAUTE DE COMMUNES VENDEE SEVRE AUTISE",
+    "nom": "Communaute De Communes Vendee Sevre Autise",
     "adresse": "25 rue de la Gare",
     "codepostal": 85420,
     "ville": "Oulmes",
@@ -516,7 +528,7 @@
     ]
   },
   {
-    "nom": "Commune de Beaufort-en-Anjou",
+    "nom": "Commune De Beaufort-En-Anjou",
     "adresse": "16 rue de l'hôtel de ville",
     "codepostal": 49250,
     "ville": "Beaufort-en-anjou",
@@ -560,7 +572,7 @@
     ]
   },
   {
-    "nom": "commune de Changé",
+    "nom": "Commune De Changé",
     "adresse": "Hôtel de ville, 6 place Christian d'Elva",
     "codepostal": 53810,
     "ville": "Changé",
@@ -604,7 +616,7 @@
     ]
   },
   {
-    "nom": "Direction des affaires culturelles",
+    "nom": "Direction Des Affaires Culturelles",
     "adresse": "Le Cyel, 10 rue Salvador Allende",
     "codepostal": 85000,
     "ville": "La Roche sur Yon",
@@ -642,10 +654,13 @@
     "actionculturelle_epci": 248500589,
     "actionculturelle_commune": 85000,
     "notes": "",
-    "coords": [46.670427, -1.431175]
+    "coords": [
+      46.670427,
+      -1.431175
+    ]
   },
   {
-    "nom": "Espace culturel René Cassin-La Gare",
+    "nom": "Espace Culturel René Cassin-La Gare",
     "adresse": "avenue de la Gare",
     "codepostal": 85200,
     "ville": "Fontenay-le-comte",
@@ -689,7 +704,7 @@
     ]
   },
   {
-    "nom": "Espace Culturel SCELIA",
+    "nom": "Espace Culturel Scelia",
     "adresse": "Rue Didier Pironi",
     "codepostal": 72190,
     "ville": "Sargé-Lès-Le Mans",
@@ -777,7 +792,7 @@
     ]
   },
   {
-    "nom": "Graines d'Images",
+    "nom": "Graines D'Images",
     "adresse": "35, rue de Degré - hall A",
     "codepostal": 72000,
     "ville": "Le Mans",
@@ -815,10 +830,13 @@
     "actionculturelle_epci": 247200686,
     "actionculturelle_commune": "",
     "notes": "",
-    "coords": [48.019064, 0.173756]
+    "coords": [
+      48.019064,
+      0.173756
+    ]
   },
   {
-    "nom": "Ici ou Là, service culturel de la Ville d'Indre",
+    "nom": "Ici Ou Là, Service Culturel De La Ville D'Indre",
     "adresse": "1 avenue de la Loire",
     "codepostal": 44610,
     "ville": "Indre",
@@ -862,7 +880,7 @@
     ]
   },
   {
-    "nom": "La 3'E Saison de l'Ernée",
+    "nom": "La 3'E Saison De L'Ernée",
     "adresse": "Cté de communes de l'Ernée - ZA de la Querminais - BP 28",
     "codepostal": 53500,
     "ville": "Ernée",
@@ -900,11 +918,14 @@
     "actionculturelle_epci": 245300355,
     "actionculturelle_commune": 53269,
     "notes": "",
-    "coords": [48.288472, -0.922085]
+    "coords": [
+      48.288472,
+      -0.922085
+    ]
   },
   {
-    "nom": "LA BOUCHE D'AIR",
-    "adresse": "33 RUE DE STRASBOURG",
+    "nom": "La Bouche D'Air",
+    "adresse": "33 rue de strasbourg",
     "codepostal": 44000,
     "ville": "Nantes",
     "www": "http://www.labouchdair.com",
@@ -947,7 +968,7 @@
     ]
   },
   {
-    "nom": "La Boussole - Médiathèque de La Barre de Monts",
+    "nom": "La Boussole - Médiathèque De La Barre De Monts",
     "adresse": "2, Chemin du Querruy",
     "codepostal": 85550,
     "ville": "La Barre de Monts",
@@ -1073,7 +1094,10 @@
     "actionculturelle_epci": 247200348,
     "actionculturelle_commune": 72154,
     "notes": "",
-    "coords": [47.699299, -0.073327]
+    "coords": [
+      47.699299,
+      -0.073327
+    ]
   },
   {
     "nom": "Le Grand R",
@@ -1114,10 +1138,13 @@
     "actionculturelle_epci": 248500589,
     "actionculturelle_commune": 85191,
     "notes": "",
-    "coords": [46.668682, -1.429985]
+    "coords": [
+      46.668682,
+      -1.429985
+    ]
   },
   {
-    "nom": "LE GRAND T",
+    "nom": "Le Grand T",
     "adresse": "84 rue du Général Buat - BP 30111",
     "codepostal": 44011,
     "ville": "Nantes",
@@ -1155,10 +1182,13 @@
     "actionculturelle_epci": 244400610,
     "actionculturelle_commune": "",
     "notes": "",
-    "coords": [47.231373, -1.540397]
+    "coords": [
+      47.231373,
+      -1.540397
+    ]
   },
   {
-    "nom": "Le Kiosque - Centre d'Action Culturelle - Mayenne Communauté",
+    "nom": "Le Kiosque - Centre D'Action Culturelle - Mayenne Communauté",
     "adresse": "7/9 Place Juhel - BP 50433",
     "codepostal": 53104,
     "ville": "Mayenne",
@@ -1196,10 +1226,13 @@
     "actionculturelle_epci": 200055887,
     "actionculturelle_commune": "",
     "notes": "",
-    "coords": [48.302260, -0.619653]
+    "coords": [
+      48.30226,
+      -0.619653
+    ]
   },
   {
-    "nom": "le livre dans la Théière",
+    "nom": "Le Livre Dans La Théière",
     "adresse": "6 place de la Mairie",
     "codepostal": 85620,
     "ville": "Rocheserviere",
@@ -1237,10 +1270,13 @@
     "actionculturelle_epci": 200072882,
     "actionculturelle_commune": "",
     "notes": "",
-    "coords": [46.936500, -1.512701]
+    "coords": [
+      46.9365,
+      -1.512701
+    ]
   },
   {
-    "nom": "Le Quai - CDN",
+    "nom": "Le Quai - Cdn",
     "adresse": "17 rue de la tannerie",
     "codepostal": 49000,
     "ville": "Angers",
@@ -1284,7 +1320,7 @@
     ]
   },
   {
-    "nom": "Le théâtre, scène conventionnée de Laval",
+    "nom": "Le Théâtre, Scène Conventionnée De Laval",
     "adresse": "rue de la paix",
     "codepostal": 53000,
     "ville": "Laval",
@@ -1372,7 +1408,7 @@
     ]
   },
   {
-    "nom": "Les Quinconces-L'espal",
+    "nom": "Les Quinconces-L'Espal",
     "adresse": "4 place des Jacobins",
     "codepostal": 72000,
     "ville": "Le Mans",
@@ -1416,7 +1452,7 @@
     ]
   },
   {
-    "nom": "Ligue de l'enseignement de la Mayenne",
+    "nom": "Ligue De L'Enseignement De La Mayenne",
     "adresse": "31 allée du vieux saint louis",
     "codepostal": 53000,
     "ville": "Laval",
@@ -1460,7 +1496,7 @@
     ]
   },
   {
-    "nom": "Mairie des Sorinières",
+    "nom": "Mairie Des Sorinières",
     "adresse": "les sorinières",
     "codepostal": 44840,
     "ville": "Les Sorinières",
@@ -1504,7 +1540,7 @@
     ]
   },
   {
-    "nom": "médiathèque Venansault",
+    "nom": "Médiathèque Venansault",
     "adresse": "l'îlot des Arts - Place de la Billardière",
     "codepostal": 85190,
     "ville": "Venansault",
@@ -1542,10 +1578,13 @@
     "actionculturelle_epci": 248500589,
     "actionculturelle_commune": 85300,
     "notes": "",
-    "coords": [46.684980, -1.511450]
+    "coords": [
+      46.68498,
+      -1.51145
+    ]
   },
   {
-    "nom": "MJC Ronceray / l'Alambik",
+    "nom": "Mjc Ronceray / L'Alambik",
     "adresse": "bd de la fresnellerie",
     "codepostal": 72100,
     "ville": "le Mans",
@@ -1589,7 +1628,7 @@
     ]
   },
   {
-    "nom": "Musique et Danse en Loire-Atlantique",
+    "nom": "Musique Et Danse En Loire-Atlantique",
     "adresse": "11 rue Jules Verne",
     "codepostal": 44700,
     "ville": "Orvault",
@@ -1633,7 +1672,7 @@
     ]
   },
   {
-    "nom": "Paus Vallée du Loir",
+    "nom": "Paus Vallée Du Loir",
     "adresse": "rue Anatole Carré",
     "codepostal": 72500,
     "ville": "Vaas",
@@ -1677,7 +1716,7 @@
     ]
   },
   {
-    "nom": "Pays du mans",
+    "nom": "Pays Du Mans",
     "adresse": "4O rue de la galère",
     "codepostal": 72000,
     "ville": "Le Mans",
@@ -1721,7 +1760,7 @@
     ]
   },
   {
-    "nom": "Petits et Grands",
+    "nom": "Petits Et Grands",
     "adresse": "9, rue des Olivettes",
     "codepostal": 44000,
     "ville": "Nantes",
@@ -1765,7 +1804,7 @@
     ]
   },
   {
-    "nom": "Piano'cktail",
+    "nom": "Piano'Cktail",
     "adresse": "Rue Ginsheim Gustavsburg",
     "codepostal": 44340,
     "ville": "Bouguenais",
@@ -1809,7 +1848,7 @@
     ]
   },
   {
-    "nom": "Saison Culturelle du Mont des Avaloirs",
+    "nom": "Saison Culturelle Du Mont Des Avaloirs",
     "adresse": "1 rue de la Corniche de Pail",
     "codepostal": 53140,
     "ville": "Pré-en-Pail-Saint-Samson",
@@ -1897,7 +1936,7 @@
     ]
   },
   {
-    "nom": "Service culturel de Challans",
+    "nom": "Service Culturel De Challans",
     "adresse": "Hotel de Ville",
     "codepostal": 85300,
     "ville": "Challans",
@@ -1935,10 +1974,13 @@
     "actionculturelle_epci": 200071629,
     "actionculturelle_commune": 85047,
     "notes": "",
-    "coords": [46.845009, -1.879335]
+    "coords": [
+      46.845009,
+      -1.879335
+    ]
   },
   {
-    "nom": "service culturel ville de Coulaines",
+    "nom": "Service Culturel Ville De Coulaines",
     "adresse": "Square Weyhe",
     "codepostal": 72190,
     "ville": "Coulaines",
@@ -2026,7 +2068,7 @@
     ]
   },
   {
-    "nom": "Théâtre de Chaoué",
+    "nom": "Théâtre De Chaoué",
     "adresse": "11 rue du moulin de Chaoué",
     "codepostal": 72700,
     "ville": "Allonnes",
@@ -2070,7 +2112,7 @@
     ]
   },
   {
-    "nom": "Théâtre de l'Ephémère",
+    "nom": "Théâtre De L'Ephémère",
     "adresse": "8 place des Jacobins",
     "codepostal": 72000,
     "ville": "Le Mans",
@@ -2114,7 +2156,7 @@
     ]
   },
   {
-    "nom": "Théâtre de Thalie",
+    "nom": "Théâtre De Thalie",
     "adresse": "Esplanade de Verdun",
     "codepostal": 85600,
     "ville": "Montaigu",
@@ -2158,7 +2200,7 @@
     ]
   },
   {
-    "nom": "Théâtre du Cyclope",
+    "nom": "Théâtre Du Cyclope",
     "adresse": "82 rue du Maréchal Joffre",
     "codepostal": 44000,
     "ville": "Nantes",
@@ -2240,10 +2282,13 @@
     "actionculturelle_epci": 200072692,
     "actionculturelle_commune": "",
     "notes": "",
-    "coords": [47.973539, 0.554081]
+    "coords": [
+      47.973539,
+      0.554081
+    ]
   },
   {
-    "nom": "Théâtre ONYX - ville de Saint Herblain",
+    "nom": "Théâtre ONYX - Ville De Saint Herblain",
     "adresse": "1, place Océane BP 30224",
     "codepostal": 44815,
     "ville": "Saint Herblain",
@@ -2281,10 +2326,13 @@
     "actionculturelle_epci": 244400404,
     "actionculturelle_commune": "",
     "notes": "",
-    "coords": [47.224004, -1.628445]
+    "coords": [
+      47.224004,
+      -1.628445
+    ]
   },
   {
-    "nom": "THV",
+    "nom": "Thv",
     "adresse": "1, rue Jean Gilles",
     "codepostal": 49180,
     "ville": "Saint-Barthélémy-d'Anjou",
@@ -2328,7 +2376,7 @@
     ]
   },
   {
-    "nom": "villages en scène",
+    "nom": "Villages En Scène",
     "adresse": "2, rue Jacques du Bellay",
     "codepostal": 49380,
     "ville": "Thouarcé",
@@ -2372,7 +2420,7 @@
     ]
   },
   {
-    "nom": "Ville d'Yvré l'Evêque, service Culture",
+    "nom": "Ville D'Yvré L'Evêque, Service Culture",
     "adresse": "16, avenue Guy Bouriat",
     "codepostal": 72530,
     "ville": "Yvré l'Evêque",
@@ -2416,7 +2464,7 @@
     ]
   },
   {
-    "nom": "Ville de Saint-Hilaire-de-Riez - Service culturel",
+    "nom": "Ville De Saint-Hilaire-De-Riez - Service Culturel",
     "adresse": "Place de l'église, BP 49",
     "codepostal": 85270,
     "ville": "Saint-Hilaire-de-Riez",
@@ -2454,6 +2502,9 @@
     "actionculturelle_epci": "",
     "actionculturelle_commune": "",
     "notes": "",
-    "coords": [46.720500, -1.945929]
+    "coords": [
+      46.7205,
+      -1.945929
+    ]
   }
 ]

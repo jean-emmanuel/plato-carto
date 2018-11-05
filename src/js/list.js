@@ -6,9 +6,9 @@ var keyboardJS = require('keyboardjs'),
     modal = require('./modal'),
     batch = require('./batch'),
     templates = require('../../config/templates'),
-    list = document.getElementById('list'),
+    listElement = document.getElementById('list'),
     listCount = document.getElementById('list-count'),
-    listContent = list.getElementsByClassName('list-content')[0],
+    listContent = listElement.getElementsByClassName('list-content')[0],
     listToggle = document.getElementById('list-toggle'),
     open = false
 
@@ -17,23 +17,27 @@ var listEmpty = html`
         <p class="">${locale.noResults}</p>
     </div>`
 
-function toggleList() {
+function toggleList(state) {
 
-    open = !open
-    updateList(open)
+    open = state !== undefined ? state : !open
+    if (open) {
+        updateList(open)
+    } else {
+        updateDom()
+    }
 
 }
 
 function updateDom() {
 
-    list.classList.toggle('opened', open)
+    listElement.classList.toggle('opened', open)
     listToggle.classList.toggle('on', open)
 
     if (open) {
-        list.classList.remove('hidden')
+        listElement.classList.remove('hidden')
     } else {
         setTimeout(()=>{
-            list.classList.add('hidden')
+            listElement.classList.add('hidden')
         }, 250)
     }
 
@@ -101,4 +105,7 @@ function updateList(){
 }
 
 
-module.exports = updateList
+module.exports = {
+    update: updateList,
+    toggle: toggleList
+}

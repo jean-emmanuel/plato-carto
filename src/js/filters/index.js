@@ -1,7 +1,7 @@
 var filtersData = require('../../../config/filters'),
     {FilterBase} = require('./base'),
     map = require('../map'),
-    updateList = require('../list')
+    list = require('../list')
 
 
 class FilterManager extends FilterBase {
@@ -15,7 +15,7 @@ class FilterManager extends FilterBase {
     onChange() {
 
         map.drawMarkers(this.applyFilter.bind(this))
-        updateList()
+        list.update()
 
     }
 

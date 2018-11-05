@@ -23,7 +23,7 @@ function resizeTitle(){
     modalElement.style.paddingTop = h
 }
 
-module.exports = (title, content) => {
+function createModal(title, content){
 
     modalTitle.innerHTML = ''
     modalContent.innerHTML = ''
@@ -37,3 +37,9 @@ module.exports = (title, content) => {
     })
 
 }
+
+createModal.close = ()=>{
+    modal.close()
+}
+
+module.exports = createModal
