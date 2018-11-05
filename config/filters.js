@@ -6,6 +6,7 @@ module.exports = [
 
     {
         label: 'Rechercher',
+        help: 'Filtrer par nom, ville, code postal...',
         type: 'text',
         value: '',
         icon: 'search',

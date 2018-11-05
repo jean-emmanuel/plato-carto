@@ -201,13 +201,12 @@ html, body {
     z-index: 4;
     height: $nav-height;
     line-height: $nav-height;
-
+    color: #fff;
     background: $base;
 
     header {
         $icon-size:  $nav-height - 11px;
         font-family: Roboto;
-        color: #fff;
         font-weight: bold;
         letter-spacing: .2px;
         padding: 0px 10px 0 $icon-size + 20px;
@@ -235,10 +234,19 @@ html, body {
         line-height: $nav-height;
         margin: 0;
         padding: 0 10px;
+        li {
+            display: inline-block;
+            // margin-left: 10px;
+        }
     }
 
-    .btn {
+    .btn-small, .btn-flat {
+        text-align: center;
         margin-top: -5px;
+        padding: 0 10px;
+        min-width: 40px;
+        color: inherit;
+        font-size: 1rem;
     }
 
     @extend .shadow;

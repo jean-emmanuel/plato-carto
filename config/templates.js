@@ -1,4 +1,5 @@
 var html =require('nanohtml'),
+    raw = require('nanohtml/raw'),
     locale = require('./locale')
 
 module.exports = {
@@ -71,9 +72,9 @@ module.exports = {
 
                     <div class="bloc bloc-1">
                         <h4>Aide à la création jeune public 2017-2018</h4>
-                        <p><b>${item.aidecreation_preachat || 0}</b> représentation(s) en préachat</p>
-                        <p><b>${item.aidecreation_coprod || 0}</b> création(s) en (co)production</p>
-                        <p><b>${item.aidecreation_residence || 0}</b> équipe(s) en résidence</p>
+                        <p><b>${item.aidecreation_preachat || 0}</b> représentation${item.aidecreation_preachat > 1 ? 's' : ''} en préachat</p>
+                        <p><b>${item.aidecreation_coprod || 0}</b> création${item.aidecreation_coprod > 1 ? 's' : ''} en (co)production</p>
+                        <p><b>${item.aidecreation_residence || 0}</b> équipe${item.aidecreation_residence > 1 ? 's' : ''} en résidence</p>
                     </div>
 
                     <div class="bloc bloc-2">
@@ -83,16 +84,16 @@ module.exports = {
                         }
                         <p><b>${item.diffusion_total}</b> spectacles programmés dont <b>${item.diffusion_jp}</b> jeune public</p>
                         ${item.diffusion_0_3ans ?
-                            html`<p><b>${item.diffusion_0_3ans}</b> spectacle(s) 0-3 ans` : ''
+                            html`<p><b>${item.diffusion_0_3ans}</b> spectacle${item.diffusion_0_3ans > 1 ? 's' : ''} 0-3 ans` : ''
                         }
                         ${item.diffusion_3_6ans ?
-                            html`<p><b>${item.diffusion_3_6ans}</b> spectacle(s) 3-6 ans` : ''
+                            html`<p><b>${item.diffusion_3_6ans}</b> spectacle${item.diffusion_3_6ans > 1 ? 's' : ''} 3-6 ans` : ''
                         }
                         ${item.diffusion_6_12ans ?
-                            html`<p><b>${item.diffusion_6_12ans}</b> spectacle(s) 6-12 ans` : ''
+                            html`<p><b>${item.diffusion_6_12ans}</b> spectacle${item.diffusion_6_12ans > 1 ? 's' : ''} 6-12 ans` : ''
                         }
                         ${item.diffusion_12ans ?
-                            html`<p><b>${item.diffusion_12ans}</b> spectacle(s) à partir de 12 ans` : ''
+                            html`<p><b>${item.diffusion_12ans}</b> spectacle${item.diffusion_12ans > 1 ? 's' : ''} à partir de 12 ans` : ''
                         }
                         ${item.diffusion_places_jp ?
                             html`<p><b>${item.diffusion_places_jp}</b> places proposées pour toutes les représentations jeune public</p>` : ''
@@ -128,7 +129,7 @@ module.exports = {
                 "diffusion_reseaux_centreculturel": "Centre culturel",
                 "diffusion_reseaux_mediatheque": "Médiathèque",
                 "diffusion_reseaux_autre": item.diffusion_reseaux_autre
-            }, reseaux_diff_compagnie = Object.keys(reseaux_diff).filter(x => item[x] == 'Oui')
+            }, reseaux_diff_compagnie = Object.keys(reseaux_diff).filter(x => x === "diffusion_reseaux_autre" ? item[x] : item[x] !== 'Non')
 
             var formes_art = {
                 "formesartistiques_theatre": "Théâtre",
@@ -139,14 +140,14 @@ module.exports = {
                 "formesartistiques_cinema": "Cinéma",
                 "formesartistiques_theatreobjet": "Théâtre d'objet",
                 "formesartistiques_autre": item.formesartistiques_autre
-            }, formes_art_compagnie = Object.keys(formes_art).filter(x => item[x] == 'Oui')
+            }, formes_art_compagnie = Object.keys(formes_art).filter(x => x === "formesartistiques_autre" ? item[x] : item[x] !== 'Non')
 
             var ages = {
                 "agecible_0_3ans": "0-3 ans",
                 "agecible_3_6ans": "3-6 ans",
                 "agecible_6_12ans": "6-12 ans",
                 "agecible_12ans": "12 ans et +",
-            }, ages_compagnie = Object.keys(ages).filter(x => item[x] == 'Oui')
+            }, ages_compagnie = Object.keys(ages).filter(x => item[x] === 'Oui')
 
 
 
@@ -180,7 +181,7 @@ module.exports = {
                     }
                     ${item.lieu_creation || item.lieu_diffusion ? html`
                         <p>
-                            <label>Dispose d'un lieu de</label>
+                            <label>Dispose d'un lieu de${raw('&nbsp;')}</label>
                             ${item.lieu_creation ? html`<span class="chip">création</span>` : ''}
                             ${item.lieu_diffusion ? html`<span class="chip">diffusion</span>` : ''}
                         </p>`
@@ -202,10 +203,10 @@ module.exports = {
                     <div class="bloc bloc-1">
                         <h4>Création / Diffusion depuis 2016</h4>
                         ${item.creation ?
-                            html`<p><b>${item.creation}</b> spectacle(s) jeune public créés depuis 2016</p>` : ''
+                            html`<p><b>${item.creation}</b> spectacle${item.creation > 1 ? 's' : ''} jeune public créé${item.creation > 1 ? 's' : ''} depuis 2016</p>` : ''
                         }
                         ${item.diffusion ?
-                            html`<p><b>${item.diffusion}</b> spectacle(s) jeune public en diffusion depuis 2016</p>` : ''
+                            html`<p><b>${item.diffusion}</b> spectacle${item.diffusion > 1 ? 's' : ''} jeune public en diffusion depuis 2016</p>` : ''
                         }
                     </div>
                     <div class="bloc bloc-2">

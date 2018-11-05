@@ -34,11 +34,11 @@ $button-radius: $border-radius;
     background: #555;
 }
 
-.btn, .btn-small {
+.btn, .btn-small, .btn-flat {
     font-weight: bold;
     // padding: 0 10px!important;
     i {
-        font-size: inherit;
+        font-size: inherit!important;
     }
 }
 

@@ -1,5 +1,6 @@
 var html = require('nanohtml'),
     store = require('./store'),
+    materialize = require('materialize-css'),
     {deepEqual, deepCopy} = require('../utils'),
     filterTypes
 
@@ -93,6 +94,17 @@ class Filter extends FilterBase {
                     this.reset()
                     this.onChange()
                 })
+            }
+
+            if (options.help) {
+
+                this.label.setAttribute('data-tooltip', options.help)
+                 materialize.Tooltip.init(this.label, {
+                    position: 'right',
+                    margin: 15,
+                    enterDelay: 750
+                })
+
             }
 
         }

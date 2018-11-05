@@ -12,6 +12,12 @@ modalCloser.addEventListener('click', (e)=>{
     }, 200)
 })
 
+var resizeTimeout
+window.addEventListener('resize', (e)=>{
+    clearTimeout(resizeTimeout)
+    resizeTimeout = setTimeout(resizeTitle, 100)
+})
+
 function resizeTitle(){
     var h = modalTitle.offsetHeight + 6 + 'px'
     modalElement.style.paddingTop = h
