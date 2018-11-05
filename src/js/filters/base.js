@@ -75,7 +75,7 @@ class Filter extends FilterBase {
                 var icon = html`<i class="fas faw icon fa-${options.icon}"></i>`
 
             }
-            this.label = html`<label for="${this.id}">${icon}${options.label}</label>`
+            this.label = html`<label for="${this.id}">${icon}<span>${options.label}</span></label>`
             this.html.appendChild(this.label)
             if (options.reset) {
                 var reset = html`<i class="fas fa-trash reset"></i>`

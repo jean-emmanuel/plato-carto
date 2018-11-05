@@ -43,7 +43,7 @@ module.exports = [
         filters: [
             {
                 type: 'select',
-                label: 'Réseaux Jeune Publics...',
+                label: 'Réseaux Jeune Publics',
                 choices: (()=>{
                     var c = {},
                         r = []

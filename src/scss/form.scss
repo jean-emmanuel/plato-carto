@@ -47,15 +47,15 @@ $inactive-color: #888;
     }
 
     .text label {
-        &, .icon {
-            transition: transform .2s ease-out, font-size .2s ease-out;
+        &, span , .icon {
+            transition: transform .2s ease-out;
         }
         &.active {
             transform: translateY(-14px);
-            font-size: .6rem;
-        }
-        &.active .icon {
-            font-size: .6rem;
+            // span,.icon{
+            //     transform: scale(0.8)!important;
+            //     transform-origin: 0 0;
+            // }
         }
     }
 
