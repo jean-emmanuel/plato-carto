@@ -206,10 +206,11 @@ html, body {
 
     header {
         $icon-size:  $nav-height - 11px;
-        font-family: Lato;
+        font-family: Roboto;
         color: #fff;
         font-weight: bold;
-        padding: 1px 10px 0 $icon-size + 20px;
+        letter-spacing: .2px;
+        padding: 0px 10px 0 $icon-size + 20px;
         // width: $sidepanel-width;
         .icon {
             position: absolute;
@@ -224,7 +225,7 @@ html, body {
             display: inline-block;
             i {
                 position: relative;
-                top: -4px;
+                top: -5px;
             }
         }
     }

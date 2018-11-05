@@ -61,7 +61,9 @@ module.exports = {
                         <p>
                         <label>Membre de</label>
                         ${item.reseaux.split('\n').map(reseau => html`
-                            <span class="chip">${reseau}</span>
+                            <span class="chip">
+                                ${reseau}
+                            </span>
                         `)}
                         </p>`
                         : ''
@@ -169,7 +171,9 @@ module.exports = {
                         <p>
                             <label>Membre de</label>
                             ${item.reseaux.split('\n').map(reseau => html`
-                                <span class="chip">${reseau}</span>
+                                <span class="chip">
+                                    ${reseau}
+                                </span>
                             `)}
                         </p>`
                         : ''
@@ -224,8 +228,10 @@ module.exports = {
                         ${reseaux_diff_compagnie.length ? html`
                             <div>
                                 <h4>Réseaux de diffusion des spectacles jeune public</h4>
-                                ${reseaux_diff_compagnie.map(reseau =>
-                                    html`<span class="chip">${reseaux_diff[reseau]}</span>`
+                                ${reseaux_diff_compagnie.map(reseau => html`
+                                    <span class="chip">
+                                        ${reseaux_diff[reseau]}
+                                    </span>`
                                 )}
                             </div>` : ''
                         }
@@ -236,8 +242,10 @@ module.exports = {
                         ${formes_art_compagnie.length ? html`
                             <div>
                                 <h4>Formes artistiques dominantes</h4>
-                                ${formes_art_compagnie.map(x =>
-                                    html`<span class="chip">${formes_art[x]}</span>`
+                                ${formes_art_compagnie.map(x => html`
+                                    <span class="chip">
+                                        ${formes_art[x]}
+                                    </span>`
                                 )}
                             </div>
                         `  : ''}
@@ -245,8 +253,10 @@ module.exports = {
                         ${ages_compagnie.length ? html`
                             <div>
                                 <h4>Spectacles créés pour les</h4>
-                                ${ages_compagnie.map(x =>
-                                    html`<span class="chip">${ages[x]}</span>`
+                                ${ages_compagnie.map(x => html`
+                                    <span class="chip">
+                                        ${ages[x]}
+                                    </span>`
                                 )}
                             </div>
                         `  : ''}

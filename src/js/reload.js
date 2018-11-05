@@ -12,8 +12,10 @@ function connect() {
     }
 
     ws.onclose = ()=>{
-        console.log('Reconnecting autoreload socket...')
-        connect()
+        setTimeout(()=>{
+            console.log('Reconnecting autoreload socket...')
+            connect()
+        }, 1000)
     }
 
 
@@ -37,4 +39,4 @@ function cb(e, data) {
 
 }
 
-connect()
+if (window.location.host.match(/[0-9]+\.[0-9]+\.[0-9]+\.[0-9]/)) connect()
