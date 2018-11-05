@@ -1,8 +1,16 @@
 {
-  "name": "carte-plato",
+  "name": "carto-plato",
+  "description": "Cartographie du Jeune Public en Pays de la Loire",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "author": {
+    "name": "Jean-Emmanuel Doucet",
+    "email": "jean-emmanuel@ammd.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jean-emmanuel/plato-carto"
+  },
+  "license": "GPL-3.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node scripts/build-css.js",
@@ -11,8 +19,6 @@
     "build": "npm run build-css && npm run build-js && npm run build-html",
     "watch": "node scripts/reload.js & nodemon --watch src/scss -e scss -x \"npm run build-css\" & npm run build-js -- --watch & nodemon --watch src/mustache -e mustache --watch config/config.js -x \"npm run build-html\""
   },
-  "author": "",
-  "license": "GPL-3.0",
   "dependencies": {
     "autoprefixer": "^9.3.1",
     "babel-core": "^6.26.3",
