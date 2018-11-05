@@ -2,16 +2,20 @@ var loading = document.getElementById('loading')
 
 module.exports = batch
 
+var lastState
 function progress(progress, total) {
 
-    var state = progress / total
+    var state = Math.round(10 * progress / total) / 10
 
-    loading.classList.toggle('loading', state !== 0)
-    loading.setAttribute('style', `
-        -webkit-transform: scale3d(${state}, 1, 1);
-        -ms-transform: scale3d(${state}, 1, 1);
+    if (state !== lastState) {
+        lastState = state
+        loading.classList.toggle('loading', state !== 0)
+        loading.setAttribute('style', `
+            -webkit-transform: scale3d(${state}, 1, 1);
+            -ms-transform: scale3d(${state}, 1, 1);
             transform: scale3d(${state}, 1, 1);
-    `)
+        `)
+    }
 
 }
 

@@ -152,6 +152,8 @@ class Filter extends FilterBase {
 
     onChange(e, value) {
 
+        if (deepEqual(this.value, value)) return
+
         if (value !== undefined) this.value = value
 
         this.checkInactive()
