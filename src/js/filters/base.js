@@ -92,7 +92,7 @@ class Filter extends FilterBase {
                     e.preventDefault()
                     e.stopPropagation()
                     this.reset()
-                    this.onChange()
+                    this.parent.onChange()
                 })
             }
 
