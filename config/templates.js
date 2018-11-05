@@ -11,7 +11,7 @@ module.exports = {
                     ${item.nom} <span class="chip">${item._type}</span>
                 </h3>
                 <p>
-                    <span data-coords="${item.coords}"><i class="fas fa-fw fa-map-marker-alt"></i> ${item.adresse}, ${item.codepostal} ${item.ville}</span><br/>
+                    <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt"></i> ${item.adresse}, ${item.codepostal} ${item.ville}<br/>
                     ${item.www ?
                         html`<span><i class="fas fa-fw fa-globe"></i> <a href="${item.www}">${item.www}</a><br/></span>` : ''
                     }
@@ -38,7 +38,7 @@ module.exports = {
             return html`
                 <div>
                     <p>
-                        <span data-coords="${item.coords}"><i class="fas fa-fw fa-map-marker-alt"></i> ${item.adresse}, ${item.codepostal} ${item.ville}</span><br/>
+                        <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt"></i> ${item.adresse}, ${item.codepostal} ${item.ville}<br/>
                         ${item.www ?
                             html`<span><i class="fas fa-fw fa-globe"></i> <a href="${item.www}">${item.www}</a><br/></span>` : ''
                         }
@@ -154,7 +154,7 @@ module.exports = {
             return html`
                 <div>
                     <p>
-                        <span data-coords="${item.coords}"><i class="fas fa-fw fa-map-marker-alt"></i> ${item.adresse}, ${item.codepostal} ${item.ville}</span><br/>
+                        <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt"></i> ${item.adresse}, ${item.codepostal} ${item.ville}<br/>
                         ${item.www ?
                             html`<span><i class="fas fa-fw fa-globe"></i> <a href="${item.www}">${item.www}</a><br/></span>` : ''
                         }
