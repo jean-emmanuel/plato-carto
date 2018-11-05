@@ -135,8 +135,6 @@ class Filter extends FilterBase {
 
     reset() {
 
-        if (deepEqual(this.value, this.defaultValue)) return
-
         this.setValue(deepCopy(this.defaultValue))
         for (var i in this.filters) {
             this.filters[i].reset()
