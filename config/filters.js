@@ -31,8 +31,6 @@ module.exports = [
             compagnie: 'Compagnie',
             structure: 'Structure'
         },
-        value: [],
-        disabled: (data, value, filters) => !value.length,
         filter: (data, value) => value.indexOf(data._type) !== -1
     },
     {
