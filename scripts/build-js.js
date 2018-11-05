@@ -67,10 +67,12 @@ function bundle() {
 
     var output =  b.bundle()
 
-    output.on('end', (err)=> {
-        console.log('Build successful, reloading...')
-        send('reload')
-    })
+    if (watch) {
+        output.on('end', (err)=> {
+            console.log('Build successful, reloading...')
+            send('reload')
+        })
+    }
 
     output.on('error', (err)=> {
 
