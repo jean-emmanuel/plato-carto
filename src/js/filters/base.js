@@ -87,7 +87,7 @@ class Filter extends FilterBase {
                 reset.addEventListener('touchstart', (e)=>{
                     // e.preventDefault()
                     e.stopPropagation()
-                })
+                }, {passive: true})
                 reset.addEventListener('click', (e)=>{
                     e.preventDefault()
                     e.stopPropagation()
