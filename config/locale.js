@@ -5,7 +5,7 @@ module.exports = {
     header_short: 'Cartographie JP en Pays de la Loire',
     noResults: 'Aucun résultat ne correspond à votre recherche.',
     more: 'En savoir plus',
-    about: 'À propis',
+    about: 'À propos',
     export: 'Exporter',
     fullscreen: 'Plein écran',
 
