@@ -32,6 +32,7 @@ class Map {
             zoom: options.zoom,
             minZoom: options.minZoom,
             maxZoom: options.maxZoom,
+            attribution: '© <a href= "http://cartodb.com/attributions#basemaps">CartoDB</a>'
         })
 
         var fitBounds = this.map.fitBounds
@@ -45,7 +46,10 @@ class Map {
         document.getElementById('zoom-in').addEventListener('click', e => this.map.zoomIn())
         document.getElementById('zoom-out').addEventListener('click', e => this.map.zoomOut())
 
-        this.addLayer('tileLayer', options.tiles)
+        this.addLayer('tileLayer', options.tiles, {
+            attribution: 'Carte © <a href= "http://cartodb.com/attributions#basemaps">CartoDB</a>'
+
+        })
         for (var l of options.layers) {
             this.addLayer(...l)
         }
@@ -107,7 +111,7 @@ class Map {
             e.preventDefault()
             modal.close()
             list.toggle(false)
-            this.setView(coords, 11)
+            this.setView(coords, 14)
 
         })
 
