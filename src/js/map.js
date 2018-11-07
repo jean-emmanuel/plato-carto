@@ -111,7 +111,10 @@ class Map {
             e.preventDefault()
             modal.close()
             list.toggle(false)
-            this.setView(coords, 14)
+            this.map.fitBounds([coords])
+            // setTimeout(()=>{
+            //     this.map.zoomOut(2)
+            // }, 500)
 
         })
 
