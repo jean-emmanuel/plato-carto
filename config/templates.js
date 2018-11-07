@@ -301,6 +301,17 @@ module.exports = {
             </p>
 
         </div>
-    `
+    `,
 
+    helpTitle: (item) => html`
+        <span>
+            ${locale.help}
+        </span>
+    `,
+
+    help: (item) => html`
+        <div>
+            Ici, le guide...
+        </div>
+    `
 }

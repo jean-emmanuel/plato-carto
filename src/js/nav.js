@@ -21,6 +21,13 @@ materialize.Tooltip.init(document.getElementById('nav').querySelectorAll('[data-
 //     constrainWidth: false,
 // })
 
+// aide
+
+document.getElementById('help').addEventListener('click', (e)=>{
+    e.preventDefault()
+    modal(templates.helpTitle(), templates.help())
+})
+
 // infos
 
 document.getElementById('infos').addEventListener('click', (e)=>{

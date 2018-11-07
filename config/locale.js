@@ -6,6 +6,7 @@ module.exports = {
     header: 'Cartographie du Jeune Public en Pays de la Loire',
     header_short: 'Cartographie JP en Pays de la Loire',
     noResults: 'Aucun résultat ne correspond à votre recherche.',
+    help: 'Aide',
     more: 'En savoir plus',
     about: 'À propos',
     export: 'Exporter',
