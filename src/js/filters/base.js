@@ -22,6 +22,7 @@ class FilterBase {
         this.parent = options.parent
         this.filterCallback = options.filter
         this.disabled = options.disabled
+        this.inclusive = options.inclusive
         this.filters = []
 
         for (var f of options.filters) {
@@ -45,6 +46,11 @@ class FilterBase {
         if (this.inactive) return true
         if (this.disabled && this.disabled(marker, this.value, store)) return true
         if (this.filterCallback && !this.filterCallback(marker, this.value, store)) return false
+
+        if (this.inclusive) {
+            return this.filters.filter(f => !f.inactive).some(f => f.applyFilter(marker))
+        }
+
         return this.filters.every(f => f.applyFilter(marker))
 
     }

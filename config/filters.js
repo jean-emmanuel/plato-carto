@@ -38,6 +38,7 @@ module.exports = [
         label: 'Réseaux',
         icon: 'globe',
         reset: true,
+        inclusive: true,
         filters: [
             {
                 type: 'select',
