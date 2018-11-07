@@ -1,10 +1,7 @@
 {
   "presets": [
     ["env", {
-      "targets": {
-        "ios": "9.3",
-        "chrome": "50"
-      }
+      "targets": "> 0.25%, not dead"
     }]
   ],
   "plugins": ["transform-object-rest-spread", "nanohtml"]
