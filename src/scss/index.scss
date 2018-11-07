@@ -335,3 +335,25 @@ html, body {
     color: $accent;
     cursor: pointer;
 }
+
+
+#init-loader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: #f0f0f0;
+    z-index: 1000;
+    transition: opacity .25s;
+    font-family: sans-serif;
+
+    > div {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .progress {
+        margin: 10px auto;
+        width: 200px;
+    }
+}

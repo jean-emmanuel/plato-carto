@@ -44,7 +44,10 @@ function updateDom() {
 
 }
 
-listToggle.addEventListener('click', ()=>{toggleList()})
+listToggle.addEventListener('click', (e)=>{
+    e.preventDefault()
+    toggleList()
+})
 keyboardJS.bind('f2', ()=>{toggleList()})
 
 var queue = null,

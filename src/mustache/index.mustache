@@ -7,6 +7,20 @@
         <link href="./styles.css?v{{version}}" rel="stylesheet">
     </head>
     <body>
+        <div id="init-loader" class="valign-wrapper">
+            <div>
+                <div>
+                    <div><em>{{loading}}</em></div>
+
+                    <noscript>
+                        {{javascript}}
+                    </noscript>
+                </div>
+                <div class="progress">
+                    <div class="indeterminate"></div>
+                </div>
+            </div>
+         </div>
         <div id="nav">
             <header class="left">
                 <span class="icon"><i class="fas fa-fw fa-map-marker-alt"></i></span><span data-mobile="{{header_short}}">{{header}}</span>
@@ -20,13 +34,13 @@
         </div>
         <div id="sidepanel">
             <div id="sidepanel-tools">
-                <div id="sidepanel-closer" class="waves-effect waves-light">
+                <a id="sidepanel-closer" href="#!" class="waves-effect waves-light">
                     <i class="fas fa-fw fa-angle-left"></i>
-                </div>
-                <div id="list-toggle" class="waves-effect waves-light">
+                </a>
+                <a id="list-toggle" href="#!" class="waves-effect waves-light">
                     <i class="fas fa-fw fa-list"></i>
                     <span id="list-count">1</span>
-                </div>
+                </a>
             </div>
         </div>
         <div id="list">

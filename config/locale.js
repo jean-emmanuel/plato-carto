@@ -1,7 +1,7 @@
 module.exports = {
 
     version: 3,
-    
+
     title: 'PlatO / Cartographie du spectacle jeune public en Pays de la Loire',
     header: 'Cartographie du Jeune Public en Pays de la Loire',
     header_short: 'Cartographie JP en Pays de la Loire',
@@ -10,6 +10,8 @@ module.exports = {
     about: 'À propos',
     export: 'Exporter',
     fullscreen: 'Plein écran',
+    loading: 'Chargement en cours',
+    javascript: 'Cette page nécessite l\'activation de javascript pour être affichée correctement.',
 
 
 

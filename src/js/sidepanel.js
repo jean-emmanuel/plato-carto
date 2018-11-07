@@ -20,7 +20,8 @@ function toggleSidepanel() {
 
 }
 
-closer.addEventListener('click', ()=>{
+closer.addEventListener('click', (e)=>{
+    e.preventDefault()
     toggleSidepanel()
 })
 
