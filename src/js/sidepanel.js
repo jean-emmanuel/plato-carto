@@ -3,11 +3,12 @@ var keyboardJS = require('keyboardjs'),
     closer = document.getElementById('sidepanel-closer'),
     filterManager = require('./filters'),
     html = require('nanohtml')
+    open = true
 
 
 function toggleSidepanel() {
 
-    sidepanel.classList.toggle('sidepanel-closed')
+    open = !sidepanel.classList.toggle('sidepanel-closed')
 
     // force :hover out
     closer.classList.add('nohover')
@@ -62,3 +63,7 @@ function createForm(filters, parentNode) {
 createForm(filterManager.filters, form)
 
 sidepanel.appendChild(form)
+
+module.exports = {
+    opened: () => open
+}

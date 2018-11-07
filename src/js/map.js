@@ -3,10 +3,9 @@ var leaflet = require('leaflet'),
     templates = require('../../config/templates'),
     materialize = require('materialize-css'),
     modal = require('./modal'),
-    list
+    sidepanel, list
 
 Object.assign(leaflet, require('leaflet.markercluster'))
-
 
 class Map {
 
@@ -34,6 +33,13 @@ class Map {
             minZoom: options.minZoom,
             maxZoom: options.maxZoom,
         })
+
+        var fitBounds = this.map.fitBounds
+        this.map.fitBounds = (bounds, opt) => {
+            opt = opt || {}
+            opt.paddingTopLeft = [sidepanel.opened() ? 350 : 0, 0]
+            fitBounds.call(this.map, bounds, opt)
+        }
 
 
         document.getElementById('zoom-in').addEventListener('click', e => this.map.zoomIn())
@@ -160,3 +166,6 @@ class Map {
 module.exports = new Map(config)
 
 list = require('./list')
+setTimeout(()=>{
+    sidepanel = require('./sidepanel')
+})
