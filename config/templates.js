@@ -220,10 +220,6 @@ module.exports = {
                         ${item.diffusion_monde ?
                             html`<p><b>${item.diffusion_monde}%</b> de représentations jouées à l’international</p>` : ''
                         }
-                        ${item.diffusion_monde ?
-                            html`<p><b>${item.diffusion_monde}%</b> de représentations jouées à l’international</p>` : ''
-                        }
-
 
 
                         ${reseaux_diff_compagnie.length ? html`
