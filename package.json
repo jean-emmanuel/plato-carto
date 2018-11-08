@@ -20,9 +20,11 @@
     "watch": "node scripts/reload.js & nodemon --watch src/scss -e scss -x \"npm run build-css\" & npm run build-js -- --watch & nodemon --watch src/mustache -e mustache --watch config/config.js -x \"npm run build-html\""
   },
   "dependencies": {
+    "@babel/plugin-transform-object-assign": "^7.0.0",
     "@turf/convex": "^6.0.3",
     "autoprefixer": "^9.3.1",
     "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-assign": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "^1.7.0",
     "babelify": "8.0.0",

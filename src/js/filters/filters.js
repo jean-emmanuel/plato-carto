@@ -44,7 +44,7 @@ class Group extends Filter {
         }
 
     }
-    
+
 }
 
 class Text extends Filter {

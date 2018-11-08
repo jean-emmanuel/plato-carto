@@ -82,7 +82,10 @@ module.exports = {
                         ${item.diffusion_festival_nom ?
                             html`<p>Festival jeune public : <b>${item.diffusion_festival_nom}</b></p>` : ''
                         }
-                        <p><b>${item.diffusion_total}</b> spectacles programmés dont <b>${item.diffusion_jp}</b> jeune public</p>
+                        ${item.diffusion_total ?
+                            html`<p><b>${item.diffusion_total}</b> spectacles programmés dont <b>${item.diffusion_jp || 0}</b> jeune public</p>` : ''
+                        }
+
                         ${item.diffusion_0_3ans ?
                             html`<p><b>${item.diffusion_0_3ans}</b> spectacle${item.diffusion_0_3ans > 1 ? 's' : ''} 0-3 ans` : ''
                         }
@@ -179,11 +182,11 @@ module.exports = {
                         </p>`
                         : ''
                     }
-                    ${item.lieu_creation || item.lieu_diffusion ? html`
+                    ${item.lieu_creation  === 'Oui'  || item.lieu_diffusion  === 'Oui' ? html`
                         <p>
                             <label>Dispose d'un lieu de${raw('&nbsp;')}</label>
-                            ${item.lieu_creation ? html`<span class="chip">création</span>` : ''}
-                            ${item.lieu_diffusion ? html`<span class="chip">diffusion</span>` : ''}
+                            ${item.lieu_creation === 'Oui' ? html`<span class="chip">création</span>` : ''}
+                            ${item.lieu_diffusion  === 'Oui' ? html`<span class="chip">diffusion</span>` : ''}
                         </p>`
                         : ''
                     }

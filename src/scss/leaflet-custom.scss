@@ -35,7 +35,8 @@
     &.cluster {
         i {
             bottom: 0;//-16px;
-            color: mix($base, $accent);
+            color: #555;
+            // color: mix($base, $accent);
         }
         .count {
             position: absolute;

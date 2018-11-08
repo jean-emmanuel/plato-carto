@@ -85,7 +85,8 @@ $inactive-color: #888;
             color: $inactive-color;
         }
         &.checkbox label span:before, .select-dropdown label input:not([disabled]) + span:before, .select-dropdown {
-            border-color: $inactive-color;
+            // border-color: $inactive-color;
+            // border-color: rgba(black, 0.2);
         }
         .select-wrapper .caret {
             fill: $inactive-color;
@@ -128,9 +129,9 @@ $inactive-color: #888;
     }
     .separator {
         margin: 35px 0;
-        width: 50%;
+        width: 100%;
         border-top: 1px solid #000;
-        opacity: 0.1;
+        opacity: 0.2;
     }
 
     .row .checkbox {
@@ -154,6 +155,8 @@ $inactive-color: #888;
             // font-size: 18px;
             .icon {
                 transition: transform .4s, top .4s;
+                margin-right: 22px!important;
+                margin-left: 2px!important;
             }
         }
         > .filter {

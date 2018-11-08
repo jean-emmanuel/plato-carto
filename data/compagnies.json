@@ -1496,11 +1496,11 @@
     ]
   },
   {
-    "nom": "Compagnie Pic A Son",
+    "nom": "Compagnie Pic À Son",
     "annee": 2013,
-    "adresse": "5 rue Montaigne",
-    "codepostal": 37000,
-    "ville": "Tours",
+    "adresse": "6 rue de l'Arche",
+    "codepostal": 72100,
+    "ville": "Le Mans",
     "mail": "cie.picason@gmail.com",
     "www": "http://ciepicason.wix.com/cie-picason",
     "reseaux": "",
@@ -1535,8 +1535,8 @@
     "agecible_6_12ans": "Oui",
     "agecible_12ans": "Non",
     "coords": [
-      47.3960935,
-      0.6977116
+        48.002631,
+        0.210895
     ]
   },
   {

@@ -23,48 +23,90 @@ module.exports = [
         }
     },
     {
-        type: 'checklist',
-        label: 'Type d\'organisation',
-        icon: 'home',
-        reset: true,
-        choices: {
-            compagnie: 'Compagnie',
-            structure: 'Structure'
-        },
-        filter: (data, value) => value.indexOf(data._type) !== -1
+        type: 'separator'
+    },
+    {
+        type: 'checkbox',
+        label: 'Compagnies / Artistes',
+        icon: 'map-marker',
+        // value: true,
+        filter: (data, value) => data._type === 'compagnie'
     },
     {
         type: 'group',
-        label: 'Réseaux',
-        icon: 'globe',
+        label: 'Filtres...',
+        collapse: true,
         reset: true,
-        inclusive: true,
+        disabled: (data, value, filters) => data._type !== 'compagnie',
         filters: [
             {
-                type: 'select',
-                label: 'Réseaux Jeune Publics',
-                choices: (()=>{
-                    var c = {},
-                        r = []
-                    markers.forEach(x => r = r.concat(x.reseaux.split('\n')))
-                    for (var i in r) {
-                        if (!c[r[i]] && r[i]) c[r[i]] = r[i]
-                    }
-                    return c
-                })(),
-                value: [],
-                filter: (data, value) => value.some(x => data.reseaux.indexOf(x) !== -1)
+                type: 'checklist',
+                label: 'Disposant d\'un lieu de',
+                choices: {
+                    "lieu_creation": "Création",
+                    "lieu_diffusion": 'Diffusion'
+                },
+                filter: (data, value) => value.every(x => data[x] === 'Oui')
             },
             {
-                type: 'checkbox',
-                label: 'Adhérent PlatO',
-                filter: (data, value) => data.plato === 'Oui'
+                type: 'checkradio',
+                label: 'Conventionnées',
+                choices: {
+                    "Oui": "Oui",
+                    "Non": 'Non'
+                },
+                filter: (data, value) => data.convention === value
+            },
+            {
+                type: 'checkradio',
+                label: 'Associée à une structure',
+                choices: {
+                    "Oui": "Oui",
+                    "Non": 'Non'
+                },
+                filter: (data, value) => value === 'Oui' ? data.structure_associee : !data.structure_associee
+            },
+            {
+                type: 'checklist',
+                label: 'Formes artistiques dominantes',
+                choices: {
+                    "formesartistiques_theatre": "Théâtre",
+                    "formesartistiques_danse": "Danse",
+                    "formesartistiques_cirque": "Cirque",
+                    "formesartistiques_musique": "Musique",
+                    "formesartistiques_marionette": "Marionnette",
+                    "formesartistiques_cinema": "Cinéma",
+                    "formesartistiques_theatreobjet": "Théâtre d'objet",
+                    "formesartistiques_autre": "Autre",
+                },
+                filter: (data, value) => value.some(x => x === "formesartistiques_autre" ? data[x] : data[x] !== 'Non')
+            },
+            {
+                type: 'checklist',
+                label: 'Tranches d\'âge du public',
+                choices: {
+                    "agecible_0_3ans": '0 – 3 ans',
+                    "agecible_3_6ans": '3 – 6 ans',
+                    "agecible_6_12ans": '6 – 12 ans',
+                    "agecible_12ans": 'À partir de 12 ans',
+                },
+                filter: (data, value) => value.every(x => data[x] === 'Oui')
             },
         ]
     },
     {
-        type: 'group',
+        type: 'separator'
+    },
+    {
+        type: 'checkbox',
         label: 'Structures',
+        icon: 'map-marker',
+        // value: true,
+        filter: (data, value) => data._type === 'structure'
+    },
+    {
+        type: 'group',
+        label: 'Filtres...',
         collapse: true,
         reset: true,
         disabled: (data, value, filters) => data._type !== 'structure',
@@ -131,68 +173,51 @@ module.exports = [
             },
         ]
     },
+    // {
+    //     type: 'checklist',
+    //     label: 'Type d\'organisation',
+    //     icon: 'home',
+    //     reset: true,
+    //     // value: ['compagnie', 'structure'],
+    //     choices: {
+    //         compagnie: 'Compagnie',
+    //         structure: 'Structure'
+    //     },
+    //     filter: (data, value) => value.indexOf(data._type) !== -1
+    // },
+    {
+        type: 'separator'
+    },
     {
         type: 'group',
-        label: 'Compagnies',
-        collapse: true,
+        label: 'Réseaux',
+        icon: 'globe',
         reset: true,
-        disabled: (data, value, filters) => data._type !== 'compagnie',
+        inclusive: true,
         filters: [
             {
-                type: 'checklist',
-                label: 'Disposant d\'un lieu de',
-                choices: {
-                    "lieu_creation": "Création",
-                    "lieu_diffusion": 'Diffusion'
-                },
-                filter: (data, value) => value.every(x => data[x] === 'Oui')
+                type: 'select',
+                label: 'Choisir des réseaux Jeune Public',
+                choices: (()=>{
+                    var c = {},
+                        r = []
+                    markers.forEach(x => r = r.concat(x.reseaux.split('\n')))
+                    for (var i in r) {
+                        if (!c[r[i]] && r[i]) c[r[i]] = r[i]
+                    }
+                    return c
+                })(),
+                value: [],
+                filter: (data, value) => value.some(x => data.reseaux.indexOf(x) !== -1)
             },
-            {
-                type: 'checkradio',
-                label: 'Conventionnées',
-                choices: {
-                    "Oui": "Oui",
-                    "Non": 'Non'
-                },
-                filter: (data, value) => data.convention === value
-            },
-            {
-                type: 'checkradio',
-                label: 'Associée à une structure',
-                choices: {
-                    "Oui": "Oui",
-                    "Non": 'Non'
-                },
-                filter: (data, value) => value === 'Oui' ? data.structure_associee : !data.structure_associee
-            },
-            {
-                type: 'checklist',
-                label: 'Formes artistiques dominantes',
-                choices: {
-                    "formesartistiques_theatre": "Théâtre",
-                    "formesartistiques_danse": "Danse",
-                    "formesartistiques_cirque": "Cirque",
-                    "formesartistiques_musique": "Musique",
-                    "formesartistiques_marionette": "Marionnette",
-                    "formesartistiques_cinema": "Cinéma",
-                    "formesartistiques_theatreobjet": "Théâtre d'objet",
-                    "formesartistiques_autre": "Autre",
-                },
-                filter: (data, value) => value.some(x => x === "formesartistiques_autre" ? data[x] : data[x] !== 'Non')
-            },
-            {
-                type: 'checklist',
-                label: 'Tranches d\'âge du public',
-                choices: {
-                    "agecible_0_3ans": '0 – 3 ans',
-                    "agecible_3_6ans": '3 – 6 ans',
-                    "agecible_6_12ans": '6 – 12 ans',
-                    "agecible_12ans": 'À partir de 12 ans',
-                },
-                filter: (data, value) => value.every(x => data[x] === 'Oui')
-            },
+            // {
+            //     type: 'checkbox',
+            //     label: 'Adhérent PlatO',
+            //     filter: (data, value) => data.plato === 'Oui'
+            // },
         ]
-    }
+    },
+
 
 
 ]
