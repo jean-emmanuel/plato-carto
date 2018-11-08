@@ -53,21 +53,29 @@ class Map {
         })
 
         var layers = document.getElementById('layers')
-        for (var l of options.layers) {
-            layers[l.label] = this.addLayer(...l.layer)
+        for (let l of options.layers) {
+            layers[l.label] = leaflet[l.layer[0]](l.layer[1], l.layer[2])
+            if (l.showLabel !== false) layers[l.label].bindTooltip(l.label,
+               {permanent: true, direction:"center"}
+           )
+            // layers[l.label] = this.addLayer(...l.layer)
             let control = layers.appendChild(html`
                 <label>
-                    <input type="checkbox" checked="true"/>
+                    <input type="checkbox" checked="${l.show}"/>
                     <span>${l.label}</span>
                 </label>
             `)
-            control.addEventListener('change', (e)=>{
-                if (e.target.checked) {
+            let change = (show)=>{
+                if (show) {
                     this.map.addLayer(layers[l.label])
                 } else {
                     this.map.removeLayer(layers[l.label])
                 }
+            }
+            control.addEventListener('change', (e)=>{
+                change(e.target.checked)
             })
+            change(l.show)
         }
 
         this.cache = this.markers.map((m)=>{

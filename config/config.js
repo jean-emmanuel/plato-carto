@@ -2,7 +2,8 @@ var html = require('nanohtml'),
     compagnies = require('../data/compagnies').map(x => {x._type = 'compagnie'; return x}),
     structures = require('../data/structures').map(x => {x._type = 'structure'; return x}),
     dataset = compagnies.concat(structures).sort((a, b) => a.nom[0].toLowerCase() > b.nom[0].toLowerCase()),
-    templates = require('./templates.js')
+    templates = require('./templates.js'),
+    polygon = require('./polygon')
 
 
 dataset = dataset.map((m)=>{
@@ -18,21 +19,16 @@ dataset = dataset.map((m)=>{
     return m
 })
 
-
-var convex = require('turf-convex')
-var geoJSONSet = dataset.map(m => ({
-      ...m,
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [m.coords[1], m.coords[0]]
+var reseaux = (()=>{
+    var c = [],
+        r = []
+    dataset.forEach(x => r = r.concat(x.reseaux.split('\n')))
+    for (var i in r) {
+        if (!c.includes(r[i]) && r[i]) c.push(r[i])
     }
-}))
-var c =convex({
-    type: "FeatureCollection",
-    features: geoJSONSet.filter(m => m.reseaux.includes('JP'))
-})
+    return c
+})()
+console.log(reseaux)
 
 module.exports = {
 
@@ -44,12 +40,19 @@ module.exports = {
     controlsPosition: 'topright',
     layers: [
         {
-            label: 'Région',
+            label: 'Pays de la Loire',
+            showLabel: false,
+            show: true,
             layer: ['geoJSON', require('../data/region-pays-de-la-loire.json'), {weight: 1.5, fillOpacity: 0.1}],
 
         }
-        // ['geoJSON', c, {weight: 1.5, fillOpacity: 0.1, fillColor: 'red'}]
-    ],
+    ].concat(reseaux.map(r => {
+        return {
+            label: r,
+            show: false,
+            layer: ['geoJSON', polygon(dataset.filter(m => m.reseaux.includes(r))), {weight: 1.5, color: 'red', fillColor: 'pink'}]
+        }
+    })).filter(l => l.layer[1] !== null),
     markers: dataset,
     iconClass: (item) => 'icon-' + item._type,
     tooltip: (item) => item.nom

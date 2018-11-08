@@ -47,7 +47,7 @@ html, body {
 
     path {
         // fill: $accent;
-        stroke: $accent;
+        // stroke: $accent;
     }
 
 }
@@ -87,13 +87,14 @@ html, body {
     width: auto;
     padding: 10px;
     color: #fff;
-    height:50px;
+    min-height:50px;
     i {
         line-height:30px;
     }
     label {
         color: inherit;
         display: none;
+        text-align: left;
         span {
             padding-left: 30px;
         }

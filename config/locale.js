@@ -1,6 +1,6 @@
 module.exports = {
 
-    version: 4,
+    version: 5,
 
 
     title: 'PlatO / Cartographie du spectacle jeune public en Pays de la Loire',
