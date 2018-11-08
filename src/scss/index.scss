@@ -85,17 +85,20 @@ html, body {
 
     @extend .control;
     width: auto;
-    padding: 5px 10px;
+    padding: 10px;
     color: #fff;
     height:50px;
     i {
-        line-height:40px;
+        line-height:30px;
     }
     label {
         color: inherit;
         display: none;
         span {
             padding-left: 30px;
+        }
+        &:nth-child(2):last-child {
+            line-height: 30px;
         }
     }
     label input:not(:checked) + span:before {
