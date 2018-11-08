@@ -1,0 +1,8 @@
+#init-loader .msg {
+    display: none;
+}
+#init-loader .indeterminate:before, #init-loader .indeterminate:after {
+    background: red;
+    right: 25%;
+    animation: none!important;
+}

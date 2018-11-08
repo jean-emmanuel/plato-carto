@@ -12,7 +12,7 @@
                 <div>
                     <div>
                         <!--[if !IE]>-->
-                        <em>{{loading}}</em>
+                        <em class="msg">{{loading}}</em>
                         <!--<![endif]-->
                         <!--[if IE]>
                         <em>{{internet_explorer}}</em>
@@ -21,7 +21,7 @@
                     </div>
 
                     <noscript>
-                        {{javascript}}
+                        <em>{{javascript}}</em>
                         <link href="./error.css?v{{version}}" rel="stylesheet">
                     </noscript>
                 </div>
