@@ -47,6 +47,7 @@
     "request": "^2.88.0",
     "screenfull": "^3.3.3",
     "through": "^2.3.8",
+    "turf-convex": "^3.0.12",
     "uglifyify": "5.0.1",
     "watchify": "^3.11.0",
     "ws": "^6.1.0"

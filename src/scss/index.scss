@@ -7,8 +7,8 @@
 @import 'MarkerCluster';
 @import 'leaflet-custom';
 
-@import 'materialize-custom';
 @import 'materialize';
+@import 'materialize-custom';
 
 @import 'typo';
 @import 'form';
@@ -46,7 +46,7 @@ html, body {
     transform: translate3d(0,0,0);
 
     path {
-        fill: $accent;
+        // fill: $accent;
         stroke: $accent;
     }
 
@@ -78,6 +78,40 @@ html, body {
         font-size: 12px;
         color: inherit!important;
         font-weight: bold;
+    }
+}
+
+#layers {
+
+    @extend .control;
+    width: auto;
+    padding: 5px 10px;
+    color: #fff;
+    height:50px;
+    i {
+        line-height:40px;
+    }
+    label {
+        color: inherit;
+        display: none;
+        span {
+            padding-left: 30px;
+        }
+    }
+    label input:not(:checked) + span:before {
+        border-color: #eee;
+    }
+    label input:checked + span:before {
+        border-bottom-color: #eee;
+        border-right-color: #eee;
+    }
+    &:hover {
+        i {
+            display: none;
+        }
+        label {
+            display: block;
+        }
     }
 }
 

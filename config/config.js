@@ -19,6 +19,21 @@ dataset = dataset.map((m)=>{
 })
 
 
+var convex = require('turf-convex')
+var geoJSONSet = dataset.map(m => ({
+      ...m,
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [m.coords[1], m.coords[0]]
+    }
+}))
+var c =convex({
+    type: "FeatureCollection",
+    features: geoJSONSet.filter(m => m.reseaux.includes('JP'))
+})
+
 module.exports = {
 
     tiles: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png',
@@ -28,7 +43,12 @@ module.exports = {
     maxZoom: 18,
     controlsPosition: 'topright',
     layers: [
-        ['geoJSON', require('../data/region-pays-de-la-loire.json'), {weight: 1.5, fillOpacity: 0.1}]
+        {
+            label: 'Région',
+            layer: ['geoJSON', require('../data/region-pays-de-la-loire.json'), {weight: 1.5, fillOpacity: 0.1}],
+
+        }
+        // ['geoJSON', c, {weight: 1.5, fillOpacity: 0.1, fillColor: 'red'}]
     ],
     markers: dataset,
     iconClass: (item) => 'icon-' + item._type,

@@ -3,6 +3,7 @@ var leaflet = require('leaflet'),
     templates = require('../../config/templates'),
     materialize = require('materialize-css'),
     modal = require('./modal'),
+    html = require('nanohtml'),
     sidepanel, list
 
 Object.assign(leaflet, require('leaflet.markercluster'))
@@ -50,8 +51,23 @@ class Map {
             attribution: 'Carte © <a href= "http://cartodb.com/attributions#basemaps">CartoDB</a>'
 
         })
+
+        var layers = document.getElementById('layers')
         for (var l of options.layers) {
-            this.addLayer(...l)
+            layers[l.label] = this.addLayer(...l.layer)
+            let control = layers.appendChild(html`
+                <label>
+                    <input type="checkbox" checked="true"/>
+                    <span>${l.label}</span>
+                </label>
+            `)
+            control.addEventListener('change', (e)=>{
+                if (e.target.checked) {
+                    this.map.addLayer(layers[l.label])
+                } else {
+                    this.map.removeLayer(layers[l.label])
+                }
+            })
         }
 
         this.cache = this.markers.map((m)=>{

@@ -10,10 +10,19 @@
         <div id="init-loader" class="valign-wrapper">
             <div>
                 <div>
-                    <div><em>{{loading}}</em></div>
+                    <div>
+                        <!--[if !IE]>-->
+                        <em>{{loading}}</em>
+                        <!--<![endif]-->
+                        <!--[if IE]>
+                        <em>{{internet_explorer}}</em>
+                        <link href="./error.css?v{{version}}" rel="stylesheet">
+                        <![endif]-->
+                    </div>
 
                     <noscript>
                         {{javascript}}
+                        <link href="./error.css?v{{version}}" rel="stylesheet">
                     </noscript>
                 </div>
                 <div class="progress">
@@ -60,6 +69,9 @@
         </div>
         <div id="map"></div>
         <div id="map-tools">
+            <div id="layers">
+                <i class="fa fa-fw fa-layer-group"></i>
+            </div>
             <div id="zoom">
                 <a id="zoom-in" class="waves-effect waves-light"><i class="fa fa-fw fa-plus"></i></a>
                 <a id="zoom-out" class="waves-effect waves-light"><i class="fa fa-fw fa-minus"></i></a>
