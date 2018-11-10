@@ -78,7 +78,7 @@ class Filter extends FilterBase {
 
         if (options.label) {
             if (options.icon) {
-                var icon = html`<i class="fas faw icon fa-${options.icon}"></i>`
+                var icon = html`<i class="fas fa-fw icon fa-${options.icon}"></i>`
 
             }
             this.label = html`<label for="${this.id}">${icon}<span>${options.label}</span></label>`

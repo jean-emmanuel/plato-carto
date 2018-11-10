@@ -51,7 +51,7 @@ b = browserify(inputPath, {
     plugin: plugins
  })
 
-b.transform(ignoreWrapper(babelify), {presets: ["env"]})
+b.transform(ignoreWrapper(babelify))
 b.transform(nanohtml)
 if (prod) b = b.transform(ignoreWrapper(uglifyify), {global: true})
 

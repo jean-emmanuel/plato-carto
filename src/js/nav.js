@@ -23,10 +23,10 @@ materialize.Tooltip.init(document.getElementById('nav').querySelectorAll('[data-
 
 // aide
 
-document.getElementById('help').addEventListener('click', (e)=>{
-    e.preventDefault()
-    modal(templates.helpTitle(), templates.help())
-})
+// document.getElementById('help').addEventListener('click', (e)=>{
+//     e.preventDefault()
+//     modal(templates.helpTitle(), templates.help())
+// })
 
 // infos
 

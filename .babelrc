@@ -1,8 +1,9 @@
 {
   "presets": [
-    ["env", {
-      "targets": "> 0.25%, not dead"
+    ["@babel/env", {
+      "targets": "> 0.25%, not dead",
+      "useBuiltIns": "usage"
     }]
   ],
-  "plugins": ["transform-object-rest-spread", "nanohtml"]
+  "plugins": ["@babel/plugin-proposal-object-rest-spread", "module:nanohtml"]
 }

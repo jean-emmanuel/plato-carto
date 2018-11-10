@@ -7,7 +7,7 @@ var sass = require('node-sass'),
 
 var inputPath = path.resolve(__dirname + '/../src/scss/index.scss'),
     outputPath = path.resolve(__dirname + '/../app/styles.css'),
-    includes = ['/../node_modules/leaflet/dist/', '/../node_modules/leaflet.markercluster/dist/', '/../node_modules/normalize.css/', '/../node_modules/materialize-css/sass/', '/../node_modules/materialize-css/sass/components/']
+    includes = ['/../node_modules/leaflet/dist/', '/../node_modules/leaflet.markercluster/dist/', '/../node_modules/normalize.css/', '/../node_modules/materialize-css/sass/', '/../node_modules/materialize-css/sass/components/forms/', '/../node_modules/materialize-css/sass/components/']
 
 var result = sass.renderSync({
     file: inputPath,

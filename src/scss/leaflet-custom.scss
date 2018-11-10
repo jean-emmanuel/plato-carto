@@ -20,22 +20,12 @@
         }
     }
 
-    &.icon-compagnie {
-        i {
-            color: $accent;
-        }
-    }
-
-    &.icon-structure {
-        i {
-            color: $base;
-        }
-    }
+    color:$accent;
 
     &.cluster {
         i {
             bottom: 0;//-16px;
-            color: #555;
+            color: $accent;
             // color: mix($base, $accent);
         }
         .count {

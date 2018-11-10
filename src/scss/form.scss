@@ -84,12 +84,32 @@ $inactive-color: #888;
         .select-dropdown li span {
             color: $inactive-color;
         }
-        &.checkbox label span:before, .select-dropdown label input:not([disabled]) + span:before, .select-dropdown {
-            // border-color: $inactive-color;
+        .select-dropdown label input:not([disabled]) + span:before, .select-dropdown {
+            border-color: $inactive-color;
             // border-color: rgba(black, 0.2);
         }
         .select-wrapper .caret {
             fill: $inactive-color;
+        }
+    }
+
+    .checkbox {
+        input:checked + span {
+            color: $secondary-color;
+        }
+        input:not(:checked) + span {
+            color: $inactive-color;
+        }
+        .has-icon {
+            &:before {
+                display: none;
+            }
+            position: relative;
+            .icon {
+                position: absolute;
+                left: 2px;
+                top: 4px;
+            }
         }
     }
 
@@ -99,7 +119,7 @@ $inactive-color: #888;
         }
         input {
             display: inline-block;
-            width: 75%;
+            width: 75%!important;
         }
         .helper {
             display: inline-block;
@@ -149,14 +169,16 @@ $inactive-color: #888;
             display: block;
             padding: 10px;
             padding-right: 0;
+            padding-left: 46px;
             width: auto;
             position: relative;
             margin-left: -10px;
             // font-size: 18px;
-            .icon {
+            > .icon {
+                position: absolute!important;
+                left: 12px!important;
+                top: 14px!important;
                 transition: transform .4s, top .4s;
-                margin-right: 22px!important;
-                margin-left: 2px!important;
             }
         }
         > .filter {

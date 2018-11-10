@@ -28,7 +28,6 @@ var reseaux = (()=>{
     }
     return c
 })()
-console.log(reseaux)
 
 module.exports = {
 
@@ -41,18 +40,21 @@ module.exports = {
     layers: [
         {
             label: 'Pays de la Loire',
-            showLabel: false,
             show: true,
             layer: ['geoJSON', require('../data/region-pays-de-la-loire.json'), {weight: 1.5, fillOpacity: 0.1}],
 
         }
-    ].concat(reseaux.map(r => {
-        return {
-            label: r,
-            show: false,
-            layer: ['geoJSON', polygon(dataset.filter(m => m.reseaux.includes(r))), {weight: 1.5, color: 'red', fillColor: 'pink'}]
-        }
-    })).filter(l => l.layer[1] !== null),
+    ]
+    .concat(
+        reseaux.map(r=>{
+            var lines = polygon(dataset.filter(m => m.reseaux.includes(r)))
+            return {
+                label: r,
+                tooltip: lines.geometry.coordinates[0][0],
+                layer: ['geoJSON', lines]
+            }
+        })
+    ),
     markers: dataset,
     iconClass: (item) => 'icon-' + item._type,
     tooltip: (item) => item.nom

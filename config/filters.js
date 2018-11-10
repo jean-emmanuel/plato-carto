@@ -29,7 +29,8 @@ module.exports = [
         type: 'checkbox',
         label: 'Compagnies / Artistes',
         icon: 'map-marker',
-        // value: true,
+        disabled: (data, value) => value,
+        value: true,
         filter: (data, value) => data._type === 'compagnie'
     },
     {
@@ -101,7 +102,9 @@ module.exports = [
         type: 'checkbox',
         label: 'Structures',
         icon: 'map-marker',
-        // value: true,
+        class: 'structures',
+        disabled: (data, value) => value,
+        value: true,
         filter: (data, value) => data._type === 'structure'
     },
     {
@@ -109,6 +112,7 @@ module.exports = [
         label: 'Filtres...',
         collapse: true,
         reset: true,
+        class: 'structures',
         disabled: (data, value, filters) => data._type !== 'structure',
         filters: [
             {

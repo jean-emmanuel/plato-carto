@@ -52,30 +52,27 @@ class Map {
 
         })
 
+
         var layers = document.getElementById('layers')
+        this.layers = {}
+
         for (let l of options.layers) {
-            layers[l.label] = leaflet[l.layer[0]](l.layer[1], l.layer[2])
-            if (l.showLabel !== false) layers[l.label].bindTooltip(l.label,
-               {permanent: true, direction:"center"}
-           )
-            // layers[l.label] = this.addLayer(...l.layer)
+            this.layers[l.label] = leaflet[l.layer[0]](l.layer[1], l.layer[2])
+            if (l.tooltip) this.layers[l.label].addLayer(
+                leaflet.marker(l.tooltip.reverse(), {opacity: 0.5}).bindTooltip(l.label,
+                    {permanent: true, direction:"center", offset: [0, -25]}
+                )
+            )
             let control = layers.appendChild(html`
                 <label>
                     <input type="checkbox" checked="${l.show}"/>
                     <span>${l.label}</span>
                 </label>
             `)
-            let change = (show)=>{
-                if (show) {
-                    this.map.addLayer(layers[l.label])
-                } else {
-                    this.map.removeLayer(layers[l.label])
-                }
-            }
             control.addEventListener('change', (e)=>{
-                change(e.target.checked)
+                this.toggleLayer(l.label, e.target.checked)
             })
-            change(l.show)
+            if (l.show) this.toggleLayer(l.label, true)
         }
 
         this.cache = this.markers.map((m)=>{
@@ -155,6 +152,18 @@ class Map {
     addLayer(type, ...args) {
 
         return leaflet[type](...args).addTo(this.map)
+
+    }
+
+    toggleLayer(label, state) {
+
+        var show = state === undefined ? !this.map.hasLayer(this.layers[label]) : state
+
+        if (show) {
+            this.map.addLayer(this.layers[label])
+        } else {
+            this.map.removeLayer(this.layers[label])
+        }
 
     }
 

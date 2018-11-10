@@ -1,0 +1,46 @@
+
+.leaflet-marker-icon {
+
+    &.icon-compagnie {
+        i {
+            color: $accent;
+        }
+    }
+
+    &.icon-structure {
+        i {
+            color: $base;
+        }
+    }
+
+}
+
+#form {
+    .checkbox.structures {
+        input:checked + span {
+            color: $accent;
+        }
+    }
+
+    .group.structures:not(.inactive) {
+        $radio-fill-color: $accent;
+        @import '_range';
+        color: $accent;
+        .filter:not(.inactive), &.filter:not(.inactive) {
+            color: $accent;
+        }
+        .checkbox {
+            input:checked + span {
+                color: $accent;
+                &:before {
+                    border-bottom-color: $accent;
+                    border-right-color: $accent;
+                }
+            }
+        }
+        .number .thumb {
+            background: $accent;
+        }
+    }
+
+}

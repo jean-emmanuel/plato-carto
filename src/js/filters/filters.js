@@ -102,11 +102,15 @@ class CheckBox extends Filter {
 
     constructor(o) {
 
+        if (o.icon) {
+            var icon = html`<i class="fas fa-fw icon fa-${o.icon}"></i>`
+        }
+
         var options = {
             input: html`
                 <label>
                     <input type="checkbox"/>
-                    <span>${o.label}</span>
+                    <span class="${icon ? 'has-icon' : ''}">${icon}${o.label}</span>
                 </label>`,
             value: false,
             ...o,
