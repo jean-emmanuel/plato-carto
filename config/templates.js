@@ -315,7 +315,7 @@ module.exports = {
                 sur <a href="https://github.com/jean-emmanuel/plato-carto" target="_blank">https://github.com/jean-emmanuel/plato-carto</a>.
             </p>
             <p>
-                Certaines foncitonnalités ont été librement inspirées de la carte <a href="https://presdecheznous.fr" target="_blank">presdecheznous.fr</a>.
+                Certaines fonctionnalités ont été librement inspirées de la carte <a href="https://presdecheznous.fr" target="_blank">presdecheznous.fr</a>.
             </p>
 
         </div>
