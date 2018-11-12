@@ -303,8 +303,8 @@ module.exports = {
 
             <p>
                 Les données utilisées pour la réalisation de cette carte sont
-                publiée sous licence <a href="https://spdx.org/licenses/ODbL-1.0.html#licenseText" target="_blank">ODC Open Database License (ODbL)</a>
-                à l'adresse <a href="" target="_blank">https://www.data.gouv.fr/fr/licences</a>.
+                publiées sous licence <a href="https://spdx.org/licenses/ODbL-1.0.html#licenseText" target="_blank">ODC Open Database License (ODbL)</a>
+                à l'adresse <a href="https://github.com/jean-emmanuel/plato-carto/tree/master/data" target="_blank">https://github.com/jean-emmanuel/plato-carto/tree/master/data</a>.
             </p>
 
             <h4>Code source</h4>
