@@ -63,8 +63,6 @@ function process(){
         markers.sort((a, b) => a.nom[0].toLowerCase() < b.nom[0].toLowerCase() ? -1 : 1)
     }
 
-    console.log(markers[0])
-
     listCount.innerText = markers.length
 
     if (open) {

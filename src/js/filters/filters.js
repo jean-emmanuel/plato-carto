@@ -307,7 +307,7 @@ class CheckRadio extends Filter {
                     value = k
                 }
             } else {
-                this.checkboxes[k].checkbox.checked = false
+                this.checkboxes[k].setValue(false)
             }
         }
 
