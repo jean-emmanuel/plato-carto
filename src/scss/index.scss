@@ -194,12 +194,17 @@ html, body {
 
 #list-toggle {
 
-    @extend .control;
+    .toggle {
 
-    width: 50px;
-    float: left;
-    transition: background-color .2s;
-    position: relative;
+        @extend .control;
+        @extend .shadow;
+
+        width: 50px;
+        float: left;
+        transition: background-color .2s;
+        position: relative;
+
+    }
 
     #list-count {
         position: absolute;
@@ -216,17 +221,34 @@ html, body {
         transition: background-color .5s, border-color .5s;
     }
 
+    .back {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .5s;
+        margin-left: 15px;
+        position: absolute;
+        width: 200px;
+    }
+
     &.on {
-        background: $accent;
-        color: #fff;
+        display: block;
+        width: 300px;
+        .toggle {
+            background: $accent;
+            color: #fff;
+        }
         #list-count {
             background: $base;
             border-color: $accent;
 
         }
+        .back {
+            opacity: 1;
+            pointer-events: auto,
+        }
     }
 
-    @extend .shadow;
+
 
 }
 
@@ -299,7 +321,8 @@ html, body {
     right:0;
     transform-origin: left;
     transform: scale3d(0, 1, 1);
-    background: lighten($accent, 50);
+    background: #fff;
+    // background: $accent;
     // box-shadow: 0 0 5px 0 $accent;
     height: 2px;
     z-index: 10;
@@ -370,8 +393,11 @@ html, body {
 }
 
 [data-coords] {
-    color: $accent;
+    color: $base;
     cursor: pointer;
+    &.accent {
+        color: $accent;
+    }
 }
 
 

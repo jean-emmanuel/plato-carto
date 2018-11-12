@@ -3,7 +3,6 @@ var leaflet = require('leaflet'),
     templates = require('../../config/templates'),
     materialize = require('materialize-css'),
     modal = require('./modal'),
-    html = require('nanohtml'),
     sidepanel, list
 
 Object.assign(leaflet, require('leaflet.markercluster'))
@@ -22,6 +21,7 @@ class Map {
             markers: [],
             iconClass: marker => '',
             tooltip: marker => 'Title'
+
         }, o)
 
         this.markers = options.markers
@@ -50,31 +50,8 @@ class Map {
             attribution: 'Carte © <a href= "http://cartodb.com/attributions#basemaps">CartoDB</a>'
 
         })
-
-
-        var layers = document.getElementById('layers')
-        this.layers = {}
-
-        for (let l of options.layers) {
-            this.layers[l.label] = leaflet[l.layer[0]](l.layer[1], l.layer[2])
-            if (l.tooltip) this.layers[l.label].addLayer(
-                leaflet.marker(l.tooltip.reverse(), {opacity: 0.5}).bindTooltip(l.htmlLabel || l.label,
-                    {permanent: true, direction:"center", offset: [0, -25], className: l.htmlLabel.indexOf('<a') > -1 ? 'clickable' : ''}
-                )
-            )
-            if (l.control !== false) {
-                let control = layers.appendChild(html`
-                    <label>
-                        <input type="checkbox" checked="${l.show}"/>
-                        <span>${l.label}</span>
-                    </label>
-                `)
-                control.addEventListener('change', (e)=>{
-                    this.toggleLayer(l.label, e.target.checked)
-                })
-                this.layers[l.label]._control = control.getElementsByTagName('input')[0]
-            }
-            if (l.show) this.toggleLayer(l.label, true)
+        for (var l of options.layers) {
+            this.addLayer(...l)
         }
 
         this.cache = this.markers.map((m)=>{
@@ -82,19 +59,23 @@ class Map {
             return leaflet.marker(m.coords, {icon: icon, _data: m, bubblingMouseEvents: true})
         })
 
-        this.markerLayer = this.addLayer('markerClusterGroup', {
-            showCoverageOnHover: false,
-            // maxClusterRadius: 60,
-            iconCreateFunction: function(cluster) {
-                return leaflet.divIcon({
-                    html: options.clusterIcon ? options.clusterIcon(cluster) : `
-                        <i class="fas fa-fw fa-circle"></i><i class="fas fa-fw fa-circle icon-shadow"></i>
-                        <div class="count">${cluster.getChildCount()}</div>
-                    `,
-                    className: 'cluster'
-                })
-            }
-        })
+        this.markerLayer = this.addLayer('featureGroup', {})
+        this.markerLayers = {}
+        for (var cp of [72, 49, 44, 85, 53]) {
+            this.markerLayers[cp] = leaflet.markerClusterGroup({
+                showCoverageOnHover: false,
+                maxClusterRadius: 300,
+                iconCreateFunction: function(cluster) {
+                    return leaflet.divIcon({
+                        html: `
+                            <i class="fas fa-fw fa-circle"></i><i class="fas fa-fw fa-circle icon-shadow"></i>
+                            <div class="count">${cluster.getChildCount()}</div>
+                        `,
+                        className: 'cluster'
+                    })
+                }
+            }).addTo(this.markerLayer)
+        }
 
 
         // Tooltips & Modals
@@ -157,20 +138,6 @@ class Map {
 
     }
 
-    toggleLayer(label, state) {
-
-        var show = state === undefined ? !this.map.hasLayer(this.layers[label]) : state
-
-        if (show) {
-            this.map.addLayer(this.layers[label])
-        } else {
-            this.map.removeLayer(this.layers[label])
-        }
-
-        if (this.layers[label]._control) this.layers[label]._control.checked = show
-
-    }
-
     addControl(type, ...args) {
 
         return leaflet.control[type](...args).addTo(this.map)
@@ -188,14 +155,15 @@ class Map {
 
         for (var i = 0; i < this.markers.length; i++) {
 
-            var m = this.markers[i]
-
+            var m = this.markers[i],
+                cp = String(m.codepostal).slice(0,2)
+            if (!this.markerLayers[cp]) continue
             if (filter && !filter(m)) {
                 this.markers[i]._visible = false
-                this.markerLayer.removeLayer(this.cache[i])
+                this.markerLayer[cp].removeLayer(this.cache[i])
             } else {
                 this.markers[i]._visible = true
-                this.cache[i].addTo(this.markerLayer)
+                this.cache[i].addTo(this.markerLayers[cp])
             }
 
 

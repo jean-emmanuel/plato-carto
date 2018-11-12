@@ -2,6 +2,7 @@ var html = require('nanohtml'),
     store = require('./store'),
     materialize = require('materialize-css'),
     {deepEqual, deepCopy} = require('../utils'),
+    map = require('../map'),
     filterTypes
 
 class FilterBase {
@@ -76,6 +77,9 @@ class Filter extends FilterBase {
 
         this.html = options.html
 
+        this.changeCallback = options.onChange
+
+
         if (options.label) {
             if (options.icon) {
                 var icon = html`<i class="fas fa-fw icon fa-${options.icon}"></i>`
@@ -146,6 +150,7 @@ class Filter extends FilterBase {
             this.filters[i].reset()
         }
         this.checkInactive()
+        if (this.changeCallback) this.changeCallback(this.value, store, map)
 
     }
 
@@ -165,6 +170,8 @@ class Filter extends FilterBase {
         this.checkInactive()
 
         this.parent.onChange(e, undefined)
+
+        if (this.changeCallback) this.changeCallback(this.value, store, map)
 
     }
 

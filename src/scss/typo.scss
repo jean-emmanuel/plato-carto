@@ -47,7 +47,7 @@ table td {
 }
 
 .bloc-1 {
-    border-color: $accent;
+    border-color: $base;
 }
 // .bloc-1 + .bloc-1,
 // .bloc-2 + .bloc-2,
@@ -56,8 +56,8 @@ table td {
 //     padding-top: 10px;
 // }
 .bloc-2 {
-    border-color: adjust-hue($accent,90);
+    border-color: $accent;
 }
 .bloc-3 {
-    border-color: adjust-hue($accent,180);
+    border-color: adjust-hue($base,120);
 }

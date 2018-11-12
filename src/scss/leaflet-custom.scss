@@ -25,7 +25,7 @@
     &.cluster {
         i {
             bottom: 0;//-16px;
-            color: $accent;
+            color: $base;
             // color: mix($base, $accent);
         }
         .count {
@@ -42,4 +42,8 @@
         }
     }
 
+}
+
+.leaflet-tooltip.clickable {
+    pointer-events: auto!important;
 }

@@ -17,17 +17,31 @@ module.exports = (dataset) => {
         features: geoJSONSet
     }).geometry.coordinates
 
-    var polyline = {
-        "type": "Feature",
-        "properties": {},
-        "geometry": {
-            "type": "MultiLineString",
-            "coordinates": geoJSONSet.map(m => {
-                return [center, m.geometry.coordinates]
-            })
-        }
+    var network = {
+        type: 'FeatureCollection',
+        features: [
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "MultiLineString",
+                    "coordinates": geoJSONSet.map(m => {
+                        return [center, m.geometry.coordinates]
+                    })
+                }
+            }
+        ]
     }
 
-    return polyline
+    if (geoJSONSet.length > 3) {
+        network.features.push(
+            convex({
+                type: "FeatureCollection",
+                features: geoJSONSet
+            })
+        )
+    }
+
+    return network
 
 }

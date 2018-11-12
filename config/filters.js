@@ -23,7 +23,23 @@ module.exports = [
         }
     },
     {
-        type: 'separator'
+        type: 'select',
+        label: 'Départements',
+        choices: {
+            "44": 'Loire-Atlantique',
+            "49": 'Maine-Et-Loire',
+            "53": 'Mayenne',
+            "72": 'Sarthe',
+            "85": 'Vendée',
+        },
+        filter: (data, value) => value.some(x => String(data.codepostal).slice(0,2) === x),
+        onChange: (value, filters, map)=>{
+            map.toggleLayer('Départements', !!value.length)
+        }
+    },
+    {
+        type: 'separator',
+        class: 'transparent'
     },
     {
         type: 'checkbox',
@@ -31,7 +47,7 @@ module.exports = [
         icon: 'map-marker',
         disabled: (data, value) => value,
         value: true,
-        filter: (data, value) => data._type === 'compagnie'
+        filter: (data, value) => data._type !== 'compagnie'
     },
     {
         type: 'group',
@@ -91,7 +107,7 @@ module.exports = [
                     "agecible_6_12ans": '6 – 12 ans',
                     "agecible_12ans": 'À partir de 12 ans',
                 },
-                filter: (data, value) => value.every(x => data[x] === 'Oui')
+                filter: (data, value) => value.some(x => data[x] === 'Oui')
             },
         ]
     },
@@ -105,7 +121,7 @@ module.exports = [
         class: 'structures',
         disabled: (data, value) => value,
         value: true,
-        filter: (data, value) => data._type === 'structure'
+        filter: (data, value) => data._type !== 'structure'
     },
     {
         type: 'group',
@@ -123,7 +139,7 @@ module.exports = [
                     activite_diffusion: 'Diffusion',
                     activite_actionculturelle : 'Action Culturelle'
                 },
-                filter: (data, value) => value.every(x => data[x] === 'Oui')
+                filter: (data, value) => value.some(x => data[x] === 'Oui')
             },
             {
                 type: 'group',
@@ -155,7 +171,7 @@ module.exports = [
                     "diffusion_6_12ans": '6 – 12 ans',
                     "diffusion_12ans": 'À partir de 12 ans',
                 },
-                filter: (data, value) => value.every(x => data[x] > 0)
+                filter: (data, value) => value.some(x => data[x] > 0)
             },
             {
                 type: 'number',
@@ -173,22 +189,10 @@ module.exports = [
                     "actionculturelle_periscolaire": "Périscolaire",
                     "actionculturelle_extrascolaire": "Extrascolaire",
                 },
-                filter: (data, value) => value.every(x => data[x] === 'Oui')
+                filter: (data, value) => value.some(x => data[x] === 'Oui')
             },
         ]
     },
-    // {
-    //     type: 'checklist',
-    //     label: 'Type d\'organisation',
-    //     icon: 'home',
-    //     reset: true,
-    //     // value: ['compagnie', 'structure'],
-    //     choices: {
-    //         compagnie: 'Compagnie',
-    //         structure: 'Structure'
-    //     },
-    //     filter: (data, value) => value.indexOf(data._type) !== -1
-    // },
     {
         type: 'separator'
     },
@@ -202,6 +206,7 @@ module.exports = [
             {
                 type: 'select',
                 label: 'Choisir des réseaux Jeune Public',
+                id: 'reseaux',
                 choices: (()=>{
                     var c = {},
                         r = []
@@ -212,16 +217,15 @@ module.exports = [
                     return c
                 })(),
                 value: [],
-                filter: (data, value) => value.some(x => data.reseaux.indexOf(x) !== -1)
+                filter: (data, value) => value.some(x => data.reseaux.indexOf(x) !== -1),
+                onChange: (value, filters, map)=>{
+                    for (var c in filters.reseaux.choices) {
+                        map.toggleLayer(c, value.includes(c))
+                    }
+                }
             },
-            // {
-            //     type: 'checkbox',
-            //     label: 'Adhérent PlatO',
-            //     filter: (data, value) => data.plato === 'Oui'
-            // },
         ]
     },
-
 
 
 ]

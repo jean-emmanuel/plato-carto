@@ -1,6 +1,7 @@
 var html =require('nanohtml'),
     raw = require('nanohtml/raw'),
-    locale = require('./locale')
+    locale = require('./locale'),
+    reseaux = require('../data/reseaux')
 
 module.exports = {
     listView: (item) => {
@@ -11,9 +12,9 @@ module.exports = {
                     ${item.nom} <span class="chip">${item._type}</span>
                 </h3>
                 <p>
-                    <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt"></i> ${item.adresse}, ${item.codepostal} ${item.ville}<br/>
+                    <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt ${item._type === 'structure' ? 'accent' : ''}"></i> ${item.adresse}, ${item.codepostal} ${item.ville}<br/>
                     ${item.www ?
-                        html`<span><i class="fas fa-fw fa-globe"></i> <a href="${item.www}">${item.www}</a><br/></span>` : ''
+                        html`<span><i class="fas fa-fw fa-globe"></i> <a href="${item.www}" target="_blank">${item.www}</a><br/></span>` : ''
                     }
                     ${item.mail ?
                         html`<span><i class="fas fa-fw fa-at"></i> <a href="mailto:${item.mail}">${item.mail}</a><br/></span>` : ''
@@ -38,9 +39,9 @@ module.exports = {
             return html`
                 <div>
                     <p>
-                        <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt"></i> ${item.adresse}, ${item.codepostal} ${item.ville}<br/>
+                        <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt accent"></i> ${item.adresse}, ${item.codepostal} ${item.ville}<br/>
                         ${item.www ?
-                            html`<span><i class="fas fa-fw fa-globe"></i> <a href="${item.www}">${item.www}</a><br/></span>` : ''
+                            html`<span><i class="fas fa-fw fa-globe"></i> <a href="${item.www}" target="_blank">${item.www}</a><br/></span>` : ''
                         }
                         ${item.mail ?
                             html`<span><i class="fas fa-fw fa-at"></i> <a href="mailto:${item.mail}">${item.mail}</a><br/></span>` : ''
@@ -61,21 +62,31 @@ module.exports = {
                     ${item.reseaux ? html`
                         <p>
                         <label>Membre de</label>
-                        ${item.reseaux.split('\n').map(reseau => html`
+                        ${item.reseaux.split('\n').map(r => html`
                             <span class="chip">
-                                ${reseau}
+                                ${
+                                    reseaux[r] ? html`<a href="${reseaux[r]}" target="_blank">${r}</a>` : r
+                                }
                             </span>
                         `)}
                         </p>`
                         : ''
                     }
 
-                    <div class="bloc bloc-1">
-                        <h4>Aide à la création jeune public 2017-2018</h4>
-                        <p><b>${item.aidecreation_preachat || 0}</b> représentation${item.aidecreation_preachat > 1 ? 's' : ''} en préachat</p>
-                        <p><b>${item.aidecreation_coprod || 0}</b> création${item.aidecreation_coprod > 1 ? 's' : ''} en (co)production</p>
-                        <p><b>${item.aidecreation_residence || 0}</b> équipe${item.aidecreation_residence > 1 ? 's' : ''} en résidence</p>
-                    </div>
+                    ${item.aidecreation_preachat || item.aidecreation_coprod || item.aidecreation_residence ? html`
+                        <div class="bloc bloc-1">
+                            <h4>Aide à la création jeune public 2017-2018</h4>
+                            ${item.aidecreation_preachat ? html`
+                                <p><b>${item.aidecreation_preachat}</b> représentation${item.aidecreation_preachat > 1 ? 's' : ''} en préachat</p>
+                            ` : ''}
+                            ${item.aidecreation_coprod ? html`
+                                <p><b>${item.aidecreation_coprod}</b> création${item.aidecreation_coprod > 1 ? 's' : ''} en (co)production</p>
+                            ` : ''}
+                            ${item.aidecreation_residence ? html`
+                                <p><b>${item.aidecreation_residence}</b> équipe${item.aidecreation_residence > 1 ? 's' : ''} en résidence</p>
+                            ` : ''}
+                        </div>
+                    ` : ''}
 
                     <div class="bloc bloc-2">
                         <h4>Diffusion 2017-2018</h4>
@@ -159,7 +170,7 @@ module.exports = {
                     <p>
                         <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt"></i> ${item.adresse}, ${item.codepostal} ${item.ville}<br/>
                         ${item.www ?
-                            html`<span><i class="fas fa-fw fa-globe"></i> <a href="${item.www}">${item.www}</a><br/></span>` : ''
+                            html`<span><i class="fas fa-fw fa-globe"></i> <a href="${item.www}" target="_blank">${item.www}</a><br/></span>` : ''
                         }
                         ${item.mail ?
                             html`<span><i class="fas fa-fw fa-at"></i> <a href="mailto:${item.mail}">${item.mail}</a><br/></span>` : ''
@@ -282,25 +293,28 @@ module.exports = {
             <h4>Mentions Légales</h4>
 
             <ul class="browser-default">
-                <li>Hébergement: ?</li>
+                <li>Hébergement: Jimdo</li>
                 <li>Publication: PlatO</li>
-                <li>Réalisation: <a href="https://ammd.net">Jeannot / AMMD</a></li>
+                <li>Réalisation: <a href="https://ammd.net" target="_blank">Jeannot / AMMD</a></li>
             </ul>
 
             <h4>Données</h4>
 
             <p>
                 Les données utilisées pour la réalisation de cette carte sont
-                publiée sous licence <a href="https://spdx.org/licenses/ODbL-1.0.html#licenseText">ODC Open Database License (ODbL)</a>
-                à l'adresse <a href="">https://www.data.gouv.fr/fr/licences</a>.
+                publiée sous licence <a href="https://spdx.org/licenses/ODbL-1.0.html#licenseText" target="_blank">ODC Open Database License (ODbL)</a>
+                à l'adresse <a href="" target="_blank">https://www.data.gouv.fr/fr/licences</a>.
             </p>
 
             <h4>Code source</h4>
 
-            <p>Cette carte à été réalisée integralement avec des logiciels libres.</p>
+            <p>Cette carte à été réalisée uniquement avec des logiciels libres.</p>
             <p>
-                Son code source est publié sous licence <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU/GPL-3.0</a>
-                sur <a href="https://github.com/jean-emmanuel/plato-carto">https://github.com/jean-emmanuel/plato-carto</a>.
+                Son code source est publié sous licence <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU/GPL-3.0</a>
+                sur <a href="https://github.com/jean-emmanuel/plato-carto" target="_blank">https://github.com/jean-emmanuel/plato-carto</a>.
+            </p>
+            <p>
+                Certaines foncitonnalités ont été librement inspirées de la carte <a href="https://presdecheznous.fr" target="_blank">presdecheznous.fr</a>.
             </p>
 
         </div>

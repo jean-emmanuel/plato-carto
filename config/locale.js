@@ -14,7 +14,7 @@ module.exports = {
     fullscreen: 'Plein écran',
     loading: 'Chargement en cours',
     javascript: 'Cette page nécessite l\'activation de javascript pour être affichée correctement.',
-    internet_explorer: 'Ce site nécessite un navgateur moderne pour être affiché correctement.'
-
+    internet_explorer: 'Ce site nécessite un navgateur moderne pour être affiché correctement.',
+    back_to_map: 'Retour à la carte',
 
 }

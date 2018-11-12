@@ -58,10 +58,12 @@ function process(){
     var markers = map.getVisibleMarkers()
 
     if (markers.every(x => x._score !== undefined)) {
-        markers.sort((a, b) => b._score - a._score ||  a.nom[0].toLowerCase() > b.nom[0].toLowerCase())
+        markers.sort((a, b) => b._score - a._score || (a.nom[0].toLowerCase() < b.nom[0].toLowerCase() ? -1 : 1))
     } else {
-        markers.sort((a, b) => a.nom[0].toLowerCase() > b.nom[0].toLowerCase())
+        markers.sort((a, b) => a.nom[0].toLowerCase() < b.nom[0].toLowerCase() ? -1 : 1)
     }
+
+    console.log(markers[0])
 
     listCount.innerText = markers.length
 

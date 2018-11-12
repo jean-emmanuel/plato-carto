@@ -3,13 +3,80 @@
 
     &.icon-compagnie {
         i {
-            color: $accent;
+            color: $base;
         }
     }
 
     &.icon-structure {
         i {
-            color: $base;
+            color: $accent;
+        }
+    }
+
+}
+
+.cluster {
+
+    &:before {
+        content:"";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        top: -14px;
+        left: -14px;
+        background: black!important;
+        opacity: 0.1;
+        transform-origin: center bottom;
+        transform: skewX(-30deg) scaleY(.7);
+        z-index: 0
+    }
+
+    .structures, .compagnies {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        position: absolute;
+        z-index: 1;
+        top: -14px;
+        left: -14px;
+
+
+        span {
+            position: absolute;
+            width: 100%;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            padding: 0 5px;
+        }
+    }
+
+    .compagnies {
+        background: $base;
+    }
+
+    .structures {
+        background: $accent;
+    }
+
+    .compagnies.structures {
+        background: linear-gradient(-45deg, $base, $base 50%, $accent 50%, $accent);
+        span {
+            width: 50%;
+        }
+        span:first-child {
+            // text-align: right;
+            margin-top: -5px;
+            left: 3px;
+            right: auto;
+        }
+        span:last-child {
+            margin-top: 5px;
+            // text-align: left;
+            right: 3px;
+            left: auto;
         }
     }
 

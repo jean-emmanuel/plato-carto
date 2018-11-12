@@ -3,6 +3,7 @@ var html = require('nanohtml'),
     structures = require('../data/structures').map(x => {x._type = 'structure'; return x}),
     dataset = compagnies.concat(structures).sort((a, b) => a.nom[0].toLowerCase() > b.nom[0].toLowerCase()),
     templates = require('./templates.js'),
+    reseaux = require('../data/reseaux'),
     polygon = require('./polygon')
 
 
@@ -15,19 +16,16 @@ dataset = dataset.map((m)=>{
         m.ville,
         m.diffusion_festival_nom || ''
     ].join(' ')
-    m._score = 0
     return m
 })
 
-var reseaux = (()=>{
-    var c = [],
-        r = []
-    dataset.forEach(x => r = r.concat(x.reseaux.split('\n')))
-    for (var i in r) {
-        if (!c.includes(r[i]) && r[i]) c.push(r[i])
+function getClusterMarkers(cluster) {
+    var markers = cluster._markers
+    for (var i = 0; i < cluster._childClusters.length; i++) {
+        markers = markers.concat(getClusterMarkers(cluster._childClusters[i]))
     }
-    return c
-})()
+    return markers
+}
 
 module.exports = {
 
@@ -43,20 +41,48 @@ module.exports = {
             show: true,
             layer: ['geoJSON', require('../data/region-pays-de-la-loire.json'), {weight: 1.5, fillOpacity: 0.1}],
 
+        },
+        {
+            label: 'Départements',
+            show: false,
+            layer: ['geoJSON', {
+                type: 'FeatureCollection',
+                features: [
+                    require('../data/departements/72.json'),
+                    require('../data/departements/49.json'),
+                    require('../data/departements/85.json'),
+                    require('../data/departements/53.json'),
+                    require('../data/departements/44.json')
+                ]
+            }, {weight: 1.5, fillOpacity: 0.05}],
+
         }
     ]
     .concat(
-        reseaux.map(r=>{
+        Object.keys(reseaux).map(r=>{
             var lines = polygon(dataset.filter(m => m.reseaux.includes(r)))
             return {
                 label: r,
-                tooltip: lines.geometry.coordinates[0][0],
-                layer: ['geoJSON', lines]
+                htmlLabel: `<a href="${reseaux[r]}" target="_blank">${r}</a>`,
+                control: false,
+                tooltip: lines.features[0].geometry.coordinates[0][0],
+                layer: ['geoJSON', lines, {weight: 1.5, fillOpacity: 0.1}],
             }
         })
     ),
     markers: dataset,
     iconClass: (item) => 'icon-' + item._type,
-    tooltip: (item) => item.nom
+    tooltip: (item) => item.nom,
+    clusterIcon: (cluster)=>{
+        var structs = getClusterMarkers(cluster).filter(m => m.options._data._type === 'structure').length,
+            comps = cluster.getChildCount() - structs
+
+        return `
+            <div class="${structs ? 'structures' : ''} ${comps ? 'compagnies' : ''}">
+                ${structs ? `<span>${structs}</span>` : ''}
+                ${comps ? `<span>${comps}</span>` : ''}
+            </div>
+        `
+    }
 
 }
