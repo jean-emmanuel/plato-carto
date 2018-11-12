@@ -54,9 +54,6 @@ module.exports = {
                     <p>
                         <label>Type de structure</label>
                         <span class="chip">${item.type} ${item.conventionnement}</span>
-                        ${item.plato ?
-                            html`<span class="chip">Adhérent PlatO</span>` : ''
-                        }
                     </p>
 
                     ${item.reseaux ? html`
