@@ -88,10 +88,11 @@
             color: $accent;
         }
     }
-
-    .group.structures:not(.inactive) {
+    .group.structures {
         $radio-fill-color: $accent;
         @import '_range';
+    }
+    .group.structures:not(.inactive) {
         color: $accent;
         .filter:not(.inactive), &.filter:not(.inactive) {
             color: $accent;
