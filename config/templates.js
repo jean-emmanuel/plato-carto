@@ -115,19 +115,20 @@ module.exports = {
 
                     </div>
 
-                    <div class="bloc bloc-3">
-                        <h4>Action culturelle</h4>
-                        ${item.actionculturelle_scolaire === 'Oui' ?
-                            html`<span class="chip">Scolaire</span>` : ''
-                        }
-                        ${item.actionculturelle_periscolaire === 'Oui' ?
-                            html`<span class="chip">Périscolaire</span>` : ''
-                        }
-                        ${item.actionculturelle_extrascolaire === 'Oui' ?
-                            html`<span class="chip">Extrascolaire</span>` : ''
-                        }
-                    </div>
-
+                    ${item.actionculturelle_scolaire === 'Oui' || item.actionculturelle_periscolaire === 'Oui' || item.actionculturelle_extrascolaire === 'Oui' ? html`
+                        <div class="bloc bloc-3">
+                            <h4>Action culturelle</h4>
+                            ${item.actionculturelle_scolaire === 'Oui' ?
+                                html`<span class="chip">Scolaire</span>` : ''
+                            }
+                            ${item.actionculturelle_periscolaire === 'Oui' ?
+                                html`<span class="chip">Périscolaire</span>` : ''
+                            }
+                            ${item.actionculturelle_extrascolaire === 'Oui' ?
+                                html`<span class="chip">Extrascolaire</span>` : ''
+                            }
+                        </div>
+                    ` : ''}
                 </div>
             `
 
