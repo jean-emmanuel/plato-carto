@@ -183,7 +183,7 @@ module.exports = {
                     ${item.reseaux ? html`
                         <p>
                             <label>Membre de</label>
-                            ${item.reseaux.split('\n').map(reseau => html`
+                            ${item.reseaux.split('\n').map(r => html`
                                 <span class="chip">
                                 ${
                                     reseaux[r] ? html`<a href="${reseaux[r]}" target="_blank">${r}</a>` : r
