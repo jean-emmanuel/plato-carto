@@ -1,7 +1,7 @@
 var html =require('nanohtml'),
     raw = require('nanohtml/raw'),
     locale = require('./locale'),
-    reseaux = require('../data/reseaux')
+    reseaux = require('../data/2018/reseaux')
 
 module.exports = {
     listView: (item) => {
