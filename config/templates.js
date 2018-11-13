@@ -185,7 +185,9 @@ module.exports = {
                             <label>Membre de</label>
                             ${item.reseaux.split('\n').map(reseau => html`
                                 <span class="chip">
-                                    ${reseau}
+                                ${
+                                    reseaux[r] ? html`<a href="${reseaux[r]}" target="_blank">${r}</a>` : r
+                                }
                                 </span>
                             `)}
                         </p>`
