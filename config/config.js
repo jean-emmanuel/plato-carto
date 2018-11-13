@@ -39,7 +39,7 @@ module.exports = {
         {
             label: 'Pays de la Loire',
             show: true,
-            layer: ['geoJSON', require('../data/region-pays-de-la-loire.json'), {weight: 1.5, fillOpacity: 0.1}],
+            layer: ['geoJSON', require('../data/geo/region-pays-de-la-loire.json'), {weight: 1.5, fillOpacity: 0.1}],
 
         },
         {
@@ -48,11 +48,11 @@ module.exports = {
             layer: ['geoJSON', {
                 type: 'FeatureCollection',
                 features: [
-                    require('../data/departements/72.json'),
-                    require('../data/departements/49.json'),
-                    require('../data/departements/85.json'),
-                    require('../data/departements/53.json'),
-                    require('../data/departements/44.json')
+                    require('../data/geo/72.json'),
+                    require('../data/geo/49.json'),
+                    require('../data/geo/85.json'),
+                    require('../data/geo/53.json'),
+                    require('../data/geo/44.json')
                 ]
             }, {weight: 1.5, fillOpacity: 0.05}],
 
