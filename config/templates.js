@@ -308,7 +308,7 @@ module.exports = {
 
             <h4>Code source</h4>
 
-            <p>Cette carte à été réalisée uniquement avec des logiciels libres.</p>
+            <p>Cette carte a été réalisée uniquement avec des logiciels libres.</p>
             <p>
                 Son code source est publié sous licence <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU/GPL-3.0</a>
                 sur <a href="https://github.com/jean-emmanuel/plato-carto" target="_blank">https://github.com/jean-emmanuel/plato-carto</a>.
