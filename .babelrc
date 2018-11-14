@@ -1,7 +1,7 @@
 {
   "presets": [
     ["@babel/env", {
-      "targets": "> 0.25% in FR, IE 11",
+      "targets": "> 0.25% in FR, edge 12",
       "useBuiltIns": "usage"
     }]
   ],

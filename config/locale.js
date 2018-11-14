@@ -1,6 +1,6 @@
 module.exports = {
 
-    version: 10,
+    version: 13,
 
 
     title: 'PlatO / Cartographie du spectacle jeune public en Pays de la Loire',
@@ -14,7 +14,7 @@ module.exports = {
     fullscreen: 'Plein écran',
     loading: 'Chargement en cours',
     javascript: 'Cette page nécessite l\'activation de javascript pour être affichée correctement.',
-    internet_explorer: 'Ce site nécessite un navigateur moderne pour être affiché correctement.',
+    internet_explorer: 'Ce site nécessite un navigateur moderne pour être affiché correctement, il n\'est pas compatible avec les versions 11 et inférieures d\'internet explorer.',
     back_to_map: 'Retour à la carte',
 
 }

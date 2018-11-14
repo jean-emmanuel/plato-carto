@@ -89,7 +89,7 @@ class Filter extends FilterBase {
             this.html.appendChild(this.label)
             if (options.reset) {
                 var reset = html`<i class="fas fa-trash reset"></i>`
-                this.label.append(reset)
+                this.label.appendChild(reset)
                 reset.addEventListener('mousedown', (e)=>{
                     // e.preventDefault()
                     e.stopPropagation()
