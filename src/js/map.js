@@ -28,8 +28,8 @@ class Map {
 
         this.map = leaflet.map('map', {
             zoomControl: false,
-            center: options.view,
             zoom: options.zoom,
+            center: options.view,
             minZoom: options.minZoom,
             maxZoom: options.maxZoom,
             attribution: '© <a href= "http://cartodb.com/attributions#basemaps">CartoDB</a>'
@@ -41,7 +41,6 @@ class Map {
             opt.paddingTopLeft = [sidepanel.opened() ? 350 : 0, 0]
             fitBounds.call(this.map, bounds, opt)
         }
-
 
         document.getElementById('zoom-in').addEventListener('click', e => this.map.zoomIn())
         document.getElementById('zoom-out').addEventListener('click', e => this.map.zoomOut())
@@ -145,6 +144,14 @@ class Map {
 
     }
 
+    init() {
+
+        this.map.setView(this.initView, {
+            paddingTopLeft: [sidepanel.opened() ? 350 : 0, 0]
+        })
+
+    }
+
     setView() {
 
         this.map.setView(...arguments)
@@ -212,4 +219,5 @@ module.exports = new Map(config)
 list = require('./list')
 setTimeout(()=>{
     sidepanel = require('./sidepanel')
+    if (sidepanel.opened()) module.exports.map.panBy([-350 / 2, 0])
 })

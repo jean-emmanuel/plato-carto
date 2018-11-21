@@ -290,6 +290,10 @@ module.exports = {
     infos: (item) => html`
         <div>
 
+            <p>À partir de questionnaires envoyés aux différents acteurs, PlatO a réalisé une carte régionale des lieux attentifs à la création Jeune public ainsi que des compagnies œuvrant dans ce secteur.</p>
+
+            <p>Il s’agit de permettre une meilleure interconnaissance des acteurs régionaux et de faciliter l’observation et l’analyse de la dynamique Jeune public actuelle en Pays de la Loire.</p>
+
             <h4>Mentions Légales</h4>
 
             <ul class="browser-default">

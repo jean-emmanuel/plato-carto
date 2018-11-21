@@ -65,6 +65,8 @@ createForm(filterManager.filters, form)
 
 sidepanel.appendChild(form)
 
+if (window.innerWidth < 800) toggleSidepanel()
+
 module.exports = {
     opened: () => open
 }

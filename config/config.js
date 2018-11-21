@@ -30,7 +30,7 @@ function getClusterMarkers(cluster) {
 module.exports = {
 
     tiles: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png',
-    view: [47.4, -1.6],
+    view: [47.4, -0.9],
     zoom: 8,
     minZoom: 6,
     maxZoom: 18,
