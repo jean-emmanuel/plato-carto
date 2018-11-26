@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PlatO &#x2F; Cartographie du spectacle jeune public en Pays de la Loire </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+        <link href="./styles.css?v13" rel="stylesheet">
+    </head>
+    <body>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="./data/json-to-table.js"></script>
+        <script src="./data/tableHeadFixer.js"></script>
+<script>
+    document.body.style.overflow = 'auto'
+    var url = 'https://raw.githubusercontent.com/jean-emmanuel/plato-carto/master/data/2018/',
+        type = window.location.hash === '#compagnies' ? 'compagnies' : 'structures'
+    $.getJSON(url + type + '.json', function(data){
+        document.body.innerHTML = ConvertJsonToTable(data)
+        $("table").tableHeadFixer().addClass('striped')
+        $.getJSON(url + type + '_legende.json', function(data){
+            $('thead th').each(function(i, el){
+                el.title = data[el.innerHTML]
+            })
+        })
+    })
+</script>
+
+        <link href="./fonts/roboto/roboto.css" rel="stylesheet">
+        <link href="./fonts/fontawesome/fontawesome.min.css" rel="stylesheet">
+    </body>
+</html>
