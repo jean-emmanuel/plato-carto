@@ -292,7 +292,7 @@ module.exports = {
 
             <p>À partir de questionnaires envoyés aux différents acteurs, PlatO a réalisé une carte régionale des lieux attentifs à la création Jeune public ainsi que des compagnies œuvrant dans ce secteur.</p>
 
-            <p>Il s’agit de permettre une meilleure interconnaissance des acteurs régionaux et de faciliter l’observation et l’analyse de la dynamique Jeune public actuelle en Pays de la Loire.</p>
+            <p>Il s’agit ici d’une première version de la carte qui regroupe les données des structures et artistes qui a répondu aux questionnaires. Elle n’est pas conséquent pas exhaustive et représentative de toute la dynamique régionale.</p>
 
             <h4>Mentions Légales</h4>
 
