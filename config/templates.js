@@ -290,9 +290,13 @@ module.exports = {
     infos: (item) => html`
         <div>
 
-            <p>À partir de questionnaires envoyés aux différents acteurs, PlatO a réalisé une carte régionale des lieux attentifs à la création Jeune public ainsi que des compagnies œuvrant dans ce secteur.</p>
+            <p>
+            À partir de questionnaires envoyés aux différents acteurs, PlatO est en train de réaliser une carte régionale des lieux attentifs à la création Jeune public ainsi que des compagnies œuvrant dans ce secteur.
+            </p>
 
-            <p>Il s’agit ici d’une première version de la carte qui regroupe les données des structures et artistes qui a répondu aux questionnaires. Elle n’est pas conséquent pas exhaustive et représentative de toute la dynamique régionale.</p>
+            <p>
+            Il s’agit ici d’une première version de la carte qui regroupe les données des structures et artistes qui ont répondu aux questionnaires entre juillet et septembre 2018. Elle n’est pas conséquent pas exhaustive et représentative de toute la dynamique régionale. Elle sera complétée avec des nouvelles données courant février. 
+            </p>
 
             <h4>Mentions Légales</h4>
 
