@@ -21,7 +21,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 55,
     "diffusion_jp": 9,
-    "diffusion_pourcentage_jp": 16,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 3,
     "diffusion_6_12ans": 3,
@@ -36,7 +35,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 200071165,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       46.4971096,
       -1.78378326617871
@@ -64,7 +62,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": "",
     "diffusion_jp": "",
-    "diffusion_pourcentage_jp": 0,
     "diffusion_0_3ans": "",
     "diffusion_3_6ans": "",
     "diffusion_6_12ans": "",
@@ -79,7 +76,6 @@
     "actionculturelle_departement": 49,
     "actionculturelle_epci": 244900015,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.4685214,
       -0.5541406
@@ -96,7 +92,7 @@
     "type": "Théâtre municipal",
     "conventionnement": "",
     "licence": "1-1085492\n2-1085490\n3-1085493",
-    "reseaux": "Réseau JP Sarthe",
+    "reseaux": "Réseau JP Sarthe\nPÉCANS",
     "activite_aidecreation": "Oui",
     "activite_diffusion": "Oui",
     "activite_actionculturelle": "Oui",
@@ -107,7 +103,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 25,
     "diffusion_jp": 10,
-    "diffusion_pourcentage_jp": 40,
     "diffusion_0_3ans": 2,
     "diffusion_3_6ans": 4,
     "diffusion_6_12ans": 2,
@@ -122,7 +117,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 247200686,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       48.1827359,
       0.6473614
@@ -150,7 +144,6 @@
     "diffusion_festival_nom": "Momo Festival",
     "diffusion_total": 10,
     "diffusion_jp": 5,
-    "diffusion_pourcentage_jp": 50,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 1,
     "diffusion_6_12ans": 4,
@@ -165,7 +158,6 @@
     "actionculturelle_departement": "",
     "actionculturelle_epci": "",
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       48.0078708,
       0.2745443
@@ -193,7 +185,6 @@
     "diffusion_festival_nom": "Drôles de Bobines",
     "diffusion_total": 29,
     "diffusion_jp": 10,
-    "diffusion_pourcentage_jp": 34,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 3,
     "diffusion_6_12ans": 3,
@@ -208,7 +199,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 248500464,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       46.7749451,
       -0.8494283
@@ -236,7 +226,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 6,
     "diffusion_jp": 2,
-    "diffusion_pourcentage_jp": 33,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 2,
@@ -251,7 +240,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 200072700,
     "actionculturelle_commune": 72138,
-    "notes": "",
     "coords": [
       48.280659,
       0.02944
@@ -279,7 +267,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 21,
     "diffusion_jp": 11,
-    "diffusion_pourcentage_jp": 52,
     "diffusion_0_3ans": 2,
     "diffusion_3_6ans": 3,
     "diffusion_6_12ans": 3,
@@ -294,7 +281,6 @@
     "actionculturelle_departement": 53,
     "actionculturelle_epci": 200048551,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.842866,
       -0.967504
@@ -322,7 +308,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 7,
     "diffusion_jp": 7,
-    "diffusion_pourcentage_jp": 100,
     "diffusion_0_3ans": 2,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 3,
@@ -337,7 +322,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 248500621,
     "actionculturelle_commune": 85301,
-    "notes": "",
     "coords": [
       46.8691045,
       -1.0130236
@@ -365,7 +349,6 @@
     "diffusion_festival_nom": "Le Tout-petit Festival",
     "diffusion_total": 15,
     "diffusion_jp": 15,
-    "diffusion_pourcentage_jp": 100,
     "diffusion_0_3ans": 3,
     "diffusion_3_6ans": 3,
     "diffusion_6_12ans": 7,
@@ -380,7 +363,6 @@
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400503,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.374531,
       -1.64663
@@ -408,7 +390,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 17,
     "diffusion_jp": 10,
-    "diffusion_pourcentage_jp": 59,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 5,
     "diffusion_6_12ans": 3,
@@ -423,7 +404,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 200040475,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.994555,
       -0.158881
@@ -451,7 +431,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 4,
     "diffusion_jp": 3,
-    "diffusion_pourcentage_jp": 75,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 0,
     "diffusion_6_12ans": 2,
@@ -466,7 +445,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 248500340,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       46.6925884,
       -1.049817
@@ -494,7 +472,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 11,
     "diffusion_jp": 6,
-    "diffusion_pourcentage_jp": 55,
     "diffusion_0_3ans": 2,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 2,
@@ -509,7 +486,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 248500563,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       46.4101831,
       -0.6805809
@@ -537,7 +513,6 @@
     "diffusion_festival_nom": "Festi'pousses",
     "diffusion_total": 12,
     "diffusion_jp": 7,
-    "diffusion_pourcentage_jp": 58,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 1,
     "diffusion_6_12ans": 5,
@@ -552,7 +527,6 @@
     "actionculturelle_departement": 49,
     "actionculturelle_epci": 244900882,
     "actionculturelle_commune": 49201,
-    "notes": "",
     "coords": [
       47.4404999,
       -0.215733
@@ -580,7 +554,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 23,
     "diffusion_jp": 4,
-    "diffusion_pourcentage_jp": 17,
     "diffusion_0_3ans": 2,
     "diffusion_3_6ans": 0,
     "diffusion_6_12ans": 2,
@@ -595,7 +568,6 @@
     "actionculturelle_departement": 53,
     "actionculturelle_epci": 245300330,
     "actionculturelle_commune": 53054,
-    "notes": "",
     "coords": [
       48.09863845,
       -0.788661573109924
@@ -623,7 +595,6 @@
     "diffusion_festival_nom": "Les concerts très tôt",
     "diffusion_total": 51,
     "diffusion_jp": 6,
-    "diffusion_pourcentage_jp": 12,
     "diffusion_0_3ans": 3,
     "diffusion_3_6ans": 3,
     "diffusion_6_12ans": 0,
@@ -638,7 +609,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 248500589,
     "actionculturelle_commune": 85000,
-    "notes": "",
     "coords": [
       46.670427,
       -1.431175
@@ -666,7 +636,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 20,
     "diffusion_jp": 10,
-    "diffusion_pourcentage_jp": 50,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 1,
@@ -681,7 +650,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 200071934,
     "actionculturelle_commune": 85092,
-    "notes": "",
     "coords": [
       46.4622697,
       -0.7943181
@@ -709,7 +677,6 @@
     "diffusion_festival_nom": "Pays du Môme\nRendez vous pour les p'tits Queniaux",
     "diffusion_total": 16,
     "diffusion_jp": 8,
-    "diffusion_pourcentage_jp": 50,
     "diffusion_0_3ans": 3,
     "diffusion_3_6ans": 4,
     "diffusion_6_12ans": 1,
@@ -724,7 +691,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 247200132,
     "actionculturelle_commune": 72328,
-    "notes": "",
     "coords": [
       48.0356169,
       0.2417959
@@ -752,7 +718,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 18,
     "diffusion_jp": 8,
-    "diffusion_pourcentage_jp": 44,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 3,
@@ -767,7 +732,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 200072676,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       48.347135,
       0.364821
@@ -795,7 +759,6 @@
     "diffusion_festival_nom": "Graines d'Images Junior",
     "diffusion_total": 0,
     "diffusion_jp": 0,
-    "diffusion_pourcentage_jp": 0,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 0,
     "diffusion_6_12ans": 0,
@@ -810,7 +773,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 247200686,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       48.019064,
       0.173756
@@ -838,7 +800,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 15,
     "diffusion_jp": 5,
-    "diffusion_pourcentage_jp": 33,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 2,
@@ -853,7 +814,6 @@
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400404,
     "actionculturelle_commune": 44074,
-    "notes": "",
     "coords": [
       47.1979752,
       -1.6637588
@@ -881,7 +841,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 17,
     "diffusion_jp": 9,
-    "diffusion_pourcentage_jp": 53,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 3,
     "diffusion_6_12ans": 3,
@@ -896,7 +855,6 @@
     "actionculturelle_departement": 53,
     "actionculturelle_epci": 245300355,
     "actionculturelle_commune": 53269,
-    "notes": "",
     "coords": [
       48.288472,
       -0.922085
@@ -924,7 +882,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 52,
     "diffusion_jp": 4,
-    "diffusion_pourcentage_jp": 8,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 2,
@@ -939,7 +896,6 @@
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400404,
     "actionculturelle_commune": 44109,
-    "notes": "",
     "coords": [
       47.2193637,
       -1.5542702
@@ -967,7 +923,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": "",
     "diffusion_jp": "",
-    "diffusion_pourcentage_jp": 0,
     "diffusion_0_3ans": "",
     "diffusion_3_6ans": "",
     "diffusion_6_12ans": "",
@@ -982,7 +937,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 248500258,
     "actionculturelle_commune": 85012,
-    "notes": "",
     "coords": [
       46.8851524,
       -2.1193078
@@ -1010,7 +964,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 60,
     "diffusion_jp": 6,
-    "diffusion_pourcentage_jp": 10,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 3,
     "diffusion_6_12ans": 2,
@@ -1025,7 +978,6 @@
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400404,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.1853181,
       -1.5550563
@@ -1053,7 +1005,6 @@
     "diffusion_festival_nom": "Malices au Pays",
     "diffusion_total": 28,
     "diffusion_jp": 7,
-    "diffusion_pourcentage_jp": 25,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 6,
     "diffusion_6_12ans": 14,
@@ -1068,7 +1019,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 247200348,
     "actionculturelle_commune": 72154,
-    "notes": "",
     "coords": [
       47.699299,
       -0.073327
@@ -1096,7 +1046,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 48,
     "diffusion_jp": 9,
-    "diffusion_pourcentage_jp": 19,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 5,
@@ -1111,7 +1060,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 248500589,
     "actionculturelle_commune": 85191,
-    "notes": "",
     "coords": [
       46.668682,
       -1.429985
@@ -1139,7 +1087,6 @@
     "diffusion_festival_nom": "Petits en Grands",
     "diffusion_total": 54,
     "diffusion_jp": 11,
-    "diffusion_pourcentage_jp": 20,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 0,
     "diffusion_6_12ans": 5,
@@ -1154,7 +1101,6 @@
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400610,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.231373,
       -1.540397
@@ -1182,7 +1128,6 @@
     "diffusion_festival_nom": "53 tours",
     "diffusion_total": 21,
     "diffusion_jp": 10,
-    "diffusion_pourcentage_jp": 48,
     "diffusion_0_3ans": 2,
     "diffusion_3_6ans": 3,
     "diffusion_6_12ans": 2,
@@ -1197,7 +1142,6 @@
     "actionculturelle_departement": 53,
     "actionculturelle_epci": 200055887,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       48.30226,
       -0.619653
@@ -1225,7 +1169,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": "",
     "diffusion_jp": "",
-    "diffusion_pourcentage_jp": 0,
     "diffusion_0_3ans": "",
     "diffusion_3_6ans": "",
     "diffusion_6_12ans": "",
@@ -1240,7 +1183,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 200072882,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       46.9365,
       -1.512701
@@ -1268,7 +1210,6 @@
     "diffusion_festival_nom": "Le Beau Samedi",
     "diffusion_total": 49,
     "diffusion_jp": 12,
-    "diffusion_pourcentage_jp": 24,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 3,
     "diffusion_6_12ans": 9,
@@ -1283,7 +1224,6 @@
     "actionculturelle_departement": 49,
     "actionculturelle_epci": 244900015,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.4727565,
       -0.5656585
@@ -1311,7 +1251,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 40,
     "diffusion_jp": 18,
-    "diffusion_pourcentage_jp": 45,
     "diffusion_0_3ans": 3,
     "diffusion_3_6ans": 5,
     "diffusion_6_12ans": 5,
@@ -1326,7 +1265,6 @@
     "actionculturelle_departement": 53,
     "actionculturelle_epci": 245300330,
     "actionculturelle_commune": 53130,
-    "notes": "",
     "coords": [
       48.0709941,
       -0.7691566
@@ -1354,7 +1292,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 13,
     "diffusion_jp": 7,
-    "diffusion_pourcentage_jp": 54,
     "diffusion_0_3ans": 2,
     "diffusion_3_6ans": 1,
     "diffusion_6_12ans": 3,
@@ -1369,7 +1306,6 @@
     "actionculturelle_departement": "",
     "actionculturelle_epci": "",
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.8929673,
       0.2011817
@@ -1397,7 +1333,6 @@
     "diffusion_festival_nom": "Festival en jeu !",
     "diffusion_total": 52,
     "diffusion_jp": 8,
-    "diffusion_pourcentage_jp": 15,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 1,
     "diffusion_6_12ans": 5,
@@ -1412,7 +1347,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 247200132,
     "actionculturelle_commune": 72181,
-    "notes": "",
     "coords": [
       48.0076541,
       0.1988369
@@ -1440,7 +1374,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 9,
     "diffusion_jp": 9,
-    "diffusion_pourcentage_jp": 100,
     "diffusion_0_3ans": 3,
     "diffusion_3_6ans": 3,
     "diffusion_6_12ans": 3,
@@ -1455,7 +1388,6 @@
     "actionculturelle_departement": "",
     "actionculturelle_epci": "",
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       48.0718691,
       -0.7733292
@@ -1483,7 +1415,6 @@
     "diffusion_festival_nom": "Je sors mes parents",
     "diffusion_total": 8,
     "diffusion_jp": 3,
-    "diffusion_pourcentage_jp": 38,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 2,
@@ -1498,7 +1429,6 @@
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400404,
     "actionculturelle_commune": 44198,
-    "notes": "",
     "coords": [
       47.1485792,
       -1.5332052
@@ -1526,7 +1456,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": "",
     "diffusion_jp": "",
-    "diffusion_pourcentage_jp": 0,
     "diffusion_0_3ans": "",
     "diffusion_3_6ans": "",
     "diffusion_6_12ans": "",
@@ -1541,7 +1470,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 248500589,
     "actionculturelle_commune": 85300,
-    "notes": "",
     "coords": [
       46.68498,
       -1.51145
@@ -1569,7 +1497,6 @@
     "diffusion_festival_nom": "Festimioches\nTout-petits et déjà grands",
     "diffusion_total": 30,
     "diffusion_jp": 14,
-    "diffusion_pourcentage_jp": 47,
     "diffusion_0_3ans": 3,
     "diffusion_3_6ans": 6,
     "diffusion_6_12ans": 5,
@@ -1584,7 +1511,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 247200132,
     "actionculturelle_commune": 72181,
-    "notes": "",
     "coords": [
       47.9699467,
       0.204411
@@ -1612,7 +1538,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 48,
     "diffusion_jp": 29,
-    "diffusion_pourcentage_jp": 60,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 0,
     "diffusion_6_12ans": 12,
@@ -1627,7 +1552,6 @@
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400586,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.2529748,
       -1.6158712
@@ -1655,7 +1579,6 @@
     "diffusion_festival_nom": "Malices au Pays",
     "diffusion_total": 18,
     "diffusion_jp": 10,
-    "diffusion_pourcentage_jp": 56,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 6,
     "diffusion_6_12ans": 2,
@@ -1670,7 +1593,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 247200348,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.6681999,
       0.3139872
@@ -1698,7 +1620,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": "",
     "diffusion_jp": "",
-    "diffusion_pourcentage_jp": 0,
     "diffusion_0_3ans": "",
     "diffusion_3_6ans": "",
     "diffusion_6_12ans": "",
@@ -1713,7 +1634,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 247200447,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       48.0062913,
       0.1929769
@@ -1741,7 +1661,6 @@
     "diffusion_festival_nom": "Festival Petits et Grands",
     "diffusion_total": 42,
     "diffusion_jp": 42,
-    "diffusion_pourcentage_jp": 100,
     "diffusion_0_3ans": 18,
     "diffusion_3_6ans": 14,
     "diffusion_6_12ans": 10,
@@ -1784,7 +1703,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 35,
     "diffusion_jp": 9,
-    "diffusion_pourcentage_jp": 26,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 4,
     "diffusion_6_12ans": 5,
@@ -1799,7 +1717,6 @@
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400404,
     "actionculturelle_commune": 44020,
-    "notes": "",
     "coords": [
       47.1740111,
       -1.6097043
@@ -1827,7 +1744,6 @@
     "diffusion_festival_nom": "Spectacles en Chemin",
     "diffusion_total": 13,
     "diffusion_jp": 7,
-    "diffusion_pourcentage_jp": 54,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 3,
@@ -1842,7 +1758,6 @@
     "actionculturelle_departement": 53,
     "actionculturelle_epci": 200042182,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       48.4566123,
       -0.2078357
@@ -1870,7 +1785,6 @@
     "diffusion_festival_nom": "Festival pour enfants sages et pas seulement",
     "diffusion_total": 80,
     "diffusion_jp": 25,
-    "diffusion_pourcentage_jp": 31,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 4,
     "diffusion_6_12ans": 5,
@@ -1885,7 +1799,6 @@
     "actionculturelle_departement": "",
     "actionculturelle_epci": "",
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.2156023,
       -1.5690889
@@ -1913,7 +1826,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 23,
     "diffusion_jp": 11,
-    "diffusion_pourcentage_jp": 48,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 6,
@@ -1928,7 +1840,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 200071629,
     "actionculturelle_commune": 85047,
-    "notes": "",
     "coords": [
       46.845009,
       -1.879335
@@ -1956,7 +1867,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 10,
     "diffusion_jp": 7,
-    "diffusion_pourcentage_jp": 70,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 3,
     "diffusion_6_12ans": 3,
@@ -1971,7 +1881,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 247200132,
     "actionculturelle_commune": 72095,
-    "notes": "",
     "coords": [
       48.0237602,
       0.2021867
@@ -1999,7 +1908,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": "",
     "diffusion_jp": "",
-    "diffusion_pourcentage_jp": 0,
     "diffusion_0_3ans": "",
     "diffusion_3_6ans": "",
     "diffusion_6_12ans": "",
@@ -2014,7 +1922,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 200070233,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       46.9376985,
       -1.5097261
@@ -2042,7 +1949,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 21,
     "diffusion_jp": 4,
-    "diffusion_pourcentage_jp": 19,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 3,
     "diffusion_6_12ans": 3,
@@ -2057,7 +1963,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 247200132,
     "actionculturelle_commune": 72003,
-    "notes": "",
     "coords": [
       47.9724101,
       0.1658002
@@ -2085,7 +1990,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 12,
     "diffusion_jp": 1,
-    "diffusion_pourcentage_jp": 8,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 0,
     "diffusion_6_12ans": 0,
@@ -2100,7 +2004,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 247200447,
     "actionculturelle_commune": 72181,
-    "notes": "",
     "coords": [
       48.0073783,
       0.1989582
@@ -2128,7 +2031,6 @@
     "diffusion_festival_nom": "Mont'en Scène",
     "diffusion_total": 30,
     "diffusion_jp": 7,
-    "diffusion_pourcentage_jp": 23,
     "diffusion_0_3ans": 0,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 3,
@@ -2143,7 +2045,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 200070233,
     "actionculturelle_commune": 85146,
-    "notes": "",
     "coords": [
       46.9817211,
       -1.3082603
@@ -2171,7 +2072,6 @@
     "diffusion_festival_nom": "La chaussette de M. Joffre",
     "diffusion_total": 58,
     "diffusion_jp": 12,
-    "diffusion_pourcentage_jp": 21,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 3,
     "diffusion_6_12ans": 8,
@@ -2186,7 +2086,6 @@
     "actionculturelle_departement": 85,
     "actionculturelle_epci": 200040475,
     "actionculturelle_commune": 44068,
-    "notes": "",
     "coords": [
       47.3018941,
       -1.5577515
@@ -2203,7 +2102,7 @@
     "type": "Association",
     "conventionnement": "",
     "licence": "1-1085541",
-    "reseaux": "Collectif des médiateurs jeune public des Pays de la Loire\nRéseau JP Sarthe\nPlatO - Plateforme jeune public des Pays de la Loire",
+    "reseaux": "Collectif des médiateurs jeune public des Pays de la Loire\nRéseau JP Sarthe\nPlatO - Plateforme jeune public des Pays de la Loire\nPÉCANS",
     "activite_aidecreation": "Oui",
     "activite_diffusion": "Oui",
     "activite_actionculturelle": "Oui",
@@ -2214,7 +2113,6 @@
     "diffusion_festival_nom": "Temps fort jeunes",
     "diffusion_total": 15,
     "diffusion_jp": 11,
-    "diffusion_pourcentage_jp": 73,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 1,
     "diffusion_6_12ans": 7,
@@ -2229,7 +2127,6 @@
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 200072692,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.973539,
       0.554081
@@ -2257,7 +2154,6 @@
     "diffusion_festival_nom": "Festival NIJINSKID",
     "diffusion_total": 57,
     "diffusion_jp": 13,
-    "diffusion_pourcentage_jp": 23,
     "diffusion_0_3ans": 2,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 9,
@@ -2272,7 +2168,6 @@
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400404,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.224004,
       -1.628445
@@ -2300,7 +2195,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 42,
     "diffusion_jp": 9,
-    "diffusion_pourcentage_jp": 21,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 4,
     "diffusion_6_12ans": 4,
@@ -2315,7 +2209,6 @@
     "actionculturelle_departement": 49,
     "actionculturelle_epci": 244900015,
     "actionculturelle_commune": 49267,
-    "notes": "",
     "coords": [
       47.4687573,
       -0.4959337
@@ -2343,7 +2236,6 @@
     "diffusion_festival_nom": "",
     "diffusion_total": 30,
     "diffusion_jp": 5,
-    "diffusion_pourcentage_jp": 17,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 1,
@@ -2358,7 +2250,6 @@
     "actionculturelle_departement": 49,
     "actionculturelle_epci": 200071553,
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       47.2664933,
       -0.5012198
@@ -2386,7 +2277,6 @@
     "diffusion_festival_nom": "Au Pays du Môme",
     "diffusion_total": 13,
     "diffusion_jp": 8,
-    "diffusion_pourcentage_jp": 62,
     "diffusion_0_3ans": 5,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 1,
@@ -2401,7 +2291,6 @@
     "actionculturelle_departement": "",
     "actionculturelle_epci": "",
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       48.0128261,
       0.2694379
@@ -2429,7 +2318,6 @@
     "diffusion_festival_nom": "La Fête Dans les Nuages",
     "diffusion_total": 12,
     "diffusion_jp": 6,
-    "diffusion_pourcentage_jp": 50,
     "diffusion_0_3ans": 1,
     "diffusion_3_6ans": 2,
     "diffusion_6_12ans": 2,
@@ -2444,7 +2332,6 @@
     "actionculturelle_departement": "",
     "actionculturelle_epci": "",
     "actionculturelle_commune": "",
-    "notes": "",
     "coords": [
       46.7205,
       -1.945929
