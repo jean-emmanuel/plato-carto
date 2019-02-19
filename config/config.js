@@ -1,9 +1,9 @@
 var html = require('nanohtml'),
-    compagnies = require('../data/2018/compagnies').map(x => {x._type = 'compagnie'; return x}),
-    structures = require('../data/2018/structures').map(x => {x._type = 'structure'; return x}),
+    compagnies = require('../data/compagnies').map(x => {x._type = 'compagnie'; return x}),
+    structures = require('../data/structures').map(x => {x._type = 'structure'; return x}),
     dataset = compagnies.concat(structures).sort((a, b) => a.nom[0].toLowerCase() > b.nom[0].toLowerCase()),
     templates = require('./templates.js'),
-    reseaux = require('../data/2018/reseaux'),
+    reseaux = require('../data/reseaux'),
     polygon = require('./polygon')
 
 

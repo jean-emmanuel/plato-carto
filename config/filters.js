@@ -160,7 +160,7 @@ module.exports = [
                 value: 0,
                 prefix: '>',
                 suffix: '%',
-                filter: (data, value) => data.diffusion_pourcentage_jp >= value
+                filter: (data, value) => 100 * data.diffusion_jp / data.diffusion_total >= value
             },
             {
                 type: 'checklist',

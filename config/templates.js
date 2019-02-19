@@ -1,7 +1,7 @@
 var html =require('nanohtml'),
     raw = require('nanohtml/raw'),
     locale = require('./locale'),
-    reseaux = require('../data/2018/reseaux')
+    reseaux = require('../data/reseaux')
 
 module.exports = {
     listView: (item) => {
@@ -295,7 +295,7 @@ module.exports = {
             </p>
 
             <p>
-            Il s’agit ici d’une première version de la carte qui regroupe les données des structures et artistes qui ont répondu aux questionnaires entre juillet et septembre 2018. Elle n’est pas conséquent pas exhaustive et représentative de toute la dynamique régionale. Elle sera complétée avec des nouvelles données courant février. 
+            Il s’agit ici d’une première version de la carte qui regroupe les données des structures et artistes qui ont répondu aux questionnaires entre juillet et septembre 2018. Elle n’est pas conséquent pas exhaustive et représentative de toute la dynamique régionale. Elle sera complétée avec des nouvelles données courant février.
             </p>
 
             <h4>Mentions Légales</h4>
