@@ -12,7 +12,7 @@ module.exports = {
     about: 'À propos',
     export: 'Exporter',
     fullscreen: 'Plein écran',
-    loading: 'Chargement en cours',
+    loading: 'Cartographie du spectacle jeune public en Pays de la Loire',
     javascript: 'Cette page nécessite l\'activation de javascript pour être affichée correctement.',
     internet_explorer: 'Ce site nécessite un navigateur moderne pour être affiché correctement, il n\'est pas compatible avec les versions 11 et inférieures d\'internet explorer.',
     back_to_map: 'Retour à la carte',

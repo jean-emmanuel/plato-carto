@@ -1,5 +1,5 @@
 var request = require('request')
-var data = require('../data/compagnies.json')
+var data = require('../data/2019/structures.json')
 var fs = require('fs'),
     path = require('path')
 
@@ -22,6 +22,8 @@ var i = 0,
         if (err) throw err
         if (body.length && body[0].lat)  {
             item.coords = [parseFloat(body[0].lat), parseFloat(body[0].lon)]
+            console.log(`\SUCCESS: ${item.adresse}, ${item.codepostal} ${item.ville}`)
+            console.log(item.coords)
         } else {
             console.log(`\nFAIL: ${item.adresse}, ${item.codepostal} ${item.ville}`)
             console.log(body)
