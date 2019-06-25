@@ -51,6 +51,10 @@ module.exports = {
                         }
 
                     </p>
+
+${!item.nodetail ? html`<div>
+
+
                     <p>
                         <label>Type de structure</label>
                         <span class="chip">${item.type} ${item.conventionnement}</span>
@@ -71,7 +75,6 @@ module.exports = {
                     }
 
 
-${!item.nodetail ? html`<div>
 
                     ${item.aidecreation_preachat || item.aidecreation_coprod || item.aidecreation_residence ? html`
                         <div class="bloc bloc-1">
@@ -186,6 +189,9 @@ ${!item.nodetail ? html`<div>
                             html`<span class="grey-text"><i class="fas fa-fw fa-info-circle"></i> Création en ${item.annee}<br/></span>` : ''
                         }
                     </p>
+
+${!item.nodetail ? html`<div>
+
                     ${item.reseaux ? html`
                         <p>
                             <label>Membre de</label>
@@ -219,8 +225,6 @@ ${!item.nodetail ? html`<div>
                             <span class="chip">${item.structure_associee.replace(/\n/g, ' / ')}</span>
                         </p>` : ''
                     }
-
-${!item.nodetail ? html`<div>
 
                     <div class="bloc bloc-1">
                         <h4>Création / Diffusion depuis 2016</h4>
