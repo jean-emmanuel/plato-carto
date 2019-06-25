@@ -3,432 +3,719 @@
     "nom": "Théâtre De La Fleuriaye",
     "adresse": "30 boulevard Ampère",
     "codepostal": 44470,
-    "ville": "Carquefou"
+    "ville": "Carquefou",
+    "coords": [
+      47.3003928,
+      -1.5005153
+    ]
   },
   {
     "nom": "Théatre Boris Vian",
     "adresse": "Rue Edmond Rostand",
     "codepostal": 44220,
-    "ville": "Couëron"
+    "ville": "Couëron",
+    "coords": [
+        47.2165493,
+        -1.7325115
+    ]
   },
   {
     "nom": "Espace Culturel Capellia",
     "adresse": "Chemin de Roche Blanche",
     "codepostal": 44240,
-    "ville": "La-Chapelle-Sur-Erdre"
+    "ville": "La-Chapelle-Sur-Erdre",
+    "coords": [
+      47.2794772,
+      -1.5607223
+    ]
   },
   {
     "nom": "Doudou Festival",
     "adresse": "2 rue Conan Mériadec",
     "codepostal": 44200,
-    "ville": "Nantes"
+    "ville": "Nantes",
+    "coords": [
+      47.2066694,
+      -1.5507713
+    ]
   },
   {
     "nom": "Handiclap",
     "adresse": "Esplanade des Riveurs",
     "codepostal": 44000,
-    "ville": "Nantes"
+    "ville": "Nantes",
+    "coords": [
+      47.204985,
+      -1.56485436967966
+    ]
   },
   {
     "nom": "Tnt (le)",
     "adresse": "11 Allée de la Maison Rouge",
     "codepostal": 44000,
-    "ville": "Nantes"
+    "ville": "Nantes",
+    "coords": [
+      47.2125593,
+      -1.5520298
+    ]
   },
   {
     "nom": "Théâtre De La Gobinière (le)",
     "adresse": "Hôtel de Ville",
     "codepostal": 44706,
-    "ville": "Orvault"
+    "ville": "Orvault",
+    "coords": [
+      47.2709998,
+      -1.6243347
+    ]
   },
   {
     "nom": "Le Quatrain",
     "adresse": "Rue de la Basse Lande",
     "codepostal": 44115,
-    "ville": "Basse-Goulaine"
+    "ville": "Basse-Goulaine",
+    "coords": [
+      47.1960258,
+      -1.4486562
+    ]
   },
   {
     "nom": "Théâtre Quartier Libre",
     "adresse": "Place Rohan - Rue Antoinette de Bruc",
     "codepostal": 44150,
-    "ville": "Ancenis-Saint-Géréon"
+    "ville": "Ancenis-Saint-Géréon",
+    "coords": [
+        47.3630754,
+        -1.1903039
+    ]
   },
   {
     "nom": "Théâtre De Verre",
     "adresse": "27 Place Charles de Gaulle",
     "codepostal": 44110,
-    "ville": "Chateaubriant"
+    "ville": "Chateaubriant",
+    "coords": [
+      47.7180735,
+      -1.37408085895196
+    ]
   },
   {
     "nom": "Le Grand Lieu",
     "adresse": "Place Saint-Martin",
     "codepostal": 44118,
-    "ville": "La Chevrolière"
+    "ville": "La Chevrolière",
+    "coords": [
+      47.0938489,
+      -1.6108785492823
+    ]
   },
   {
     "nom": "Carré D'Argent",
     "adresse": "Rue du Port-du-Four",
     "codepostal": 44160,
-    "ville": "Pont-Château"
+    "ville": "Pont-Château",
+    "coords": [
+        47.437418,
+        -2.0933337
+    ]
   },
   {
     "nom": "Espace Culturel Le Preambule",
     "adresse": "Place de Presteigne",
     "codepostal": 44850,
-    "ville": "Ligné"
+    "ville": "Ligné",
+    "coords": [
+      47.4087401,
+      -1.37647047175975
+    ]
   },
   {
     "nom": "Théâtre De L’espace De Retz",
     "adresse": "14 Rue de la Taillée",
     "codepostal": 44270,
-    "ville": "Machecoul-Saint-Même"
+    "ville": "Machecoul-Saint-Même",
+    "coords": [
+      46.9947096,
+      -1.8254924
+    ]
   },
   {
     "nom": "Quai Des Arts",
     "adresse": "2 Avenue Camille Flammarion",
     "codepostal": 44380,
-    "ville": "Pornichet"
+    "ville": "Pornichet",
+    "coords": [
+      47.2655441,
+      -2.3351598
+    ]
   },
   {
     "nom": "Espace Culturel Sainte Anne",
     "adresse": "2 Rue des Ajoncs",
     "codepostal": 44410,
-    "ville": "Saint-Lyphard"
+    "ville": "Saint-Lyphard",
+    "coords": [
+      47.4003643,
+      -2.3091236
+    ]
   },
   {
     "nom": "Ville De Saint-Sébastien-Sur-Loire",
     "adresse": "",
     "codepostal": 44230,
-    "ville": "Saint-Sébastien-Sur-Loire"
+    "ville": "Saint-Sébastien-Sur-Loire",
+    "coords": [
+      47.2035029,
+      -1.4992075
+    ]
   },
   {
     "nom": "Le Champilambart",
     "adresse": "13 Rue des Dorices",
     "codepostal": 44330,
-    "ville": "Vallet"
+    "ville": "Vallet",
+    "coords": [
+        47.1666532,
+        -1.2678051
+    ]
   },
   {
     "nom": "Centre Culturel Jacques Tati",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Centre Marcelle Menet",
     "adresse": "",
     "codepostal": 49100,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Centre National De Danse Contemporaine",
     "adresse": "",
     "codepostal": 49101,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Le Grand Theatre",
     "adresse": "",
     "codepostal": 49100,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Le Trois Mats",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Maison De Quartier Du Lac De Maine",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Maison De Quartier Les Hauts De Saint Aubin",
     "adresse": "",
     "codepostal": 49100,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Maison De Quartier Saint Serge",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Maison De Quartier St Jacques / St Nicolas",
     "adresse": "",
     "codepostal": 49100,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Mpt Monplaisir",
     "adresse": "",
     "codepostal": 49100,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Centre Jean Vilar / Festival Boule De Gomme",
     "adresse": "",
     "codepostal": 49009,
-    "ville": "Angers Cedex 01"
+    "ville": "Angers",
+    "coords": [
+        47.4449776,
+        -0.5658108
+    ]
   },
   {
     "nom": "Centre Culturel Georges Brassens",
     "adresse": "",
     "codepostal": 49240,
-    "ville": "Avrille"
+    "ville": "Avrille",
+    "coords": [
+      47.5045657,
+      -0.5956539
+    ]
   },
   {
     "nom": "Centre Culturel Rene D'Anjou",
     "adresse": "",
     "codepostal": 49150,
-    "ville": "Bauge"
+    "ville": "Bauge",
+    "coords": [
+      47.5490746,
+      -0.117747326483762
+    ]
   },
   {
     "nom": "L'Echappee Belle",
     "adresse": "",
     "codepostal": 49370,
-    "ville": "Becon Les Granits"
+    "ville": "Becon Les Granits",
+    "coords": [
+      47.5034433,
+      -0.8012205
+    ]
   },
   {
     "nom": "Les Boites A Culture",
     "adresse": "",
     "codepostal": 49080,
-    "ville": "Bouchemaine"
+    "ville": "Bouchemaine",
+    "coords": [
+      47.4234644,
+      -0.6085356
+    ]
   },
   {
     "nom": "Centre Social Du Chemillois",
     "adresse": "",
     "codepostal": 49120,
-    "ville": "Chemille"
+    "ville": "Chemille",
+    "coords": [
+      47.23005335,
+      -0.732369572023663
+    ]
   },
   {
     "nom": "Théâtre Foirail",
     "adresse": "",
     "codepostal": 49120,
-    "ville": "Chemille-En-Anjou"
+    "ville": "Chemille-En-Anjou",
+    "coords": [
+      47.2146396,
+      -0.732659
+    ]
   },
   {
     "nom": "Theatre Saint Louis",
     "adresse": "",
     "codepostal": 49300,
-    "ville": "Cholet"
+    "ville": "Cholet",
+    "coords": [
+      47.05249335,
+      -0.878211254509414
+    ]
   },
   {
     "nom": "Trpl / Festival De Noirmoutier",
     "adresse": "",
     "codepostal": 49305,
-    "ville": "Cholet Cedex"
+    "ville": "Cholet",
+    "coords": [
+      47.05249335,
+      -0.878211254509414
+    ]
   },
   {
     "nom": "Centre Culturel Vincent Malandrin ( Théâtre Des Dames)",
     "adresse": "",
     "codepostal": 49130,
-    "ville": "Les Ponts De Ce"
+    "ville": "Les Ponts De Ce",
+    "coords": [
+      47.4286962,
+      -0.5270662
+    ]
   },
   {
     "nom": "Espace Culturel L'Argerie",
     "adresse": "",
     "codepostal": 49370,
-    "ville": "Louroux Beconnais"
+    "ville": "Louroux Beconnais",
+    "coords": [
+      47.5168109,
+      -0.900519684017551
+    ]
   },
   {
     "nom": "Centre Culturel Jean Carmet",
     "adresse": "",
     "codepostal": 49610,
-    "ville": "Murs Erigne"
+    "ville": "Murs Erigne",
+    "coords": [
+      47.3992042,
+      -0.5361153
+    ]
   },
   {
     "nom": "Le Carre Des Arts",
     "adresse": "",
     "codepostal": 49112,
-    "ville": "Pellouailles Les Vignes"
+    "ville": "Pellouailles Les Vignes",
+    "coords": [
+      47.5323942,
+      -0.447210312296261
+    ]
   },
   {
     "nom": "Theatre De L'Herberie",
     "adresse": "",
     "codepostal": 49420,
-    "ville": "Pouance"
+    "ville": "Pouance",
+    "coords": [
+      47.7690063,
+      -1.19454394901809
+    ]
   },
   {
     "nom": "Espace Culturel Centre Poetique",
     "adresse": "",
     "codepostal": 49190,
-    "ville": "Rochefort Sur Loire"
+    "ville": "Rochefort Sur Loire",
+    "coords": [
+      47.3577833,
+      -0.6549574
+    ]
   },
   {
     "nom": "Cnar La Paperie",
     "adresse": "",
     "codepostal": 49124,
-    "ville": "Saint Barthelemy D'Anjou"
+    "ville": "Saint Barthelemy D'Anjou",
+    "coords": [
+      47.4683081,
+      -0.4932941
+    ]
   },
   {
     "nom": "Centre Social Indigo",
     "adresse": "",
     "codepostal": 49450,
-    "ville": "Saint Macaire En Mauges"
+    "ville": "Saint Macaire En Mauges",
+    "coords": [
+      47.1239125,
+      -0.992844353499407
+    ]
   },
   {
     "nom": "Espace Galilee",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Saint-Jean-De- Linières"
+    "ville": "Saint-Jean-De-Linières",
+    "coords": [
+      47.45625925,
+      -0.675433612536101
+    ]
   },
   {
     "nom": "Mjc",
     "adresse": "",
     "codepostal": 49400,
-    "ville": "Saumur"
+    "ville": "Saumur",
+    "coords": [
+      47.25417435,
+      -0.0661853886972667
+    ]
   },
   {
     "nom": "L'Avant Scene",
     "adresse": "",
     "codepostal": 49800,
-    "ville": "Trelaze"
+    "ville": "Trelaze",
+    "coords": [
+      47.4460674,
+      -0.4652452
+    ]
   },
   {
     "nom": "Mairie - Service Culturel",
     "adresse": "",
     "codepostal": 49125,
-    "ville": "Tiercé"
+    "ville": "Tiercé",
+    "coords": [
+      47.6152682,
+      -0.4673732
+    ]
   },
   {
     "nom": "Le Dôme",
     "adresse": "",
     "codepostal": 49400,
-    "ville": "Saumur"
+    "ville": "Saumur",
+    "coords": [
+      47.25417435,
+      -0.0661853886972667
+    ]
   },
   {
     "nom": "Festival Les Accroches-Cœurs",
     "adresse": "",
     "codepostal": 4900,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Festival Ça Chauffe",
     "adresse": "",
     "codepostal": 49610,
-    "ville": "Murs-Erigné"
+    "ville": "Murs-Erigné",
+    "coords": [
+      47.3992042,
+      -0.5361153
+    ]
   },
   {
     "nom": "Com Com Anjou Loir Et Sarthe",
     "adresse": "",
     "codepostal": 49430,
-    "ville": "Durtal"
+    "ville": "Durtal",
+    "coords": [
+      47.6703129,
+      -0.2458621
+    ]
   },
   {
     "nom": "Courants D'Loire",
     "adresse": "",
     "codepostal": 49350,
-    "ville": "Les Rosiers Sur Loire"
+    "ville": "Les Rosiers Sur Loire",
+    "coords": [
+      47.3765554,
+      -0.227997739535239
+    ]
   },
   {
     "nom": "Le Carré - Scène Nationale Cacin De Château-Gontiert",
     "adresse": "4 bis rue Horeau",
     "codepostal": 53200,
-    "ville": "Chateau-Gontier"
+    "ville": "Chateau-Gontier",
+    "coords": [
+      47.82871,
+      -0.6975078
+    ]
   },
   {
     "nom": "Théâtre Les 3 Chênes – Saison Culturelle Du Pays De Loiron",
     "adresse": "",
     "codepostal": 53320,
-    "ville": "Loiron Ruillé"
+    "ville": "Loiron Ruillé",
+    "coords": [
+      48.0620375,
+      -0.938686995327107
+    ]
   },
   {
     "nom": "Croq’ Les Mots, Marmot !",
     "adresse": "",
     "codepostal": 53000,
-    "ville": "Mayenne"
+    "ville": "Mayenne",
+    "coords": [
+      48.0810745,
+      -0.7705716
+    ]
   },
   {
     "nom": "Saison Culturelle Du Bocage Mayennais – Communauté De Communes",
     "adresse": "1 Grande Rue",
     "codepostal": 53120,
-    "ville": "Gorron"
+    "ville": "Gorron",
+    "coords": [
+      48.4111954,
+      -0.8129093
+    ]
   },
   {
     "nom": "Le Reflet",
     "adresse": "11 rue du Haut Bourg",
     "codepostal": 53940,
-    "ville": "Saint Berthevin"
+    "ville": "Saint Berthevin",
+    "coords": [
+      48.0673317,
+      -0.8296859
+    ]
   },
   {
     "nom": "Les Ondines",
     "adresse": "Place Christian d'Elva",
     "codepostal": 53810,
-    "ville": "Changé"
+    "ville": "Changé",
+    "coords": [
+      48.0983536,
+      -0.7890256
+    ]
   },
   {
     "nom": "L’entracte",
-    "adresse": "  16 rue Saint-Denis - B.P. 177",
+    "adresse": "16 rue Saint-Denis - B.P. 177",
     "codepostal": 72305,
-    "ville": "Sablé Sur Sarthe"
+    "ville": "Sablé Sur Sarthe",
+    "coords": [
+        47.838805,
+        -0.3403827
+    ]
   },
   {
     "nom": "Théâtre Du Passeur",
     "adresse": "88 rue de la Rivière",
     "codepostal": 72000,
-    "ville": "Le Mans"
+    "ville": "Le Mans",
+    "coords": [
+      48.0099932,
+      0.2118187
+    ]
   },
   {
     "nom": "Les Saulnières",
     "adresse": "249, avenue Rhin-et-Danube",
     "codepostal": 72000,
-    "ville": "Le Mans"
+    "ville": "Le Mans",
+    "coords": [
+      48.0145544,
+      0.1867048
+    ]
   },
   {
     "nom": "L’écluse",
     "adresse": "47 rue des accacias",
     "codepostal": 72000,
-    "ville": "Le Mans"
+    "ville": "Le Mans",
+    "coords": [
+        47.9974596,0.1826615
+    ]
   },
   {
     "nom": "Service Culturel Ville Du Mans",
     "adresse": "place Saint Pierre",
     "codepostal": 72000,
-    "ville": "Le Mans"
+    "ville": "Le Mans",
+    "coords": [
+      48.0073203,
+      0.1965084
+    ]
   },
   {
     "nom": "Superforma",
     "adresse": "5, place Paul Cezanne",
     "codepostal": 72100,
-    "ville": "Le Mans"
+    "ville": "Le Mans",
+    "coords": [
+      47.9740307,
+      0.215191
+    ]
   },
   {
     "nom": "Le Théâtre",
     "adresse": "",
     "codepostal": 44000,
-    "ville": "Saint-Nazaire"
+    "ville": "Saint-Nazaire",
+    "coords": [
+      45.2566002,
+      5.8490243
+    ]
   },
   {
     "nom": "Athénor",
     "adresse": "",
     "codepostal": 44000,
-    "ville": "Saint-Nazaire"
+    "ville": "Saint-Nazaire",
+    "coords": [
+      45.2566002,
+      5.8490243
+    ]
   },
   {
     "nom": "Pannonica (le)",
     "adresse": "9 Rue Basse Porte",
     "codepostal": 44000,
-    "ville": "Nantes"
+    "ville": "Nantes",
+    "coords": [
+      47.2209624,
+      -1.558229
+    ]
   },
   {
     "nom": "P’tits Enchantements Du Dix (les) – Maison Du Dix",
     "adresse": "10 place des Garennes",
     "codepostal": 44100,
-    "ville": "Nantes"
+    "ville": "Nantes",
+    "coords": [
+      47.2022473,
+      -1.578156
+    ]
   },
   {
     "nom": "Ruche (la)",
     "adresse": " 8 Rue Félibien",
     "codepostal": 44000,
-    "ville": "Nantes"
+    "ville": "Nantes",
+    "coords": [
+      47.2209017,
+      -1.5638617
+    ]
   },
   {
     "nom": "Aux Heures D’été",
     "adresse": "27 Rue de Strasbourg",
     "codepostal": 44000,
-    "ville": "Nantes"
+    "ville": "Nantes",
+    "coords": [
+      47.2181286,
+      -1.5531753
+    ]
   }
 ]

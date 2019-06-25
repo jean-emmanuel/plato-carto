@@ -12,7 +12,7 @@ module.exports = {
                     ${item.nom} <span class="chip">${item._type}</span>
                 </h3>
                 <p>
-                    <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt ${item._type === 'structure' ? 'accent' : ''}"></i> ${item.adresse}, ${item.codepostal} ${item.ville}<br/>
+                    <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt ${item._type === 'structure' ? 'accent' : ''}"></i> ${item.adresse}${item.adresse ? ', ' : ''}${item.codepostal} ${item.ville}<br/>
                     ${item.www ?
                         html`<span><i class="fas fa-fw fa-globe"></i> <a href="${item.www}" target="_blank">${item.www}</a><br/></span>` : ''
                     }
@@ -39,7 +39,7 @@ module.exports = {
             return html`
                 <div>
                     <p>
-                        <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt accent"></i> ${item.adresse}, ${item.codepostal} ${item.ville}<br/>
+                        <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt accent"></i> ${item.adresse}${item.adresse ? ', ' : ''}${item.codepostal} ${item.ville}<br/>
                         ${item.www ?
                             html`<span><i class="fas fa-fw fa-globe"></i> <a href="${item.www}" target="_blank">${item.www}</a><br/></span>` : ''
                         }
@@ -69,6 +69,9 @@ module.exports = {
                         </p>`
                         : ''
                     }
+
+
+${!item.nodetail ? html`<div>
 
                     ${item.aidecreation_preachat || item.aidecreation_coprod || item.aidecreation_residence ? html`
                         <div class="bloc bloc-1">
@@ -126,6 +129,9 @@ module.exports = {
                             }
                         </div>
                     ` : ''}
+
+</div>` : ''}
+
                 </div>
             `
 
@@ -166,7 +172,7 @@ module.exports = {
             return html`
                 <div>
                     <p>
-                        <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt"></i> ${item.adresse}, ${item.codepostal} ${item.ville}<br/>
+                        <i data-coords="${item.coords}" class="fas fa-fw fa-map-marker-alt"></i> ${item.adresse}${item.adresse ? ', ' : ''}${item.codepostal} ${item.ville}<br/>
                         ${item.www ?
                             html`<span><i class="fas fa-fw fa-globe"></i> <a href="${item.www}" target="_blank">${item.www}</a><br/></span>` : ''
                         }
@@ -213,6 +219,8 @@ module.exports = {
                             <span class="chip">${item.structure_associee.replace(/\n/g, ' / ')}</span>
                         </p>` : ''
                     }
+
+${!item.nodetail ? html`<div>
 
                     <div class="bloc bloc-1">
                         <h4>Création / Diffusion depuis 2016</h4>
@@ -273,6 +281,7 @@ module.exports = {
                         `  : ''}
                     </div>
 
+</div>` : ''}
 
                 </div>
             `

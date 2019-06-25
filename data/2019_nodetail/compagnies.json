@@ -3,210 +3,344 @@
     "nom": "Ergatica Compagnie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Les-Ponts-De-Cé"
+    "ville": "Les-Ponts-De-Cé",
+    "coords": [
+      47.4286962,
+      -0.5270662
+    ]
   },
   {
     "nom": "Zig Zag Compagnie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Les-Ponts-De-Cé"
+    "ville": "Les-Ponts-De-Cé",
+    "coords": [
+      47.4286962,
+      -0.5270662
+    ]
   },
   {
     "nom": "Oeildudo Compagnie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Les-Ponts-De-Cé"
+    "ville": "Les-Ponts-De-Cé",
+    "coords": [
+      47.4286962,
+      -0.5270662
+    ]
   },
   {
     "nom": "Compagnie A",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "A Travers Champs Compagnie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Chanzeaux"
+    "ville": "Chanzeaux",
+    "coords": [
+      47.26906745,
+      -0.657461008715596
+    ]
   },
   {
     "nom": "Oscar Et Molière Compagnie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Daumeray"
+    "ville": "Daumeray",
+    "coords": [
+      47.6885516,
+      -0.356434598024863
+    ]
   },
   {
     "nom": "Yédélé Compagnie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Les-Ponts-De-Cé"
+    "ville": "Les-Ponts-De-Cé",
+    "coords": [
+      47.4286962,
+      -0.5270662
+    ]
   },
   {
     "nom": "La Trébuche Compagnie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Doué En Anjou"
+    "ville": "Doué En Anjou",
+    "coords": [
+      47.19897355,
+      -0.311609027596023
+    ]
   },
   {
     "nom": "Nomorpa Compagnie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Mûrs-Erigné"
+    "ville": "Mûrs-Erigné",
+    "coords": [
+      47.3992042,
+      -0.5361153
+    ]
   },
   {
     "nom": "Bagoulu Compagnie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Omi Sissi Compagnie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Ste Gemmes Sur Loire"
+    "ville": "Ste Gemmes Sur Loire",
+    "coords": [
+      47.4243064,
+      -0.5587967
+    ]
   },
   {
     "nom": "Kwal",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Lilli Desastres",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Picnic Production - Les Établissements Bam",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "St Barthélemy D'Anjou"
+    "ville": "St Barthélemy D'Anjou",
+    "coords": [
+      47.4683081,
+      -0.4932941
+    ]
   },
   {
     "nom": "Map Cie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Nom D'Un Bouc Compagnie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Ste Gemmes Sur Loire"
+    "ville": "Ste Gemmes Sur Loire",
+    "coords": [
+      47.4243064,
+      -0.5587967
+    ]
   },
   {
     "nom": "Cie Plume",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Montreuil Juigné"
+    "ville": "Montreuil Juigné",
+    "coords": [
+      47.5291981,
+      -0.6099197
+    ]
   },
   {
     "nom": "Collectif Citron",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Ste Gemmes Sur Loire"
+    "ville": "Ste Gemmes Sur Loire",
+    "coords": [
+      47.4243064,
+      -0.5587967
+    ]
   },
   {
     "nom": "Gaïa Compagnie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Lezarts Verts",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Angers"
+    "ville": "Angers",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ]
   },
   {
     "nom": "Il Est Doux De Faire Les Fous Compagnie",
     "adresse": "",
     "codepostal": 49000,
-    "ville": "Les-Ponts-De-Cé"
+    "ville": "Les-Ponts-De-Cé",
+    "coords": [
+      47.4286962,
+      -0.5270662
+    ]
   },
   {
     "nom": "La Fille Du Vent",
     "adresse": "3 La Roche",
     "codepostal": 72310,
-    "ville": "La Chapelle Gaugain"
+    "ville": "La Chapelle Gaugain",
+    "coords": [47.8084196,0.6385215]
   },
   {
     "nom": "Cet Été",
     "adresse": "35 rue de Degré",
     "codepostal": 72000,
-    "ville": "Le Mans"
+    "ville": "Le Mans",
+    "coords": [
+      48.0148721,
+      0.1832314
+    ]
   },
   {
     "nom": "Cinémaniak Et Cie",
     "adresse": "",
     "codepostal": 72000,
-    "ville": "Le Mans"
+    "ville": "Le Mans",
+    "coords": [
+      48.0073498,
+      0.1967379
+    ]
   },
   {
     "nom": "Cronopios",
     "adresse": "",
     "codepostal": 72000,
-    "ville": "Le Mans"
+    "ville": "Le Mans",
+    "coords": [
+      48.0073498,
+      0.1967379
+    ]
   },
   {
     "nom": "Exodus",
-    "adresse": "espace scelia, rue D. Pironi",
+    "adresse": "Espace Culturel Scelia, rue Didier Pironi",
     "codepostal": 72190,
-    "ville": "Sargé Lès- Le Mans"
+    "ville": "Sargé-lès-le Mans",
+    "coords": [48.0356459,0.2387658]
   },
   {
     "nom": "Fais Pas Ci Fais Pas Ça",
     "adresse": "",
     "codepostal": 72000,
-    "ville": "Le Mans"
+    "ville": "Le Mans",
+    "coords": [
+      48.0073498,
+      0.1967379
+    ]
   },
   {
     "nom": "Houlala Cie",
     "adresse": "",
     "codepostal": 72000,
-    "ville": "Sablé Sur Sarthe"
+    "ville": "Sablé Sur Sarthe",
+    "coords": [
+      47.8400712,
+      -0.3352048
+    ]
   },
   {
     "nom": "J’ai Trois Poules",
     "adresse": "",
     "codepostal": 72000,
-    "ville": "Connerré"
+    "ville": "Connerré",
+    "coords": [
+      48.0604578,
+      0.4933923
+    ]
   },
   {
     "nom": "La Cave À Danse",
     "adresse": "",
     "codepostal": 72000,
-    "ville": "Mamers"
+    "ville": "Mamers",
+    "coords": [
+      48.3547,
+      0.371483
+    ]
   },
   {
     "nom": "La Chaise",
     "adresse": "",
     "codepostal": 72000,
-    "ville": "Mamers"
+    "ville": "Mamers",
+    "coords": [
+      48.3547,
+      0.371483
+    ]
   },
   {
     "nom": "Labôart",
     "adresse": "",
     "codepostal": 72000,
-    "ville": "Le Mans"
+    "ville": "Le Mans",
+    "coords": [
+      48.0073498,
+      0.1967379
+    ]
   },
   {
     "nom": "Nba Spectacles – Rozen Bodin",
     "adresse": "35 rue de Degré",
     "codepostal": 72000,
-    "ville": "Le Mans"
+    "ville": "Le Mans",
+    "coords": [
+      48.0148721,
+      0.1832314
+    ]
   },
   {
     "nom": "Paf Théâtre",
     "adresse": "",
     "codepostal": 72000,
-    "ville": "Le Mans"
+    "ville": "Le Mans",
+    "coords": [
+      48.0073498,
+      0.1967379
+    ]
   },
   {
     "nom": "Cie Points De Suspension",
     "adresse": "",
     "codepostal": 72000,
-    "ville": "Le Mans"
+    "ville": "Le Mans",
+    "coords": [
+      48.0073498,
+      0.1967379
+    ]
   }
 ]
