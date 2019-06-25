@@ -20,10 +20,10 @@
     "watch": "node scripts/reload.js & nodemon --watch src/scss -e scss -x \"npm run build-css\" & npm run build-js -- --watch & nodemon --watch src/mustache -e mustache --watch config/config.js -x \"npm run build-html\""
   },
   "dependencies": {
-    "@babel/core": "7.1.2",
-    "@babel/plugin-proposal-object-rest-spread": "7.0.0",
+    "@babel/core": "7.4.5",
+    "@babel/plugin-proposal-object-rest-spread": "7.4.4",
     "@babel/polyfill": "^7.0.0",
-    "@babel/preset-env": "7.1.0",
+    "@babel/preset-env": "7.4.5",
     "babelify": "10.0.0",
     "autoprefixer": "^9.3.1",
     "browserify": "^16.2.3",
@@ -45,12 +45,12 @@
     "normalize.css": "^8.0.0",
     "postcss": "^7.0.5",
     "request": "^2.88.0",
-    "screenfull": "^3.3.3",
+    "screenfull": "^4.2.0",
     "through": "^2.3.8",
     "turf-centroid": "^3.0.12",
     "turf-convex": "^3.0.12",
     "uglifyify": "5.0.1",
     "watchify": "^3.11.0",
-    "ws": "^6.1.0"
+    "ws": "^7.0.1"
   }
 }
