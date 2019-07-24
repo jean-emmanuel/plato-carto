@@ -1,0 +1,38 @@
+"nom","adresse","codepostal","ville","www","mail","telephone","type","conventionnement","licence","reseaux","activite_aidecreation","activite_diffusion","activite_actionculturelle","aidecreation_preachat","aidecreation_coprod","aidecreation_residence","diffusion_festival","diffusion_festival_nom","diffusion_total","diffusion_jp","diffusion_0_3ans","diffusion_3_6ans","diffusion_6_12ans","diffusion_12ans","diffusion_places_jp","diffusion_departement","diffusion_epci","diffusion_commune","actionculturelle_scolaire","actionculturelle_periscolaire","actionculturelle_extrascolaire","actionculturelle_departement","actionculturelle_epci","actionculturelle_commune","coords"
+"L’Entracte","16 rue Saint Denis",72300,"Sablé sur Sarthe","http://www.lentracte-sable.fr","","0243622220","Scène conventionnée","Art en territoire","2-1107999
+2-1107156
+3-1108000","Réseau des Scènes Départementales
+Jeune Public de la Sarthe","Oui","Oui","Non",3,2,0,"Oui","Rock Ici Momes",21,7,1,1,2,3,2677,72,247200090,"","Non","Non","Non","","","","[47.83877955,-0.338394193437314]"
+"Théâtre du Passeur","88 rue de la Rivière",72000,"Le Mans","www theatredupasseur.fr","","0243766582","Compagnie","","2-142061","","Oui","Oui","Oui",0,0,0,"Oui","Les Ptites Goules",25,20,6,7,0,0,1250,72,200068963,"","Oui","Oui","Oui",72,200068963,"","[48.0099932,0.2118187]"
+"Ville de Changé","Service culturel, hôtel de ville, 6 place Christian d'Elva",53810,"Changé","http://www.culture-change53.fr","culture@mairie-change.fr","0243533442","Commune","","1-1094272
+2-1094273
+3-1094274
+1-1119298","","Non","Oui","Oui","","","","Non","",19,4,1,2,1,0,850,53,245300330,53054,"Oui","Non","Oui",53,245300330,53054,"[48.0986184,-0.7909365]"
+"Superforma","5 place Paul Cézanne",72100,"Le Mans","https://superforma.fr/","charlene.parrassin@superforma.fr","0243145531","Association","","2-1101338
+3-1101339","","Non","Oui","Oui","","","","Non","",100,10,0,0,10,0,2600,72,247200132,"","Oui","Non","Non",72,247200132,"","[47.9740307,0.215191]"
+"Le Kiosque, centre d'action culturelle de Mayenne Communauté","7 Place Juhel",53100,"Mayenne","http://www.croqlesmotsmarmot.org","melissa.rouzier@mayennecommunaute.fr","0243302121","Association","","3-1022330
+2-1022328","Quand les livres relient","Oui","Oui","Oui",20,1,1,"Oui","Croq'les mots, marmot !","","","","","","","","","","","Non","Non","Non","","","","[48.3025635,-0.619756111042693]"
+"Théâtre la Fleuriaye","30 Boulevard Ampère",44470,"Carquefou","http://www.theatre-carquefou.fr","billetterie@mairie-carquefou.fr","0228222424","Théâtre municipal","","","","Non","Non","Oui","","","","Non","","","","","","","","","","","","Oui","Non","Non",44,244400404,44470,"[47.3003928,-1.5005153]"
+"Théâtre La Ruche","8 rue Félibien",44000,"Nantes","http://www.laruchenantes.fr","contact@laruchenantes.fr","0251808913","Théâtre privé","","1-1087794
+2-1087795
+3-1087796","","Non","Oui","Non","","","","Non","",60,7,3,2,1,0,500,44,244400404,44109,"Non","Non","Non","","","","[47.2209017,-1.5638617]"
+"Espace culturel Sainte Anne","Mairie, 1 rue de Kerio",44410,"Saint Lyphard","http://www.mairie-saintlyphard.fr","","0240914967","Théâtre municipal","","1-1004785
+2-1004786
+3-1004787","","Oui","Oui","Oui","","",1,"Non","",21,8,1,2,5,0,2378,44,244400610,"","Oui","Non","Oui",44,244400610,44175,"[47.4001841,-2.3086974]"
+"Le Champilambart - Espace Culturel de la Ville de Vallet","13 route des Dorices",44330,"Vallet","http://www.champilambart.fr","","0240364281","Théâtre municipal","",1078416,"","Oui","Oui","Oui",2,1,2,"Oui","Cep Party / Festival jeune public à Vallet et au Pays du Vignoble Nantais",40,14,3,2,5,3,7500,44,"200067635 200067866","","Oui","Oui","Oui",44,"200067635 200067866","","[47.1674537,-1.2656014]"
+"Pannonica / Association Nantes Jazz Action","9, rue Basse Porte",44000,"Nantes","http://www.pannonica.com/site/","","0251838706","Scène conventionnée","Musiques actuelles","1-1051970
+2-144432
+3-144433","","Non","Oui","Oui","","","","Non","",60,4,1,0,2,1,2540,44,244400404,44109,"Oui","Non","Non",44,244400404,"","[47.2209624,-1.558229]"
+"Le Dôme - Saumur Val de Loire","Place Bilange",49400,"SAUMUR","http://saisonculturelle.agglo-saumur.fr/","mediation.ledome@agglo-saumur.fr","0253935005","Communauté de communes","",11071782,"PJP49","Oui","Oui","Oui",2,1,1,"Oui","Mômes en folie et Rancarts des Bambins",48,10,0,4,5,1,2000,49,244900361,49400,"Oui","Non","Oui",49,244900361,49400,"[47.2609457,-0.0771268]"
+"Ville de Saint-Sébastien-sur-Loire","Hôtel de Ville. Place Marcellin Verbe",44230,"Saint-Sébastien-sur-Loire","http://www.saintsebastien.fr","","0240808513","Service Culturel","","1-1112509
+1-1112510
+1-1112512
+1-1112513","PlatO - Plateforme jeune public des Pays de la Loire","Non","Oui","Oui","","","","Oui","La Loire cool, l'été à Saint-Sébastien",80,20,5,5,10,50,1200,44,244400404,44230,"Oui","Oui","Oui",44,244400404,44230,"[47.2059475,-1.5019173410701]"
+"Maison de Quartier le Trois-Mâts","Place des Justices BP51445",49014,"Angers","http://www.letroismats.fr","","0241660202","Maison de Quartier","","1-1094269
+2-1094270
+3-1094271","","Oui","Oui","Oui",2,2,2,"Oui","Semaine ou Mois de la petite enfance",18,5,2,2,1,0,750,49,244900015,49007,"Non","Non","Oui",49,244900015,49007,"[47.4530144,-0.5278988]"
+"Le Quatrain","rue de la Basse Lande",44115,"Haute-Goulaine","https://www.lequatrain.fr/","","0240806603","Espace culturel","","1-103552
+2-103553
+3-103554","","Oui","Oui","Oui","","",1,"Non","",29,6,2,1,3,0,3139,44,200067635,"","Oui","Non","Non",44,200067635,"","[47.1920402,-1.4410264]"
+"Festival Ça Chauffe","37 route de Nantes",49610,"Mûrs-Erigné","https://www.festival-chauffe.fr","","0241578185","Festival","","","","Non","Oui","Non","","","","Oui","Festival Ça Chauffe",20,10,1,3,6,0,2100,49,244900015,49223,"Non","Non","Non","","","","[47.4009957,-0.5406705]"
+"Le TNT","11 allée de la maison rouge",44000,"Nantes","http://www.tntheatre.com","contact@tntheatre.com","0240121228","Scène de découvertes","","3-1039585","PlatO - Plateforme jeune public des Pays de la Loire","Oui","Oui","Oui",6,88,1,"Non","",150,18,5,9,4,0,4606,44,244400404,"44026 44109 44114 44143 44162","Oui","Oui","Oui",44,244400404,44109,"[47.2125593,-1.5520298]"
