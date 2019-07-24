@@ -37,7 +37,11 @@
     "agecible_0_3ans": "Oui",
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Non"
+    "agecible_12ans": "Non",
+    "coords": [
+      48.0148721,
+      0.1832314
+    ]
   },
   {
     "nom": "Compagnie Oscar et Molière",
@@ -77,7 +81,8 @@
     "agecible_0_3ans": "Oui",
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Non"
+    "agecible_12ans": "Non",
+    "coords": [47.6884956,-0.44788]
   },
   {
     "nom": "Cinemaniak et Cie",
@@ -117,7 +122,11 @@
     "agecible_0_3ans": "Oui",
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Non",
-    "agecible_12ans": "Oui"
+    "agecible_12ans": "Oui",
+    "coords": [
+      48.0148721,
+      0.1832314
+    ]
   },
   {
     "nom": "Zig Zag Création",
@@ -157,7 +166,11 @@
     "agecible_0_3ans": "Non",
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Non"
+    "agecible_12ans": "Non",
+    "coords": [
+      47.4288437,
+      -0.5221098
+    ]
   },
   {
     "nom": "Compagnie du Trépied",
@@ -197,7 +210,8 @@
     "agecible_0_3ans": "Non",
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Oui"
+    "agecible_12ans": "Oui",
+    "coords": [47.4760333,-0.5561605]
   },
   {
     "nom": "Compagnie Omi Sissi",
@@ -237,7 +251,8 @@
     "agecible_0_3ans": "Non",
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Non"
+    "agecible_12ans": "Non",
+    "coords": [47.4707151,-0.5507298]
   },
   {
     "nom": "Compagnie La Chaise",
@@ -277,7 +292,11 @@
     "agecible_0_3ans": "Non",
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Oui"
+    "agecible_12ans": "Oui",
+    "coords": [
+      48.3765127,
+      0.2459961
+    ]
   },
   {
     "nom": "Compagnie A Demi-mot",
@@ -317,7 +336,11 @@
     "agecible_0_3ans": "Oui",
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Non"
+    "agecible_12ans": "Non",
+    "coords": [
+      47.1806957,
+      -1.5405688
+    ]
   },
   {
     "nom": "Théâtre des sept Lieues",
@@ -357,7 +380,11 @@
     "agecible_0_3ans": "Oui",
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Oui"
+    "agecible_12ans": "Oui",
+    "coords": [
+      47.2188692,
+      -1.5626562
+    ]
   },
   {
     "nom": "Compagnie les ELéments DISPOnibles",
@@ -397,7 +424,8 @@
     "agecible_0_3ans": "Oui",
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Non"
+    "agecible_12ans": "Non",
+    "coords": [47.3568118,-0.4511128]
   },
   {
     "nom": "Estran-Gioco cosî",
@@ -437,7 +465,11 @@
     "agecible_0_3ans": "Oui",
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Non"
+    "agecible_12ans": "Non",
+    "coords": [
+      47.2062728,
+      -1.6152834
+    ]
   },
   {
     "nom": "Compagnie En attendant la marée!",
@@ -477,7 +509,8 @@
     "agecible_0_3ans": "Oui",
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Non",
-    "agecible_12ans": "Non"
+    "agecible_12ans": "Non",
+    "coords": [47.2023453,-1.5801951]
   },
   {
     "nom": "Casus Belli Théâtre",
@@ -517,7 +550,11 @@
     "agecible_0_3ans": "Non",
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Non"
+    "agecible_12ans": "Non",
+    "coords": [
+      47.03796,
+      -1.4698266
+    ]
   },
   {
     "nom": "Les Dandys Production",
@@ -557,7 +594,11 @@
     "agecible_0_3ans": "Non",
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Oui"
+    "agecible_12ans": "Oui",
+    "coords": [
+      47.21174405,
+      -1.54208709013756
+    ]
   },
   {
     "nom": "Compagnie Il est doux de faire les fous",
@@ -597,7 +638,11 @@
     "agecible_0_3ans": "Non",
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Oui"
+    "agecible_12ans": "Oui",
+    "coords": [
+      47.4288437,
+      -0.5221098
+    ]
   },
   {
     "nom": "David Rolland Chorégraphies",
@@ -637,7 +682,8 @@
     "agecible_0_3ans": "Non",
     "agecible_3_6ans": "Non",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Non"
+    "agecible_12ans": "Non",
+    "coords": [47.2171548,-1.5479579]
   },
   {
     "nom": "Compagnie ECART",
@@ -677,12 +723,13 @@
     "agecible_0_3ans": "Non",
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Non"
+    "agecible_12ans": "Non",
+    "coords": [47.228852,-1.5868277]
   },
   {
     "nom": "Compagnie La Fille du Vent",
     "annee": 2012,
-    "adresse": "chez Madame Chantal Proust 3 la roche- La chapelle Gaugain",
+    "adresse": "Chez Madame Chantal Proust 3 la roche- La chapelle Gaugain",
     "codepostal": 72340,
     "ville": "Loir en Vallée",
     "mail": "cie.lafilleduvent@gmail.com",
@@ -717,6 +764,7 @@
     "agecible_0_3ans": "Oui",
     "agecible_3_6ans": "Oui",
     "agecible_6_12ans": "Oui",
-    "agecible_12ans": "Oui"
+    "agecible_12ans": "Oui",
+    "coords": [47.805646,0.6668873]
   }
 ]

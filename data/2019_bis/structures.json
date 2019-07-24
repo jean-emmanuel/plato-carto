@@ -34,7 +34,11 @@
     "actionculturelle_extrascolaire": "Non",
     "actionculturelle_departement": "",
     "actionculturelle_epci": "",
-    "actionculturelle_commune": ""
+    "actionculturelle_commune": "",
+    "coords": [
+      47.83877955,
+      -0.338394193437314
+    ]
   },
   {
     "nom": "Théâtre du Passeur",
@@ -71,7 +75,11 @@
     "actionculturelle_extrascolaire": "Oui",
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 200068963,
-    "actionculturelle_commune": ""
+    "actionculturelle_commune": "",
+    "coords": [
+      48.0099932,
+      0.2118187
+    ]
   },
   {
     "nom": "Ville de Changé",
@@ -108,7 +116,8 @@
     "actionculturelle_extrascolaire": "Oui",
     "actionculturelle_departement": 53,
     "actionculturelle_epci": 245300330,
-    "actionculturelle_commune": 53054
+    "actionculturelle_commune": 53054,
+    "coords": [48.0986184,-0.7909365]
   },
   {
     "nom": "Superforma",
@@ -145,7 +154,11 @@
     "actionculturelle_extrascolaire": "Non",
     "actionculturelle_departement": 72,
     "actionculturelle_epci": 247200132,
-    "actionculturelle_commune": ""
+    "actionculturelle_commune": "",
+    "coords": [
+      47.9740307,
+      0.215191
+    ]
   },
   {
     "nom": "Le Kiosque, centre d'action culturelle de Mayenne Communauté",
@@ -182,7 +195,11 @@
     "actionculturelle_extrascolaire": "Non",
     "actionculturelle_departement": "",
     "actionculturelle_epci": "",
-    "actionculturelle_commune": ""
+    "actionculturelle_commune": "",
+    "coords": [
+      48.3025635,
+      -0.619756111042693
+    ]
   },
   {
     "nom": "Théâtre la Fleuriaye",
@@ -219,7 +236,11 @@
     "actionculturelle_extrascolaire": "Non",
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400404,
-    "actionculturelle_commune": 44470
+    "actionculturelle_commune": 44470,
+    "coords": [
+      47.3003928,
+      -1.5005153
+    ]
   },
   {
     "nom": "Théâtre La Ruche",
@@ -256,11 +277,15 @@
     "actionculturelle_extrascolaire": "Non",
     "actionculturelle_departement": "",
     "actionculturelle_epci": "",
-    "actionculturelle_commune": ""
+    "actionculturelle_commune": "",
+    "coords": [
+      47.2209017,
+      -1.5638617
+    ]
   },
   {
-    "nom": "Espace culturel Ste Anne",
-    "adresse": "Maire, 1 rue de Kerio",
+    "nom": "Espace culturel Sainte Anne",
+    "adresse": "Mairie, 1 rue de Kerio",
     "codepostal": 44410,
     "ville": "Saint Lyphard",
     "www": "http://www.mairie-saintlyphard.fr",
@@ -293,7 +318,8 @@
     "actionculturelle_extrascolaire": "Oui",
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400610,
-    "actionculturelle_commune": 44175
+    "actionculturelle_commune": 44175,
+    "coords": [47.4001841,-2.3086974]
   },
   {
     "nom": "Le Champilambart - Espace Culturel de la Ville de Vallet",
@@ -330,7 +356,11 @@
     "actionculturelle_extrascolaire": "Oui",
     "actionculturelle_departement": 44,
     "actionculturelle_epci": "200067635 200067866",
-    "actionculturelle_commune": ""
+    "actionculturelle_commune": "",
+    "coords": [
+      47.1674537,
+      -1.2656014
+    ]
   },
   {
     "nom": "Pannonica / Association Nantes Jazz Action",
@@ -367,7 +397,11 @@
     "actionculturelle_extrascolaire": "Non",
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400404,
-    "actionculturelle_commune": ""
+    "actionculturelle_commune": "",
+    "coords": [
+      47.2209624,
+      -1.558229
+    ]
   },
   {
     "nom": "Le Dôme - Saumur Val de Loire",
@@ -404,7 +438,11 @@
     "actionculturelle_extrascolaire": "Oui",
     "actionculturelle_departement": 49,
     "actionculturelle_epci": 244900361,
-    "actionculturelle_commune": 49400
+    "actionculturelle_commune": 49400,
+    "coords": [
+      47.2609457,
+      -0.0771268
+    ]
   },
   {
     "nom": "Ville de Saint-Sébastien-sur-Loire",
@@ -441,7 +479,11 @@
     "actionculturelle_extrascolaire": "Oui",
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400404,
-    "actionculturelle_commune": 44230
+    "actionculturelle_commune": 44230,
+    "coords": [
+      47.2059475,
+      -1.5019173410701
+    ]
   },
   {
     "nom": "Maison de Quartier le Trois-Mâts",
@@ -478,7 +520,8 @@
     "actionculturelle_extrascolaire": "Oui",
     "actionculturelle_departement": 49,
     "actionculturelle_epci": 244900015,
-    "actionculturelle_commune": 49007
+    "actionculturelle_commune": 49007,
+    "coords": [47.4530144,-0.5278988]
   },
   {
     "nom": "Le Quatrain",
@@ -515,7 +558,11 @@
     "actionculturelle_extrascolaire": "Non",
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 200067635,
-    "actionculturelle_commune": ""
+    "actionculturelle_commune": "",
+    "coords": [
+      47.1920402,
+      -1.4410264
+    ]
   },
   {
     "nom": "Festival Ça Chauffe",
@@ -552,7 +599,11 @@
     "actionculturelle_extrascolaire": "Non",
     "actionculturelle_departement": "",
     "actionculturelle_epci": "",
-    "actionculturelle_commune": ""
+    "actionculturelle_commune": "",
+    "coords": [
+      47.4009957,
+      -0.5406705
+    ]
   },
   {
     "nom": "Le TNT",
@@ -589,6 +640,10 @@
     "actionculturelle_extrascolaire": "Oui",
     "actionculturelle_departement": 44,
     "actionculturelle_epci": 244400404,
-    "actionculturelle_commune": 44109
+    "actionculturelle_commune": 44109,
+    "coords": [
+      47.2125593,
+      -1.5520298
+    ]
   }
 ]
