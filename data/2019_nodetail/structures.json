@@ -1,14 +1,5 @@
 [
-  {
-    "nom": "Théâtre De La Fleuriaye",
-    "adresse": "30 boulevard Ampère",
-    "codepostal": 44470,
-    "ville": "Carquefou",
-    "coords": [
-      47.3003928,
-      -1.5005153
-    ]
-  },
+
   {
     "nom": "Théatre Boris Vian",
     "adresse": "Rue Edmond Rostand",
@@ -50,16 +41,6 @@
     ]
   },
   {
-    "nom": "Tnt (le)",
-    "adresse": "11 Allée de la Maison Rouge",
-    "codepostal": 44000,
-    "ville": "Nantes",
-    "coords": [
-      47.2125593,
-      -1.5520298
-    ]
-  },
-  {
     "nom": "Théâtre De La Gobinière (le)",
     "adresse": "Hôtel de Ville",
     "codepostal": 44706,
@@ -69,16 +50,7 @@
       -1.6243347
     ]
   },
-  {
-    "nom": "Le Quatrain",
-    "adresse": "Rue de la Basse Lande",
-    "codepostal": 44115,
-    "ville": "Basse-Goulaine",
-    "coords": [
-      47.1960258,
-      -1.4486562
-    ]
-  },
+
   {
     "nom": "Théâtre Quartier Libre",
     "adresse": "Place Rohan - Rue Antoinette de Bruc",
@@ -149,36 +121,7 @@
       -2.3351598
     ]
   },
-  {
-    "nom": "Espace Culturel Sainte Anne",
-    "adresse": "2 Rue des Ajoncs",
-    "codepostal": 44410,
-    "ville": "Saint-Lyphard",
-    "coords": [
-      47.4003643,
-      -2.3091236
-    ]
-  },
-  {
-    "nom": "Ville De Saint-Sébastien-Sur-Loire",
-    "adresse": "",
-    "codepostal": 44230,
-    "ville": "Saint-Sébastien-Sur-Loire",
-    "coords": [
-      47.2035029,
-      -1.4992075
-    ]
-  },
-  {
-    "nom": "Le Champilambart",
-    "adresse": "13 Rue des Dorices",
-    "codepostal": 44330,
-    "ville": "Vallet",
-    "coords": [
-        47.1666532,
-        -1.2678051
-    ]
-  },
+
   {
     "nom": "Centre Culturel Jacques Tati",
     "adresse": "",
@@ -219,16 +162,7 @@
       -0.5515588
     ]
   },
-  {
-    "nom": "Le Trois Mats",
-    "adresse": "",
-    "codepostal": 49000,
-    "ville": "Angers",
-    "coords": [
-      47.4739884,
-      -0.5515588
-    ]
-  },
+
   {
     "nom": "Maison De Quartier Du Lac De Maine",
     "adresse": "",
@@ -489,16 +423,7 @@
       -0.4673732
     ]
   },
-  {
-    "nom": "Le Dôme",
-    "adresse": "",
-    "codepostal": 49400,
-    "ville": "Saumur",
-    "coords": [
-      47.25417435,
-      -0.0661853886972667
-    ]
-  },
+
   {
     "nom": "Festival Les Accroches-Cœurs",
     "adresse": "",
@@ -509,16 +434,7 @@
       -0.5515588
     ]
   },
-  {
-    "nom": "Festival Ça Chauffe",
-    "adresse": "",
-    "codepostal": 49610,
-    "ville": "Murs-Erigné",
-    "coords": [
-      47.3992042,
-      -0.5361153
-    ]
-  },
+
   {
     "nom": "Com Com Anjou Loir Et Sarthe",
     "adresse": "",
@@ -609,16 +525,7 @@
         -0.3403827
     ]
   },
-  {
-    "nom": "Théâtre Du Passeur",
-    "adresse": "88 rue de la Rivière",
-    "codepostal": 72000,
-    "ville": "Le Mans",
-    "coords": [
-      48.0099932,
-      0.2118187
-    ]
-  },
+
   {
     "nom": "Les Saulnières",
     "adresse": "249, avenue Rhin-et-Danube",
@@ -648,16 +555,7 @@
       0.1965084
     ]
   },
-  {
-    "nom": "Superforma",
-    "adresse": "5, place Paul Cezanne",
-    "codepostal": 72100,
-    "ville": "Le Mans",
-    "coords": [
-      47.9740307,
-      0.215191
-    ]
-  },
+
   {
     "nom": "Le Théâtre",
     "adresse": "",
@@ -678,16 +576,7 @@
       5.8490243
     ]
   },
-  {
-    "nom": "Pannonica (le)",
-    "adresse": "9 Rue Basse Porte",
-    "codepostal": 44000,
-    "ville": "Nantes",
-    "coords": [
-      47.2209624,
-      -1.558229
-    ]
-  },
+
   {
     "nom": "P’tits Enchantements Du Dix (les) – Maison Du Dix",
     "adresse": "10 place des Garennes",

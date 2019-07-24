@@ -49,16 +49,7 @@
       -0.657461008715596
     ]
   },
-  {
-    "nom": "Oscar Et Molière Compagnie",
-    "adresse": "",
-    "codepostal": 49000,
-    "ville": "Daumeray",
-    "coords": [
-      47.6885516,
-      -0.356434598024863
-    ]
-  },
+
   {
     "nom": "Yédélé Compagnie",
     "adresse": "",
@@ -99,16 +90,7 @@
       -0.5515588
     ]
   },
-  {
-    "nom": "Omi Sissi Compagnie",
-    "adresse": "",
-    "codepostal": 49000,
-    "ville": "Ste Gemmes Sur Loire",
-    "coords": [
-      47.4243064,
-      -0.5587967
-    ]
-  },
+
   {
     "nom": "Kwal",
     "adresse": "",
@@ -200,43 +182,6 @@
     ]
   },
   {
-    "nom": "Il Est Doux De Faire Les Fous Compagnie",
-    "adresse": "",
-    "codepostal": 49000,
-    "ville": "Les-Ponts-De-Cé",
-    "coords": [
-      47.4286962,
-      -0.5270662
-    ]
-  },
-  {
-    "nom": "La Fille Du Vent",
-    "adresse": "3 La Roche",
-    "codepostal": 72310,
-    "ville": "La Chapelle Gaugain",
-    "coords": [47.8084196,0.6385215]
-  },
-  {
-    "nom": "Cet Été",
-    "adresse": "35 rue de Degré",
-    "codepostal": 72000,
-    "ville": "Le Mans",
-    "coords": [
-      48.0148721,
-      0.1832314
-    ]
-  },
-  {
-    "nom": "Cinémaniak Et Cie",
-    "adresse": "",
-    "codepostal": 72000,
-    "ville": "Le Mans",
-    "coords": [
-      48.0073498,
-      0.1967379
-    ]
-  },
-  {
     "nom": "Cronopios",
     "adresse": "",
     "codepostal": 72000,
@@ -293,16 +238,7 @@
       0.371483
     ]
   },
-  {
-    "nom": "La Chaise",
-    "adresse": "",
-    "codepostal": 72000,
-    "ville": "Mamers",
-    "coords": [
-      48.3547,
-      0.371483
-    ]
-  },
+
   {
     "nom": "Labôart",
     "adresse": "",
